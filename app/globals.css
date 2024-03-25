@@ -19,11 +19,113 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+:root {
+	/* Small text */
+	--font-4xl: 2rem;
+	--font-3xl: 1.5rem;
+	--font-2xl: 1.25rem;
+	--font-xl: 1rem;
+	--font-lg: 0.875rem;
+	--font-md: 0.75;
+	--font-sm: 0.625rem;
+	--font-xs: 0.5rem;
+
+	/* Large text */
+	--font-lg-3xl: 4.625rem;
+	--font-lg-2xl: 3rem;
+	--font-lg-xl: 2.75rem;
+	--font-lg-lg: 2rem;
+	--font-lg-md: 1.5rem;
+	--font-lg-sm: 1.21rem;
+	--font-lg-xs: 1rem;
+}
+
+@screen lg {
+	:root {
+		/* Small text */
+		--font-4xl: 32px;
+		--font-3xl: 24px;
+		--font-2xl: 20px;
+		--font-xl: 16px;
+		--font-lg: 14px;
+		--font-md: 12px;
+		--font-sm: 10px;
+		--font-xs: 8px;
+
+		/* Large text */
+		--font-lg-3xl: 74px;
+		--font-lg-2xl: 48px;
+		--font-lg-xl: 44px;
+		--font-lg-lg: 32px;
+		--font-lg-md: 24px;
+		--font-lg-sm: 20px;
+		--font-lg-xs: 16px;
+	}
+}
+
+@layer utilities {
+	.text__title {
+		&__3xl,
+		&__2xl,
+		&__xl,
+		&__lg,
+		&__md,
+		&__sm,
+		&__xs {
+			@apply font-lunema text-slate-700;
+		}
+
+		&__3xl {
+			font-size: var(--font-lg-3xl);
+		}
+
+		&__2xl {
+			font-size: var(--font-lg-2xl);
+		}
+
+		&__xl {
+			font-size: var(--font-lg-xl);
+		}
+
+		&__lg {
+			font-size: var(--font-lg-lg);
+		}
+
+		&__md {
+			font-size: var(--font-lg-md);
+		}
+
+		&__sm {
+			font-size: var(--font-lg-sm);
+		}
+
+		&__xs {
+			font-size: var(--font-lg-xs);
+		}
+	}
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
 
 }
+
+.footerBox{
+  background: linear-gradient(100.6deg, #DDB8F2 -23.79%, #7A24A1 73.52%);
+
+}
+
+.text-gradient {
+	background-image: linear-gradient(
+		to right,
+		#7A24A1 15%,
+		#FEAA53
+	) !important;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 
 @layer utilities {
   .text-balance {
