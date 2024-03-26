@@ -40,7 +40,7 @@
 	--font-lg-xs: 1rem;
 }
 
-@screen lg {
+ lg {
 	:root {
 		/* Small text */
 		--font-4xl: 32px;

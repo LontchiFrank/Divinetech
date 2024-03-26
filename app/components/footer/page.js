@@ -15,7 +15,7 @@ function Footers() {
 					width: "100%",
 				}}>
 				{/* <div className="xl:mx-[23rem] lg:mx-[13rem] sm:mx-[8rem] mb-24"> */}
-				<div className="xl:px-[24rem]  md:px-16 sm:px-12 mx-auto ">
+				<div className="xl:px-[20rem] lg:px-[16rem]  md:px-16 sm:px-12 mx-auto ">
 					<div class="flex justify-center items-center px-16 py-16 rounded-xl shadow-xl max-md:px-5 footerBox ">
 						<div class="flex flex-col items-center w-full max-w-[870px] max-md:max-w-full px-14">
 							<div class="text-7xl font-bold text-center text-orange-400 leading-[72px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
