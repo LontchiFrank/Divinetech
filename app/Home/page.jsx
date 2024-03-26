@@ -46,7 +46,6 @@ function page() {
 					<div className="w-full lg:w-3/5 hidden lg:flex flex-col justify-center self-center md:mr-[-100px]">
 						<img
 							src="/images/7.svg"
-							// className="right-0 top-0 z-10"
 							style={{ paddingTop: "1rem" }}
 						/>
 					</div>
