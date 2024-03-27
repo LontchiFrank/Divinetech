@@ -61,7 +61,7 @@ function page() {
 				{/* container flex min-h-[60vh] lg:min-h-[90vh] mx-auto */}
 
 				<div className="  min-h-[60vh] lg:min-h-[90vh]  ">
-					<div className=" container lg:flex flex-col mx-auto  pt-16 md:flex-row sm:flex-col  px-12 2xl:px-36  xl:px-32 lg:px-20 md:px-12 sm:px-12  w-full justify-center items-center mb-32">
+					<div className=" container lg:flex flex-col mx-auto  pt-16 md:flex-row sm:flex-col  px-12 2xl:px-36  xl:px-32 lg:px-20 md:px-12 sm:px-12  w-full justify-center items-center mb-[4rem]">
 						<div className="w-full lg:w-2/5  flex flex-col justify-center sm:pb-8 md:pb-0 ">
 							<div className="md:pb-4 pb-2 z-10">
 								<h1 className="font-[700]  text-[2.6rem] xl:text-[3.4rem] lg:text-[2.6rem] sm:text-[2rem] text-gradient xl:leading-[4.5rem] lg:leading-[3.5rem] md:leading-[2rem] sm:leading-[3rem]  pb-5">
@@ -91,7 +91,7 @@ function page() {
 							<img src="/images/7.svg" style={{ paddingTop: "1rem" }} />
 						</div>
 					</div>
-					<div className=" container mx-auto">
+					<div className=" container mx-auto ">
 						<Swiper
 							loop
 							autoplay
@@ -135,7 +135,10 @@ function page() {
 					</div>
 				</div>
 			</div>
-			<div className="container  md:flex flex-col mx-auto xl:px-32 w-full  pt-32 md:flex-row ">
+			<div className="mt-44">
+				<img src="/images/12.svg" className="absolute left-0 w-full -z-10" />
+			</div>
+			<div className="container  md:flex flex-col mx-auto xl:px-32 w-full  pt-24 md:flex-row mt-[0rem]">
 				<div className="md:w-1/2 w-full flex  justify-center items-center">
 					<img src="/images/9.svg" />
 				</div>
@@ -159,6 +162,21 @@ function page() {
 							</span>
 						</span>
 					</button>
+				</div>
+			</div>
+
+			<div className="w-full mt-[15rem]">
+				<div className="flex flex-col justify-center items-center">
+					<div className="w-[35%]">
+						<h1 className="md:text-[48px] text-center text-[40px] sm:text-[30px] pb-4 font-medium text-[#173953]">
+							Productivity <span className="text-[#FEAA53]">Services</span>
+						</h1>
+						<p className="text-center text-[20px] text-[#173953] pb-8">
+							Looking for any Tech-related services, we got you totally covered
+							on that. With our innovative SaaS (Software-as-a-Services)
+							offerings, we unleash your business potential in this digital era.
+						</p>
+					</div>
 				</div>
 			</div>
 		</DefaultLayout>
