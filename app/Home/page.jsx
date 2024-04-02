@@ -2,7 +2,6 @@
 "use client";
 import React from "react";
 import DefaultLayout from "../Layout/DefaultLayout";
-import Button from "../components/Buttons/Button";
 import VideoCom from "../components/videoCom/videoCom";
 import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
 import { Autoplay, FreeMode } from "swiper/modules";
