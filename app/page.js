@@ -331,10 +331,10 @@ function App() {
 					<img src="/images/24.svg" className="" />
 				</div>
 				<div className="w-full mt-[15rem] container mx-auto xl:px-28 px-10 flex lg:flex-row flex-col gap-6">
-					<div className="lg:pb-0 pb-12">
+					<div className="xl:pb-0 pb-12">
 						<img src="/images/25.svg" className="" />
 					</div>
-					<div className="lg:w-[45%] w-full px-7">
+					<div className="xl:w-[45%] w-full px-7">
 						<div className="flex flex-col pb-12">
 							<h2 className="text-[#173953] font-medium xl:text-[48px] text-[30px]">
 								What Our
