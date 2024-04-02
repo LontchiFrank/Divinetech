@@ -114,6 +114,15 @@ body {
   background: linear-gradient(100.6deg, #DDB8F2 -23.79%, #7A24A1 73.52%);
 
 }
+.frames{
+	/* Rectangle 17 */
+
+box-sizing: border-box;
+background: linear-gradient(115.48deg, #DDB8F2 -5.61%, #7A24A1 96.45%);
+box-shadow: -15px 70px 29px rgba(166, 166, 166, 0.01), -8px 40px 24px rgba(166, 166, 166, 0.05), -4px 18px 18px rgba(166, 166, 166, 0.09), -1px 4px 10px rgba(166, 166, 166, 0.1);
+border-radius: 20px;
+
+}
 
 .text-gradient {
 	background-image: linear-gradient(
@@ -126,6 +135,11 @@ body {
 	-webkit-text-fill-color: transparent;
 }
 
+.benefits{
+	/* background: url('../public/images/20.svg'); */
+	background-color: #483464;
+	/* background: linear-gradient(rgba(72, 52, 100, 1),rgba(72, 52, 100, 1),rgba(72, 52, 100,  1)); */
+}
 
 @layer utilities {
   .text-balance {
@@ -139,4 +153,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   }
+}
+
+[data-slot="list"]{
+	@apply grid grid-cols-2
 }

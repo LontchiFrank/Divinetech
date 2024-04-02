@@ -13,6 +13,11 @@ import {
 	NavbarMenuItem,
 	Link,
 	Button,
+	Menu,
+	DropdownItem,
+	DropdownTrigger,
+	Dropdown,
+	DropdownMenu,
 } from "@nextui-org/react";
 // import {AcmeLogo} from "./AcmeLogo.jsx";
 
@@ -50,6 +55,16 @@ export default function DefaultLayout({ children }) {
 		"Log Out",
 	];
 
+	// const icons = {
+	// 	chevron: <ChevronDown fill="currentColor" size={16} />,
+	// 	scale: <Scale className="text-warning" fill="currentColor" size={30} />,
+	// 	lock: <Lock className="text-success" fill="currentColor" size={30} />,
+	// 	activity: <Activity className="text-secondary" fill="currentColor" size={30} />,
+	// 	flash: <Flash className="text-primary" fill="currentColor" size={30} />,
+	// 	server: <Server className="text-success" fill="currentColor" size={30} />,
+	// 	user: <TagUser className="text-danger" fill="currentColor" size={30} />,
+	//   };
+
 	return (
 		<div className="">
 			<Navbar
@@ -79,11 +94,86 @@ export default function DefaultLayout({ children }) {
 							About
 						</Link>
 					</NavbarItem>
-					<NavbarItem>
-						<Link href="#" className="text-[#183953]" aria-current="page">
-							Our Services
-						</Link>
-					</NavbarItem>
+					<Dropdown>
+						<NavbarItem>
+							<DropdownTrigger>
+								<Button
+									disableRipple
+									className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+									// endContent={icons.chevron}
+									radius="sm"
+									variant="light">
+									Our Services
+								</Button>
+							</DropdownTrigger>
+						</NavbarItem>
+						<DropdownMenu
+							aria-label="ACME features"
+							className="w-[500px] flex"
+							itemClasses={{
+								base: "gap-6",
+							}}>
+							<DropdownItem
+								description={
+									<span className="text-[12px]">
+										We create user friendly and centered designs
+									</span>
+								}
+								startContent={
+									// <div className="flex justify-center items-center">
+									<img src="/images/27.svg" style={{ width: "80px" }} />
+									// </div>
+								}>
+								UI/UX Design
+							</DropdownItem>
+							<DropdownItem
+								description={
+									<span className="text-[12px]">
+										Build your website with us
+									</span>
+								}
+								startContent={
+									<img src="/images/28.svg" style={{ width: "80px" }} />
+								}>
+								Web Development
+							</DropdownItem>
+
+							<DropdownItem
+								description={
+									<span className="text-[12px]">
+										Build you mobile app with us.
+									</span>
+								}
+								startContent={
+									<img src="/images/29.png" style={{ width: "50px" }} />
+								}>
+								Mobile App Development
+							</DropdownItem>
+							<DropdownItem
+								key="99_uptime"
+								description={
+									<span className="text-[12px]">
+										Share your ideas with experts for better performance.
+									</span>
+								}
+								startContent={
+									<img src="/images/30a.svg" style={{ width: "50px" }} />
+								}>
+								IT consulting
+							</DropdownItem>
+							<DropdownItem
+								description={
+									<span className="text-[12px]">
+										Taking your products to the world.
+									</span>
+								}
+								startContent={
+									<img src="/images/31.svg" style={{ width: "80px" }} />
+								}>
+								Digital Marketing
+							</DropdownItem>
+						</DropdownMenu>
+					</Dropdown>
 					<NavbarItem>
 						<Link color="foreground" className="text-[#183953]" href="#">
 							Projects
