@@ -59,10 +59,13 @@ function App() {
 					<div className=" container lg:flex flex-col mx-auto  pt-16 md:flex-row sm:flex-col  px-8 2xl:px-36  xl:px-32 lg:px-20 md:px-12 sm:px-12  w-full justify-center items-center mb-[4rem]">
 						<div className="w-full lg:w-2/5  flex flex-col justify-center sm:pb-8 md:pb-0 ">
 							<div className="md:pb-4 pb-2 z-10">
-								<h1 className="font-[700]  text-[2.6rem] xl:text-[3.4rem] lg:text-[2.6rem] sm:text-[2rem] text-gradient xl:leading-[4.5rem] lg:leading-[3.5rem] md:leading-[2rem] sm:leading-[3rem]  pb-5">
+								<h1 className="font-[700]  text-[2rem] xl:text-[3.4rem] lg:text-[2.6rem] sm:text-left text-center text-gradient xl:leading-[4.5rem] lg:leading-[3.5rem] md:leading-[2rem] leading-8  pb-5">
 									Elevate your business with SaaS services today.
 								</h1>
-								<p className="text-dark-background font-light xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[16px]">
+								<div className="w-full flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10 lg:hidden">
+									<img src="/images/7.svg" style={{ height: "60%" }} />
+								</div>
+								<p className="text-dark-background font-light xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[16px] pt-[2rem]">
 									With our intuitive and user-friendly platforms, you can
 									seamlessly manage your operations, connect with people, and
 									drive productivity from anywhere, at any time.
@@ -82,7 +85,7 @@ function App() {
 								</span>
 							</button>
 						</div>
-						<div className="w-full lg:w-3/5  lg:flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10">
+						<div className="w-full lg:w-3/5  lg:flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10 hidden">
 							<img src="/images/7.svg" style={{ paddingTop: "1rem" }} />
 						</div>
 					</div>
@@ -162,11 +165,11 @@ function App() {
 
 			<div className="w-full lg:mt-[18rem] mt-[7rem] lg:pb-[14rem] pb-[6rem]">
 				<div className="flex flex-col justify-center items-center">
-					<div className="md:w-[45%] w-50% px-7">
-						<h1 className="md:text-[48px] text-center text-[40px] sm:text-[30px] pb-4 font-medium text-[#173953]">
+					<div className="xl:w-[45%] lg:w-[50%] w-full px-7">
+						<h1 className="xl:text-[48px] text-center lg:text-[40px] text-[35px] pb-4 font-medium text-[#173953]">
 							Productivity <span className="text-[#FEAA53]">Services</span>
 						</h1>
-						<p className="text-center text-[20px] text-[#173953] pb-8">
+						<p className="text-center md:text-[20px] text-[18px]  text-[#173953] pb-8">
 							Looking for any Tech-related services, we got you totally covered
 							on that. With our innovative SaaS (Software-as-a-Services)
 							offerings, we unleash your business potential in this digital era.
@@ -209,12 +212,12 @@ function App() {
 
 			<div className="w-full lg:mb-[0rem] pb-[6rem]">
 				<div className="flex flex-col justify-center items-center">
-					<div className="md:w-[70%] w-[80%] px-7 mt-[9rem]">
-						<h1 className="md:text-[48px] text-center flex flex-col text-[40px] sm:text-[30px] pb-16 font-medium ">
+					<div className="xl:w-[70%] lg:w-[80%] w-full px-7 mt-[9rem]">
+						<h1 className="xl:text-[48px] text-center flex flex-col md:text-[40px] text-[35px] lg:pb-16 pb-10 font-medium ">
 							<span className="text-[#FEAA53]">Share your projects</span>
 							<span className="text-[#173953]">with SaaSSimplified</span>
 						</h1>
-						<p className="text-center text-[20px] text-[#173953] pb-[8rem]">
+						<p className="text-center md:text-[20px] text-[18px]  text-[#173953] pb-[8rem]">
 							Be ahead of the competition with our comprehensive suite of SaaS
 							solutions tailored to meet your business expectations. From robust
 							project management tools to advanced customer relationship
@@ -243,13 +246,13 @@ function App() {
 			</div>
 			<div className="w-full lg:mb-[0rem] pb-[6rem]">
 				<div className="flex flex-col justify-center items-center">
-					<div className="w-[100%] container mx-auto px-28 mt-[9rem]">
+					<div className="w-[100%] container mx-auto xl:px-28 px-12 mt-[9rem]">
 						<h1 className="md:text-[48px] text-center flex flex-col text-[40px] sm:text-[30px] pb-4 font-medium ">
 							<span className="text-[#FEAA53]">Benefits</span>
 							{/* <span className="text-[#173953]">with SaaSSimplified</span> */}
 						</h1>
 						<div className="w-full flex justify-center items-center">
-							<p className="lg:w-[40%] w-[60%] text-center text-[20px] text-[#173953] pb-[8rem]">
+							<p className="xl:w-[40%] lg:w-[60%] w-[100%] text-center md:text-[20px] text-[18px]  text-[#173953] pb-[8rem]">
 								With SaaSSimplified, forget the hassle of expensive and
 								time-consuming maintenance.
 							</p>
