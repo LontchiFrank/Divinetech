@@ -178,23 +178,23 @@ function App() {
 				</div>
 			</div>
 			<div className="w-full relative lg:pb-[16rem] pb-[6rem]">
-				<div className="w-full flex-col flex justify-center relative items-center">
-					<div className="xl:w-[40%] w-3/5 lg:h-[561px] h-[320px] rounded-[20px] frames">
-						<div className="flex justify-between">
-							<div className="absolute z-10 top-0 xl:left-[17rem] left-[2rem]">
+				<div className="w-full flex-col flex justify-center relative items-center sm:px-0 px-7">
+					<div className="xl:w-[50%] sm:w-3/5 w-full md:h-[561px] h-[620px] rounded-[20px] frames ">
+						<div className="flex sm:justify-between ">
+							<div className="absolute z-10 top-0 xl:left-[10rem] left-[2rem] ">
 								<img className="lg:w-[520px] w-[310px] " src="/images/15.svg" />
 							</div>
-							<div className="absolute z-10 lg:top-[6.5rem] top-[3rem] xl:right-[14.5rem] right-[5rem]">
+							<div className="absolute z-10 lg:top-[6.5rem] sm:top-[3rem] bottom-[2rem] xl:right-[8.5rem] sm:right-[5rem] right-[3rem] ">
 								<img className="lg:w-[520px] w-[310px]" src="/images/16.svg" />
 							</div>
 						</div>
 					</div>
-					<div className="w-full flex justify-center absolute z-10 lg:top-[32rem] top-[18rem]">
+					<div className="w-full flex justify-center absolute z-10 md:top-[32rem] top-[37rem]">
 						<button
 							// endContent={<img src="/images/Home/3rem.svg" />}
 							link
 							href="#how-it-works"
-							className="px-12 py-6 rounded-full bg-[#7A24A1] text-white w-fit">
+							className="md:px-12 md:py-6 px-8 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
 							<span className="flex gap-3">
 								{" "}
 								Get Started{" "}
