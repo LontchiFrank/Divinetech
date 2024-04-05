@@ -55,16 +55,6 @@ export default function DefaultLayout({ children }) {
 		"Log Out",
 	];
 
-	// const icons = {
-	// 	chevron: <ChevronDown fill="currentColor" size={16} />,
-	// 	scale: <Scale className="text-warning" fill="currentColor" size={30} />,
-	// 	lock: <Lock className="text-success" fill="currentColor" size={30} />,
-	// 	activity: <Activity className="text-secondary" fill="currentColor" size={30} />,
-	// 	flash: <Flash className="text-primary" fill="currentColor" size={30} />,
-	// 	server: <Server className="text-success" fill="currentColor" size={30} />,
-	// 	user: <TagUser className="text-danger" fill="currentColor" size={30} />,
-	//   };
-
 	return (
 		<div className="">
 			<Navbar
@@ -90,7 +80,7 @@ export default function DefaultLayout({ children }) {
 					className="hidden sm:flex gap-14  items-center text-[20px]"
 					justify="center">
 					<NavbarItem isActive>
-						<Link className="text-[#183953]" color="foreground" href="#">
+						<Link className="text-[#183953]" color="foreground" href="/About">
 							About
 						</Link>
 					</NavbarItem>
@@ -109,9 +99,9 @@ export default function DefaultLayout({ children }) {
 						</NavbarItem>
 						<DropdownMenu
 							aria-label="ACME features"
-							className="w-[500px] flex"
+							className="w-[550px] flex"
 							itemClasses={{
-								base: "gap-6",
+								base: "gap-1",
 							}}>
 							<DropdownItem
 								description={
@@ -133,7 +123,7 @@ export default function DefaultLayout({ children }) {
 									</span>
 								}
 								startContent={
-									<img src="/images/28.svg" style={{ width: "80px" }} />
+									<img src="/images/28.png" style={{ width: "80px" }} />
 								}>
 								Web Development
 							</DropdownItem>
@@ -145,7 +135,7 @@ export default function DefaultLayout({ children }) {
 									</span>
 								}
 								startContent={
-									<img src="/images/29.png" style={{ width: "50px" }} />
+									<img src="/images/29.png" style={{ width: "80px" }} />
 								}>
 								Mobile App Development
 							</DropdownItem>
@@ -157,7 +147,7 @@ export default function DefaultLayout({ children }) {
 									</span>
 								}
 								startContent={
-									<img src="/images/30a.svg" style={{ width: "50px" }} />
+									<img src="/images/30.png" style={{ width: "80px" }} />
 								}>
 								IT consulting
 							</DropdownItem>
@@ -168,7 +158,7 @@ export default function DefaultLayout({ children }) {
 									</span>
 								}
 								startContent={
-									<img src="/images/31.svg" style={{ width: "80px" }} />
+									<img src="/images/31.png" style={{ width: "80px" }} />
 								}>
 								Digital Marketing
 							</DropdownItem>
