@@ -86,7 +86,7 @@ function page() {
 							</div>
 						</div>
 					</div>
-					<div className="w-full mt-[24rem] relative flex ">
+					<div className="w-full md:mt-[24rem] mt-0 relative flex ">
 						<div className="lg:w-[70%] w-full bg-[#EEE0F5] z-10 py-16 rounded-[20px] mt-[20rem]">
 							<h1 className="lg:text-[48px] text-[30px] text-center text-[#FEAA53] pb-8">
 								Objectives
