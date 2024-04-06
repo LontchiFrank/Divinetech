@@ -71,7 +71,10 @@ export default function DefaultLayout({ children }) {
 						className="sm:hidden"
 					/>
 					<NavbarBrand>
-						<img src="/images/logo.svg" alt="" />
+						<Link className="text-[#183953]" color="foreground" href="/">
+							<img src="/images/logo.svg" alt="" />
+						</Link>
+
 						{/* <p className="font-bold text-inherit">ACME</p> */}
 					</NavbarBrand>
 				</NavbarContent>

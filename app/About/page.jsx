@@ -21,7 +21,7 @@ function page() {
 					position: "absolute",
 				}}></div>
 			<div className="  min-h-[60vh] lg:min-h-[90vh]  ">
-				<div className=" container lg:flex-col flex-col mx-auto  pt-16 md:flex-row sm:flex-col  px-8 2xl:px-36  xl:px-32 lg:px-20 md:px-12 sm:px-12  w-full justify-center items-center mb-[4rem]">
+				<div className=" container lg:flex-col flex-col mx-auto  pt-16 md:flex-row sm:flex-col  px-8 2xl:px-36  xl:px-32 lg:px-20 md:px-4 sm:px-12  w-full justify-center items-center mb-[4rem]">
 					<div className="w-full lg:w-full  flex flex-col justify-center items-center sm:pb-8 md:pb-0 ">
 						<div className="md:w-2/5 w-3/5 md:pb-4 pb-2 z-10">
 							<h1 className="font-[700]  text-[2rem] xl:text-[72px] lg:text-[2.6rem] sm:text-center textGradientAbout xl:leading-[4.5rem] lg:leading-[3.5rem] md:leading-[2rem] leading-8  pb-5">
@@ -36,11 +36,18 @@ function page() {
 						</p>
 						<div className="mt-20">
 							<img
-								src="/images/17.svg"
+								src="/images/12.svg"
 								className="absolute left-0 w-full -z-10"
 							/>
 						</div>
 					</div>
+					<div className="mt-32">
+						<img
+							src="/images/26.svg"
+							className="absolute top-[32rem] right-0 z-10"
+						/>
+					</div>
+
 					<div className="flex justify-center  items-center mt-[12rem] ">
 						<div className="lg:w-[75%] w-full px-10  flex md:flex-row flex-col bg-[#FCFCFC] py-16 rounded-[20px] z-10 imgShadow">
 							<div className="lg:w-1/2 w-full  flex justify-center items-center">
@@ -80,7 +87,7 @@ function page() {
 						</div>
 					</div>
 					<div className="w-full mt-[24rem] relative flex ">
-						<div className="lg:w-[80%] w-full bg-[#EEE0F5] z-10 py-16 rounded-[20px] mt-[20rem]">
+						<div className="lg:w-[70%] w-full bg-[#EEE0F5] z-10 py-16 rounded-[20px] mt-[20rem]">
 							<h1 className="lg:text-[48px] text-[30px] text-center text-[#FEAA53] pb-8">
 								Objectives
 							</h1>
@@ -160,10 +167,16 @@ function page() {
 								</div>
 							</div>
 						</div>
-						<div className="w-[60%] lg:block hidden bg-[#DBD1ED] flex justify-end absolute -z-10 ml-[27rem] py-16 rounded-[20px]">
+						<div className="w-[60%] h-[1020px] lg:block  bg-[#DBD1ED] flex absolute -z-10 ml-[18rem]  left-32 py-16 rounded-[20px] hidden">
 							<div className="mt-[24rem] ">
-								<img src="/images/33.svg" className="" />
+								<img src="" className="" />
 							</div>
+						</div>
+						<div className="mt-[24rem]  ">
+							<img
+								src="/images/33.svg"
+								className=" w-[50%] lg:block absolute -z-10 top-[20rem] xl:left-[45%] min-[1414px]:left-[58%] lg:left-[58%] hidden"
+							/>
 						</div>
 					</div>
 					<div className="w-full lg:mt-[18rem] mt-[7rem] lg:pb-[14rem] pb-[6rem]">
@@ -181,7 +194,7 @@ function page() {
 						</div>
 					</div>
 
-					<div className="rounded-[20px] w-full bg-[#483464] py-14 px-12">
+					<div className="rounded-[20px] w-full bg-[#483464] py-14 md:px-12 px-6">
 						<div className="flex w-full gap-7 mb-7">
 							<div class="w-full justify-center items-center px-7 py-4 whitespace-nowrap rounded-3xl border border-violet-100 border-solid max-md:px-5">
 								<input
@@ -258,8 +271,9 @@ function page() {
 							</button>
 						</div>
 					</div>
-					<div className="w-full flex lg:flex-nowrap sm:flex-wrap gap-7 mt-14">
-						<div className="w-1/3 bg-[#EEE0F5] p-9 flex justify-center items-center rounded-[10px]">
+					{/* flex lg:flex-nowrap sm:flex-wrap  */}
+					<div className="w-full grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-7 mt-14">
+						<div className=" bg-[#EEE0F5] p-9 flex justify-center items-center rounded-[10px]">
 							<div className="flex gap-3">
 								<div>
 									<img src="/images/35.svg" />
@@ -272,7 +286,7 @@ function page() {
 								</div>
 							</div>
 						</div>
-						<div className="w-1/3 bg-[#EEE0F5] p-6 flex justify-center items-center rounded-[10px]">
+						<div className=" bg-[#EEE0F5] p-6 flex justify-center items-center rounded-[10px]">
 							<div className="flex gap-3">
 								<div className="flex items-center">
 									<img src="/images/36.svg" />
@@ -285,7 +299,7 @@ function page() {
 								</div>
 							</div>
 						</div>
-						<div className="w-1/3 bg-[#EEE0F5] p-9  flex justify-center items-center rounded-[10px]">
+						<div className=" bg-[#EEE0F5] p-9  flex justify-center items-center rounded-[10px]">
 							<div className="flex gap-3">
 								<div>
 									<img src="/images/37.svg" />
