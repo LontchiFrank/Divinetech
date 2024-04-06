@@ -179,7 +179,7 @@ function page() {
 							/>
 						</div>
 					</div>
-					<div className="w-full lg:mt-[18rem] mt-[7rem] lg:pb-[14rem] pb-[6rem]">
+					<div className="w-full lg:mt-[10rem] mt-[7rem] lg:pb-[6rem] pb-[4rem]">
 						<div className="flex flex-col justify-center items-center">
 							<div className="lg:w-[70%]  w-full px-7">
 								<h1 className="xl:text-[48px] text-center lg:text-[40px] text-[35px] pb-4 font-medium text-[#173953]">
