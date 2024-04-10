@@ -4,6 +4,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/system";
+import { useRouter } from "next/navigation";
 
 const montserrat = Montserrat({
 	display: "swap",
@@ -18,11 +19,12 @@ const montserrat = Montserrat({
 // };
 
 export default function RootLayout({ children }) {
+	const navigate = useRouter();
 	return (
 		<html lang="en">
 			<head>
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 				<link
 					href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 					rel="stylesheet"
@@ -34,7 +36,7 @@ export default function RootLayout({ children }) {
 				/>
 			</head>
 			<body className={montserrat.variable}>
-				<NextUIProvider>{children}</NextUIProvider>
+				<NextUIProvider navigate={navigate.push}>{children}</NextUIProvider>
 			</body>
 		</html>
 	);

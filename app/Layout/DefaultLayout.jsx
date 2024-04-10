@@ -3,6 +3,7 @@
 "use client";
 import React, { Children, useState, useEffect } from "react";
 import Footers from "../components/footer/page";
+import Link from "next/link";
 import {
 	Navbar,
 	NavbarBrand,
@@ -11,7 +12,6 @@ import {
 	NavbarMenuToggle,
 	NavbarMenu,
 	NavbarMenuItem,
-	Link,
 	Button,
 	Menu,
 	DropdownItem,
@@ -107,15 +107,15 @@ export default function DefaultLayout({ children }) {
 								base: "gap-1",
 							}}>
 							<DropdownItem
+								key="services"
+								href="/Services/uiux"
 								description={
 									<span className="text-[12px]">
 										We create user friendly and centered designs
 									</span>
 								}
 								startContent={
-									// <div className="flex justify-center items-center">
 									<img src="/images/27.svg" style={{ width: "80px" }} />
-									// </div>
 								}>
 								UI/UX Design
 							</DropdownItem>
