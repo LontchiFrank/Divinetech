@@ -170,8 +170,17 @@ background: linear-gradient(96.98deg, #7A24A1 0%, #FEAA53 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
+}
+
+/* Rectangle 4150 */
+
+.purpleShadow {
+box-shadow: 0px 220px 88px rgba(217, 188, 230, 0.01), 0px 124px 74px rgba(217, 188, 230, 0.05), 0px 55px 55px rgba(217, 188, 230, 0.09), 0px 14px 30px rgba(217, 188, 230, 0.1);
+
+}
 
 
-
+.testimonials{
+box-shadow: 0px 205px 82px rgba(179, 179, 179, 0.01), 0px 115px 69px rgba(179, 179, 179, 0.05), 0px 51px 51px rgba(179, 179, 179, 0.09), 0px 13px 28px rgba(179, 179, 179, 0.1);
 
 }
