@@ -260,7 +260,7 @@ function Page() {
 								<div className="cursor-pointer" onClick={changeTestimonies}>
 									<img
 										src="/images/44.svg"
-										className="absolute lg:top-[15rem] lg:left-[18rem] md:bottom-[27rem] bottom-[25rem] z-10"
+										className="absolute lg:top-[15rem] lg:left-[18rem] md:bottom-[27rem] bottom-[25rem] z-10 lg:block hidden"
 									/>
 								</div>
 							</div>
