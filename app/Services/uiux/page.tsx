@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import DefaultLayout from "../../Layout/DefaultLayout";
 import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
 
-function page() {
+function Page() {
 	// const [arr, setArr] = useState({});
 	const [tests, setTests] = useState([
 		{
@@ -298,4 +298,4 @@ function page() {
 	);
 }
 
-export default page;
+export default Page;
