@@ -184,3 +184,7 @@ box-shadow: 0px 220px 88px rgba(217, 188, 230, 0.01), 0px 124px 74px rgba(217, 1
 box-shadow: 0px 205px 82px rgba(179, 179, 179, 0.01), 0px 115px 69px rgba(179, 179, 179, 0.05), 0px 51px 51px rgba(179, 179, 179, 0.09), 0px 13px 28px rgba(179, 179, 179, 0.1);
 
 }
+
+.sidebarGradient{
+	background: linear-gradient(180deg, #7A24A1 0%, #DDB8F2 100%);
+}

@@ -2,10 +2,14 @@
 "use client";
 import React, { useState } from "react";
 import DefaultLayout from "../../Layout/DefaultLayout";
+import Sidebar from "../../components/Sidebar/page";
+import ProjecCards from "../../components/ProjectCards/page";
 import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
+import Pagination from "../../components/Pagination/page";
+import { projects } from "../../data";
+import ProjectCards from "../../components/ProjectCards/page";
 
 function Page() {
-	// const [arr, setArr] = useState({});
 	const [tests, setTests] = useState([
 		{
 			name: "Frank Brown",
@@ -89,7 +93,7 @@ function Page() {
 				</div>
 				<div className="container  lg:mx-auto xl:px-32 px-12 lg:flex flex-col mb-[13rem]">
 					<div className="w-full flex justify-center ">
-						<div className="w-[90%] relative ">
+						<div className="w-[90%] relative  flex-none">
 							<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[50%]  md:w-[45%] h-[30%]  absolute -z-10 lg:bottom-[35rem] bottom-[39rem] xl:left-[26rem] left-[20rem] rounded-[20px] sm:block hidden "></div>
 							<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute bottom-[15rem]  -z-10  left-[16rem] rounded-[20px] sm:block hidden"></div>
 							<div className="border-dashed border-t-3 ml-20 border-r-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute -z-10 bottom-[-3rem] left-[12rem] rounded-[20px] sm:block hidden"></div>
@@ -186,8 +190,51 @@ function Page() {
 						</button>
 					</div>
 				</div>
-				<div className="container mx-auto md:px-32 px-4 mb-[10rem]">
-					<img src="/images/41.svg" className="purpleShadow" />
+				<div className="container mx-auto md:px-0 px-4 mb-[10rem]">
+					<div className="w-full flex justify-center">
+						<div className="w-[95%]">
+							<div className="w-full">
+								<Sidebar>
+									<div className="w-full pt-5 px-7">
+										<div className="w-full flex lg:flex-row flex-col justify-between mb-3">
+											<span className="md:text-[26px] text-[20px] sm:text-[20px] text-center font-medium text-[#173953] lg:mb-0 md:mb-5 mb-0">
+												Web Development{" "}
+												<span className="text-[#FEAA53]">Projects</span>{" "}
+											</span>
+											<form className="lg:max-w-md    flex lg:justify-end justify-center">
+												<div className="relative w-[300px]">
+													{/* <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"></div> */}
+													<input
+														type="search"
+														id="default-search"
+														placeholder="Search"
+														className="block w-full p-4 ps-10 text-sm text-gray-900  border-1 border-stroke border-[#173953] rounded-[20px] bg-white focus:ring-none focus:border-none placeholder:text-[#FEAA53]"
+														required
+													/>
+													<button
+														type="submit"
+														className="w-[40px] h-[40px] text-white absolute end-2.5 bottom-1.5 bg-[#7A24A1] hover:bg-[#9a42c3] focus:ring-4 focus:outline-none focus:ring-[#7A24A1] font-medium  text-sm px-4 py-2 rounded-full">
+														<FaArrowRight />
+													</button>
+												</div>
+											</form>
+										</div>
+										<div className="  flex justify-center flex-wrap gap-3">
+											{projects.map((el) => (
+												<div className=" shrink-0">
+													<ProjectCards el={el} />
+												</div>
+											))}
+										</div>
+										<div className="w-full flex justify-center items-center">
+											<Pagination />
+										</div>
+									</div>
+								</Sidebar>
+							</div>
+						</div>
+					</div>
+
 					<div className="mt-0">
 						<img
 							src="/images/42.svg"
@@ -200,69 +247,19 @@ function Page() {
 					<h2 className="md:text-[48px] text-[36px] sm:text-[30px] pb-[8rem] text-center font-medium text-[#173953]">
 						What Clients <span className="text-[#FEAA53]">Say</span>
 					</h2>
-
-					{/* <div className="w-full  flex justify-center items-center">
-						<div className="md:w-[60%] w-80% relative flex lg:flex-row flex-col p-7 bg-white testimonials">
-							<div className="lg:w-2/5 w-full">
-								<img src={arr.img} />
-							</div>
-							<div className="cursor-pointer" onClick={changeTestimonies}>
-								<img
-									src="/images/44.svg"
-									className="absolute lg:top-[15rem] lg:left-[2rem] md:bottom-[27rem] bottom-[25rem] z-10"
-								/>
-							</div>
-							<div className="lg:w-3/5 w-full">
-								<div className="w-full  ">
-									{" "}
-									<div className="flex justify-center items-center p-12">
-										<img src="/images/45.svg" />
-									</div>{" "}
-									<div className="px-8">
-										<span className="text-left text-[#909090] lg:text-[1.4rem] text-[1rem]">
-											{arr.description}
-										</span>
-									</div>
-									<div className="w-full px-12 flex mt-10 justify-center gap-3">
-										<div className="w-[80px] bg-gray-400 h-[80px] rounded-full ">
-											<img
-												src="/images/43.svg"
-												className="rounded-full w-[80px] h-[80px]"
-											/>
-										</div>
-										<div className="w-[80px] h-[80px] rounded-full border-4 border-stroke border-[#7A24A1]">
-											<img
-												src="/images/2.jpg"
-												className="rounded-full w-[75px] h-[76px]"
-											/>
-										</div>
-										<div className="w-[80px] h-[80px] rounded-full ">
-											<img
-												src="/images/1.jpg"
-												className="rounded-full w-[80px] h-[80px]"
-											/>
-										</div>
-									</div>
-								</div>
-							</div>
-
-       
-						</div>
-					</div> */}
 					<div className="w-full  flex justify-center items-center">
 						<div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-[56rem] p-4 ">
-							<div className="md:w-2/5 relative">
+							<div className="md:w-2/5 relative flex items-center">
 								<img
 									className=" w-full rounded-t-lg  md:rounded-none md:rounded-s-lg"
 									src={arr.img}
 									alt=""
 								/>
-								<div className="cursor-pointer" onClick={changeTestimonies}>
-									<img
-										src="/images/44.svg"
-										className="absolute lg:top-[15rem] lg:left-[18rem] md:bottom-[27rem] bottom-[25rem] z-10 lg:block hidden"
-									/>
-								</div>
+								<img
+									onClick={changeTestimonies}
+									src="/images/44.svg"
+									className="absolute right-0 mr-[-40px] z-10"
+								/>
 							</div>
 
 							<div className="flex md:w-3/5 flex-col justify-between p-4 leading-normal">

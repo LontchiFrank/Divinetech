@@ -120,6 +120,7 @@ export default function DefaultLayout({ children }) {
 								UI/UX Design
 							</DropdownItem>
 							<DropdownItem
+								href="/Services/web"
 								description={
 									<span className="text-[12px]">
 										Build your website with us
