@@ -3,6 +3,10 @@
 import React, { useState } from "react";
 import DefaultLayout from "../../Layout/DefaultLayout";
 import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
+import { projects } from "../../data";
+import ProjectCards from "../../components/ProjectCards/page";
+import Sidebar from "../../components/Sidebar/page";
+import Pagination from "../../components/Pagination/page";
 
 function Page() {
 	const [tests, setTests] = useState([
@@ -26,6 +30,8 @@ function Page() {
 		},
 	]);
 	const [testimony, setTestimony] = useState(0);
+	const lengthArr = projects.length;
+	console.log(lengthArr);
 
 	const changeTestimonies = () => {
 		setTestimony((prevIndex) =>
@@ -85,16 +91,20 @@ function Page() {
 					</div>
 				</div>
 			</div>
-			<div className="container  lg:mx-auto xl:px-32 px-12 lg:flex flex-col mb-[13rem]">
+			<div className="md:container  lg:mx-auto  md:px-12 px-2 lg:flex flex-col mb-[13rem]">
 				<div className="w-full flex justify-center ">
-					<div className="w-[90%] relative ">
-						<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[50%]  md:w-[45%] h-[30%]  absolute -z-10 lg:bottom-[35rem] bottom-[39rem] xl:left-[26rem] left-[20rem] rounded-[20px] sm:block hidden "></div>
-						<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute bottom-[15rem]  -z-10  left-[16rem] rounded-[20px] sm:block hidden"></div>
-						<div className="border-dashed border-t-3 ml-20 border-r-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute -z-10 bottom-[-3rem] left-[12rem] rounded-[20px] sm:block hidden"></div>
+					<div className="w-[90%] relative  ">
+						<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[50%]  md:w-[45%] h-[30%]  absolute -z-10 lg:bottom-[35rem] bottom-[39rem] xl:left-[22rem] left-[20rem] rounded-[20px] md:block hidden "></div>
+						<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute bottom-[15rem]  -z-10  left-[16rem] rounded-[20px] md:block hidden"></div>
+						<div className="border-dashed border-t-3 ml-20 border-r-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute -z-10 bottom-[-3rem] left-[12rem] rounded-[20px] md:block hidden"></div>
 						<div className="relative w-fit ">
-							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] xl:bottom-[13rem] md:bottom-[16rem] sm:bottom-[11rem] bottom-[12rem]  sm:left-[-2rem] left-[-3rem]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
-								<img src="/images/40.svg" />
-							</div>
+							{/* xl:bottom-[11rem] md:bottom-[16rem] sm:bottom-[11rem] bottom-[12rem]  sm:left-[-2rem] left-[-3rem]  */}
+							{/* <div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-40px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"> */}
+							<img
+								src="/images/40.svg"
+								className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
+							/>
+							{/* </div> */}
 							<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
 								<span className="pb-2 font-medium text-[20px] text-[#183953]">
 									{" "}
@@ -112,8 +122,12 @@ function Page() {
 						</div>
 
 						<div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[4rem]">
-							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  xl:bottom-[11rem] sm:bottom-[12rem]  bottom-[12rem]   right-[-2rem] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
-								<img src="/images/40.svg" />
+							{/* xl:bottom-[11rem] sm:bottom-[12rem]  bottom-[12rem]   right-[-2rem] */}
+							<div className=" ">
+								<img
+									src="/images/40.svg"
+									className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
+								/>
 							</div>
 							<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
 								<span className="pb-2 font-medium text-[20px] text-[#183953]">
@@ -132,7 +146,8 @@ function Page() {
 						</div>
 
 						<div className=" relative w-fit left-[0rem] top-[10rem]">
-							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    sm:left-[-2rem] left-[-3rem]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
+							{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    sm:left-[-2rem] left-[-3rem]  */}
+							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
 								<img src="/images/40.svg" />
 							</div>
 							<div className=" xl:w-[500px]  md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
@@ -151,7 +166,8 @@ function Page() {
 							</div>
 						</div>
 						<div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[15rem]">
-							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] xl:bottom-[13rem] sm:bottom-[14rem] bottom-[12rem]    right-[-2rem] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
+							{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    right-[-2rem]  */}
+							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
 								<img src="/images/40.svg" />
 							</div>
 							<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
@@ -169,6 +185,12 @@ function Page() {
 							</div>
 						</div>
 					</div>
+					<div className="mt-[4rem] lg:block hidden">
+						<img
+							src="/images/26.svg"
+							className="absolute top-[60rem] right-0 z-10"
+						/>
+					</div>
 				</div>
 				<div className="w-full pt-[28rem] flex justify-center items-center">
 					<button className="md:px-12 md:py-4 px-7 py-2 rounded-full bg-[#7A24A1] text-white lg:text-[22px] text-[16px] w-fit">
@@ -182,8 +204,51 @@ function Page() {
 					</button>
 				</div>
 			</div>
-			<div className="container mx-auto md:px-32 px-4 mb-[10rem]">
-				<img src="/images/41.svg" className="purpleShadow" />
+			<div className="container mx-auto md:px-0 px-4 mb-[10rem]">
+				<div className="w-full flex justify-center">
+					<div className="w-[95%]">
+						<div className="w-full">
+							<Sidebar>
+								<div className="w-full pt-5 px-7">
+									<div className="w-full flex lg:flex-row flex-col justify-between mb-3">
+										<span className="md:text-[26px] text-[20px] sm:text-[20px] text-center font-medium text-[#173953] lg:mb-0 md:mb-5 mb-0">
+											Web Development{" "}
+											<span className="text-[#FEAA53]">Projects</span>{" "}
+										</span>
+										<form className="lg:max-w-md    flex lg:justify-end justify-center">
+											<div className="relative w-[300px]">
+												{/* <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"></div> */}
+												<input
+													type="search"
+													id="default-search"
+													placeholder="Search"
+													className="block w-full p-4 ps-10 text-sm text-gray-900  border-1 border-stroke border-[#173953] rounded-[20px] bg-white focus:ring-none focus:border-none placeholder:text-[#FEAA53]"
+													required
+												/>
+												<button
+													type="submit"
+													className="w-[40px] h-[40px] text-white absolute end-2.5 bottom-1.5 bg-[#7A24A1] hover:bg-[#9a42c3] focus:ring-4 focus:outline-none focus:ring-[#7A24A1] font-medium  text-sm px-4 py-2 rounded-full">
+													<FaArrowRight />
+												</button>
+											</div>
+										</form>
+									</div>
+									<div className="  flex justify-center flex-wrap gap-3">
+										{projects.map((el) => (
+											<div key={`${el.id}+${el.img}`} className=" shrink-0">
+												<ProjectCards el={el} />
+											</div>
+										))}
+									</div>
+									<div className="w-full flex justify-center items-center">
+										<Pagination length={lengthArr} data={projects} />
+									</div>
+								</div>
+							</Sidebar>
+						</div>
+					</div>
+				</div>
+
 				<div className="mt-0">
 					<img src="/images/42.svg" className="absolute left-0 w-full -z-10" />
 				</div>
@@ -194,22 +259,21 @@ function Page() {
 				</h2>
 				<div className="w-full  flex justify-center items-center">
 					<div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-[56rem] p-4 ">
-						<div className="md:w-2/5 relative">
+						<div className="md:w-2/5 relative flex items-center justify-center">
 							<img
 								className=" w-full rounded-t-lg  md:rounded-none md:rounded-s-lg"
 								src={arr.img}
 								alt=""
 							/>
-							<div className="cursor-pointer" onClick={changeTestimonies}>
-								<img
-									src="/images/44.svg"
-									className="absolute lg:top-[15rem] lg:left-[18rem] md:bottom-[27rem] bottom-[25rem] z-10 lg:block hidden"
-								/>
-							</div>
+							<img
+								onClick={changeTestimonies}
+								src="/images/44.svg"
+								className="absolute md:right-0 md:mr-[-40px] md:mb-[14rem]  bottom-0 mb-[-40px] z-10"
+							/>
 						</div>
 
 						<div className="flex md:w-3/5 flex-col justify-between p-4 leading-normal">
-							<div className="px-12 pb-6 flex justify-center items-center">
+							<div className="px-12 pb-6 md:pt-0 pt-16 flex justify-center items-center">
 								<img src="/images/45.svg" />
 							</div>
 							<p className="mb-3 px-10 font-normal text-[#183953] dark:text-gray-400">
