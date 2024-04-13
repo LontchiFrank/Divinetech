@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import DefaultLayout from "../../Layout/DefaultLayout";
 import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
 import { projects } from "../../data";
-import ProjectCards from "../../components/ProjectCards/page";
-import Sidebar from "../../components/Sidebar/page";
-import Paginations from "../../components/Paginations/page";
+import ProjectCards from "../../components/ProjectCards/ProjectCard";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import Paginations from "../../components/Paginations/PaginationCom";
 
 function Page() {
 	const [tests, setTests] = useState([
@@ -234,14 +234,14 @@ function Page() {
 										</form>
 									</div>
 									<div className="  flex justify-center flex-wrap gap-3">
-										{projects.map((el) => (
+										{projects.map((el: any) => (
 											<div key={`${el.id}+${el.img}`} className=" shrink-0">
 												<ProjectCards el={el} />
 											</div>
 										))}
 									</div>
 									<div className="w-full flex justify-center items-center">
-										<Paginations length={lengthArr} />
+										<Paginations />
 									</div>
 								</div>
 							</Sidebar>

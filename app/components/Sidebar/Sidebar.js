@@ -101,11 +101,11 @@ const Sidebar = ({ children }) => {
 									value=""
 									class="w-4 h-4 text-[#5f1f7f] bg-gray-100 border-gray-300 rounded focus:ring-none  dark:bg-gray-700 dark:border-gray-600"
 								/>
-								<labe
+								<label
 									for="checkbox-3"
 									class="ms-2 text-sm font-medium text-white dark:text-gray-300">
 									Laravel
-								</labe>
+								</label>
 							</div>
 						</div>
 						<div class="flex mb-4">

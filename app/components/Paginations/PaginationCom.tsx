@@ -5,9 +5,9 @@ import { usePagination, PaginationItemType } from "@nextui-org/react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { cn } from "@nextui-org/react";
 
-const Paginations = ({ length }) => {
+export default function Paginations() {
 	const { activePage, range, setPage, onNext, onPrevious } = usePagination({
-		total: length,
+		total: 6,
 		showControls: true,
 		siblings: 10,
 		boundaries: 10,
@@ -20,7 +20,7 @@ const Paginations = ({ length }) => {
 				{range.map((page) => {
 					if (page === PaginationItemType.NEXT) {
 						return (
-							<li key={page.id} aria-label="next page" className="w-17 h-17">
+							<li key={page} aria-label="next page" className="w-17 h-17">
 								<button
 									className="w-full h-full flex justify-center items-center bg-white border-1 border-stroke border-[#909090]  p-3 rounded-full"
 									onClick={onNext}>
@@ -65,5 +65,4 @@ const Paginations = ({ length }) => {
 			</ul>
 		</div>
 	);
-};
-export default Paginations;
+}

@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/Services/digital-marketing/page.jsx", "app/Services/web/page.jsx", "app/Services/uiux/page.jsx"  ],
+, "app/Services/digital-marketing/page.tsx", "app/Services/web/page.tsx", "app/Services/uiux/page.tsx", "app/components/Sidebar/Sidebar.js"  ],
   "exclude": [
     "node_modules"
   ]
