@@ -198,60 +198,23 @@ function Page() {
 						</button>
 					</div>
 				</div>
-				<div className="container mx-auto md:px-0 px-4 mb-[10rem]">
-					<div className="w-full flex justify-center">
-						<div className="w-[95%]">
-							<div className="w-full">
-								<Sidebar>
-									<div className="w-full pt-5 px-7">
-										<div className="w-full flex lg:flex-row flex-col justify-between mb-3">
-											<span className="md:text-[26px] text-[20px] sm:text-[20px] text-center font-medium text-[#173953] lg:mb-0 md:mb-5 mb-0">
-												Web Development{" "}
-												<span className="text-[#FEAA53]">Projects</span>{" "}
-											</span>
-											<form className="lg:max-w-md    flex lg:justify-end justify-center">
-												<div className="relative w-[300px]">
-													{/* <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"></div> */}
-													<input
-														type="search"
-														id="default-search"
-														placeholder="Search"
-														className="block w-full p-4 ps-10 text-sm text-gray-900  border-1 border-stroke border-[#173953] rounded-[20px] bg-white focus:ring-none focus:border-none placeholder:text-[#FEAA53]"
-														required
-													/>
-													<button
-														type="submit"
-														className="w-[40px] h-[40px] text-white absolute end-2.5 bottom-1.5 bg-[#7A24A1] hover:bg-[#9a42c3] focus:ring-4 focus:outline-none focus:ring-[#7A24A1] font-medium  text-sm px-4 py-2 rounded-full">
-														<FaArrowRight />
-													</button>
-												</div>
-											</form>
-										</div>
-										<div className="  flex justify-center flex-wrap gap-3">
-											{projects.map((el: any) => (
-												<div key={`${el.id}+${el.img}`} className=" shrink-0">
-													<ProjectCards el={el} />
-												</div>
-											))}
-										</div>
-										<div className="w-full flex justify-center items-center">
-											<Paginations />
-										</div>
-									</div>
-								</Sidebar>
-							</div>
+				<div className="w-full container mx-auto flex flex-col justify-center">
+					<h2 className="md:text-[48px] text-[36px] sm:text-[30px] pb-[8rem] text-center font-medium text-[#173953]">
+						Service <span className="text-[#FEAA53]">Statistics</span>
+					</h2>
+					<div className="w-full flex justify-center items-center">
+						<div className="w-[70%] rounded-[43px] ">
+							<img alt="statistics" src="/images/53.svg" className="w-full" />
 						</div>
 					</div>
-
-					<div className="mt-0">
+				</div>
+				<div className="mb-[45rem] pt-[10rem]  w-full ">
+					<div className="">
 						<img
 							src="/images/42.svg"
-							className="absolute left-0 w-full -z-10"
+							className="absolute mt-[-35rem] left-0 w-full -z-10"
 						/>
 					</div>
-				</div>
-
-				<div className="pb-[35rem] pt-[10rem]  w-full ">
 					<h2 className="md:text-[48px] text-[36px] sm:text-[30px] pb-[8rem] text-center font-medium text-[#173953]">
 						What Clients <span className="text-[#FEAA53]">Say</span>
 					</h2>
