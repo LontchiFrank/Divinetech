@@ -39,7 +39,6 @@ function Page() {
 		);
 	};
 	const arr = tests[testimony];
-	console.log(arr);
 	return (
 		<DefaultLayout>
 			<div
@@ -61,18 +60,18 @@ function Page() {
 						<div className="w-full lg:w-2/5  flex flex-col justify-center  sm:pb-8 md:pb-0 ">
 							<div className="md:pb-4 pb-2 z-10 mb-10">
 								<h1 className="font-[700]   xl:text-[3.2rem] text-[2.6rem] sm:text-left text-center text-gradient xl:leading-[4.5rem] lg:leading-[3.5rem] md:leading-[2rem] leading-8  pb-5">
-									Web Development
+									Digital Marketing
 								</h1>
 								<div className="w-full flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10 lg:hidden">
-									<img src="/images/46.svg" style={{ height: "60%" }} />
+									<img src="/images/52.svg" style={{ height: "60%" }} />
 								</div>
 								<p className="text-dark-background font-light xl:text-[17px] lg:text-[18px] md:text-[16px] sm:text-[16px] pt-[2rem]">
-									Empower your online presence with our web development service.
-									Let us create a powerful, visually stunning, and user-friendly
-									platform that enhances your brand image, engages your
-									audience, and improve business growth. Contact us today to
-									embark on a web development journey that will elevate your
-									online presence and set you apart in the competition.
+									In today's digital age, a strong online presence and effective
+									marketing strategies are essential for businesses to thrive.
+									At SaaSSimplified we are thrilled to offer our professional
+									digital marketing services, designed to help you connect with
+									your target audience, drive website traffic, and achieve your
+									business goals.
 								</p>
 							</div>
 							<button className="px-12 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
@@ -86,7 +85,7 @@ function Page() {
 							</button>
 						</div>
 						<div className="w-full lg:w-3/5  lg:flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10 hidden">
-							<img src="/images/46.svg" style={{ paddingTop: "1rem" }} />
+							<img src="/images/52.svg" style={{ paddingTop: "1rem" }} />
 						</div>
 					</div>
 				</div>
@@ -94,9 +93,11 @@ function Page() {
 			<div className="md:container  lg:mx-auto  md:px-12 px-2 lg:flex flex-col mb-[13rem]">
 				<div className="w-full flex justify-center ">
 					<div className="w-[90%] relative  ">
-						<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[50%]  md:w-[45%] h-[30%]  absolute -z-10 lg:bottom-[35rem] bottom-[39rem] xl:left-[22rem] left-[20rem] rounded-[20px] md:block hidden "></div>
-						<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute bottom-[15rem]  -z-10  left-[16rem] rounded-[20px] md:block hidden"></div>
-						<div className="border-dashed border-t-3 ml-20 border-r-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute -z-10 bottom-[-3rem] left-[12rem] rounded-[20px] md:block hidden"></div>
+						<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[50%] xl:mb-[10rem] lg:mb-[22rem] mb-[18rem] lg:w-[43%] md:w-[45%] h-[30%]  absolute -z-10 lg:bottom-[35rem] bottom-[39rem] xl:left-[22rem] left-[20rem] rounded-[20px] md:block hidden "></div>
+						<div className="border-dashed border-t-3 xl:ml-20 ml-0 border-l-3 border-[#7A24A1] xl:mb-[13rem] lg:mb-[18rem] mb-[22rem] lg:w-[47%] xl:w-[50%] md:w-[45%] h-[30%]  absolute bottom-[15rem]  -z-10  left-[16rem] rounded-[20px] md:block hidden"></div>
+						<div className="border-dashed border-t-3 xl:ml-20 ml-0 border-r-3 border-[#7A24A1] xl:mb-[10rem] lg:mb-[16rem] mb-[17rem] xl:w-[50%] md:w-[45%] h-[30%]  absolute -z-10 bottom-[-3rem] left-[16rem] rounded-[20px] md:block hidden"></div>
+						<div className="border-dashed border-t-3 xl:ml-20 ml-0 border-l-3 border-[#7A24A1] xl:mb-[11.5rem] lg:mb-[12rem] mb-[14rem] xl:w-[50%] md:w-[45%] h-[30%]  absolute bottom-[-21rem]  -z-10  left-[16rem] rounded-[20px] md:block hidden"></div>
+						<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[50%] xl:mb-[3rem] lg:mb-[4rem] mb-[-59rem] lg:w-[43%] md:w-[45%] h-[30%]  absolute -z-10 lg:bottom-[-32rem] bottom-[30rem] xl:left-[22rem] left-[20rem] rounded-[20px] md:block hidden "></div>
 						<div className="relative w-fit ">
 							{/* xl:bottom-[11rem] md:bottom-[16rem] sm:bottom-[11rem] bottom-[12rem]  sm:left-[-2rem] left-[-3rem]  */}
 							{/* <div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-40px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"> */}
@@ -108,20 +109,19 @@ function Page() {
 							<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
 								<span className="pb-2 font-medium text-[20px] text-[#183953]">
 									{" "}
-									Scalability
+									Email Marketing
 								</span>
 								<span className="text-[14px] text-[#183953]">
-									Our web development services focus on creating applications
-									that can handle increasing user loads, data volumes, and
-									feature expansions without compromising performance. We design
-									and optimize the architecture to ensure seamless scalability
-									and efficient utilization of resources, allowing your SaaS
-									product to grow alongside your customer base.
+									Our team designs and implements personalized email campaigns
+									that provide valuable information, product updates, and
+									exclusive offers. By staying in touch with your audience and
+									delivering targeted messages, we help you build lasting
+									relationships and increase customer loyalty.
 								</span>
 							</div>
 						</div>
 
-						<div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[4rem]">
+						<div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[4rem] lg:ml-[3rem] ml-0 ">
 							{/* xl:bottom-[11rem] sm:bottom-[12rem]  bottom-[12rem]   right-[-2rem] */}
 							<div className=" ">
 								<img
@@ -132,20 +132,21 @@ function Page() {
 							<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
 								<span className="pb-2 font-medium text-[20px] text-[#183953]">
 									{" "}
-									User Experience
+									Content Marketing
 								</span>
 								<span className="text-[14px] text-[#183953]">
-									We create intuitive and user-friendly interfaces that provide
-									a seamless and engaging experience for your customers. Through
-									careful consideration of information architecture, navigation,
-									and interaction design, we ensure that users can easily
-									navigate through your web application and accomplish their
-									tasks with minimal effort.
+									At SaaSSimplified , we share valuable, relevant, and
+									informative content to attract and engage your target
+									audience. This may include blog posts, articles, videos,
+									e-books, and webinars. By providing useful information and
+									demonstrating expertise, content marketing establishes your
+									company as a trusted resource and helps nurture leads
+									throughout the customer journey.
 								</span>
 							</div>
 						</div>
 
-						<div className=" relative w-fit left-[0rem] top-[10rem]">
+						<div className=" relative w-fit left-[0rem] top-[9rem] mb-[2rem]">
 							{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    sm:left-[-2rem] left-[-3rem]  */}
 							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
 								<img src="/images/40.svg" />
@@ -153,19 +154,18 @@ function Page() {
 							<div className=" xl:w-[500px]  md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
 								<span className="pb-2 font-medium text-[20px] text-[#183953]">
 									{" "}
-									Security
+									Social media marketing
 								</span>
 								<span className="text-[14px] text-[#183953]">
-									Our web development team incorporates robust security
-									measures, such as data encryption, user authentication, and
-									secure API integrations, to safeguard your web application and
-									protect user information. We follow industry best practices
-									and stay up-to-date with the latest security standards to
-									ensure a secure online environment for your customers.
+									We leverage popular social media platforms to create
+									captivating content, engage with your audience, and promote
+									your software products or services. Through strategic paid
+									advertising and community management, we help you connect with
+									potential customers and encourage brand advocacy.
 								</span>
 							</div>
 						</div>
-						<div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[15rem]">
+						<div className=" relative w-fit xl:left-[46rem] md:left-[24rem] left-0 top-[12rem] mb-[3rem]">
 							{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    right-[-2rem]  */}
 							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
 								<img src="/images/40.svg" />
@@ -173,14 +173,51 @@ function Page() {
 							<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
 								<span className="pb-2 font-medium text-[20px] text-[#183953]">
 									{" "}
-									Collaboration and Communication
+									Search Engine Optimization (SEO)
 								</span>
 								<span className="text-[14px] text-[#183953]">
-									Our team works closely with your stakeholders and internal
-									teams to ensure that the web application aligns with your
-									vision and requirements. We provide regular updates, conduct
-									thorough testing, and facilitate user acceptance testing to
-									ensure a seamless transition from development to deployment.
+									Through our meticulous keyword research, on-page optimization,
+									and technical improvements, we ensure that your website ranks
+									higher in search engine results, making it easier for
+									potential customers to find you organically.
+								</span>
+							</div>
+						</div>
+						<div className=" relative w-fit left-[0rem] top-[15rem] mb-[2rem]">
+							{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    sm:left-[-2rem] left-[-3rem]  */}
+							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
+								<img src="/images/40.svg" />
+							</div>
+							<div className=" xl:w-[500px]  md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
+								<span className="pb-2 font-medium text-[20px] text-[#183953]">
+									{" "}
+									Pay-Per-Click (PPC)
+								</span>
+								<span className="text-[14px] text-[#183953]">
+									We leverage Pay-per-Click (PPC) advertising to create targeted
+									campaigns that drive immediate traffic to your website. By
+									bidding on relevant keywords and crafting compelling ad copy,
+									we ensure that your ads appear in front of the right audience,
+									generating quality leads and increasing brand visibility.
+								</span>
+							</div>
+						</div>
+						<div className=" relative w-fit xl:left-[46rem] md:left-[24rem] left-0 top-[18rem] mb-[-12rem]">
+							{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    right-[-2rem]  */}
+							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
+								<img src="/images/40.svg" />
+							</div>
+							<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
+								<span className="pb-2 font-medium text-[20px] text-[#183953]">
+									{" "}
+									Affiliate Marketing
+								</span>
+								<span className="text-[14px] text-[#183953]">
+									Through the efforts of our service, your SaaS brand can gain
+									exposure to new audiences across various marketing channels.
+									SaaSSimplified can create content, write reviews, produce
+									videos, or share their personal experiences with your SaaS
+									product, helping to build trust and credibility.
 								</span>
 							</div>
 						</div>
@@ -192,7 +229,7 @@ function Page() {
 						/>
 					</div>
 				</div>
-				<div className="w-full pt-[28rem] flex justify-center items-center">
+				<div className="w-full pt-[48rem] flex justify-center items-center">
 					<button className="md:px-12 md:py-4 px-7 py-2 rounded-full bg-[#7A24A1] text-white lg:text-[22px] text-[16px] w-fit">
 						<span className="flex gap-3">
 							{" "}
