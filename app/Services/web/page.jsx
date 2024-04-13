@@ -6,7 +6,7 @@ import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
 import { projects } from "../../data";
 import ProjectCards from "../../components/ProjectCards/page";
 import Sidebar from "../../components/Sidebar/page";
-import Pagination from "../../components/Pagination/page";
+import Paginations from "../../components/Paginations/page";
 
 function Page() {
 	const [tests, setTests] = useState([
@@ -241,7 +241,7 @@ function Page() {
 										))}
 									</div>
 									<div className="w-full flex justify-center items-center">
-										<Pagination length={lengthArr} data={projects} />
+										<Paginations length={lengthArr} />
 									</div>
 								</div>
 							</Sidebar>

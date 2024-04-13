@@ -5,7 +5,7 @@ import DefaultLayout from "../../Layout/DefaultLayout";
 import Sidebar from "../../components/Sidebar/page";
 import ProjecCards from "../../components/ProjectCards/page";
 import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
-import Pagination from "../../components/Pagination/page";
+import Pagination from "../../components/Paginations/page";
 import { projects } from "../../data";
 import ProjectCards from "../../components/ProjectCards/page";
 
@@ -239,7 +239,7 @@ function Page() {
 											))}
 										</div>
 										<div className="w-full flex justify-center items-center">
-											<Pagination length={lengthArr} data={projects} />
+											<Paginations length={lengthArr} />
 										</div>
 									</div>
 								</Sidebar>

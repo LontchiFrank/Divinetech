@@ -5,7 +5,7 @@ import { usePagination, PaginationItemType } from "@nextui-org/react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { cn } from "@nextui-org/react";
 
-const Pagination = ({ length, data }) => {
+const Paginations = ({ length }) => {
 	const { activePage, range, setPage, onNext, onPrevious } = usePagination({
 		total: length,
 		showControls: true,
@@ -66,4 +66,4 @@ const Pagination = ({ length, data }) => {
 		</div>
 	);
 };
-export default Pagination;
+export default Paginations;
