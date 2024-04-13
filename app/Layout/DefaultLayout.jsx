@@ -133,6 +133,7 @@ export default function DefaultLayout({ children }) {
 							</DropdownItem>
 
 							<DropdownItem
+								href="/Services/mobile"
 								description={
 									<span className="text-[12px]">
 										Build you mobile app with us.
