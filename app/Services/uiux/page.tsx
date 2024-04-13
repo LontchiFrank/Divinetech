@@ -30,7 +30,10 @@ function Page() {
 			img: "/images/43.svg",
 		},
 	]);
+
 	const [testimony, setTestimony] = useState(0);
+	const lengthArr = projects.length;
+	console.log(lengthArr);
 
 	const changeTestimonies = () => {
 		setTestimony((prevIndex) =>
@@ -38,7 +41,6 @@ function Page() {
 		);
 	};
 	const arr = tests[testimony];
-	console.log(arr);
 	return (
 		<div className="">
 			<DefaultLayout>
@@ -91,16 +93,20 @@ function Page() {
 						</div>
 					</div>
 				</div>
-				<div className="container  lg:mx-auto xl:px-32 px-12 lg:flex flex-col mb-[13rem]">
+				<div className="md:container  lg:mx-auto  md:px-12 px-2 lg:flex flex-col mb-[13rem]">
 					<div className="w-full flex justify-center ">
 						<div className="w-[90%] relative  flex-none">
-							<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[50%]  md:w-[45%] h-[30%]  absolute -z-10 lg:bottom-[35rem] bottom-[39rem] xl:left-[26rem] left-[20rem] rounded-[20px] sm:block hidden "></div>
+							<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[50%]  md:w-[45%] h-[30%]  absolute -z-10 lg:bottom-[35rem] bottom-[39rem] xl:left-[22rem] left-[20rem] rounded-[20px] sm:block hidden "></div>
 							<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute bottom-[15rem]  -z-10  left-[16rem] rounded-[20px] sm:block hidden"></div>
 							<div className="border-dashed border-t-3 ml-20 border-r-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute -z-10 bottom-[-3rem] left-[12rem] rounded-[20px] sm:block hidden"></div>
 							<div className="relative w-fit ">
-								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] xl:bottom-[11rem] md:bottom-[16rem] sm:bottom-[11rem] bottom-[12rem]  sm:left-[-2rem] left-[-3rem]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
-									<img src="/images/40.svg" />
-								</div>
+								{/* xl:bottom-[11rem] md:bottom-[16rem] sm:bottom-[11rem] bottom-[12rem]  sm:left-[-2rem] left-[-3rem]  */}
+								{/* <div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-40px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"> */}
+								<img
+									src="/images/40.svg"
+									className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
+								/>
+								{/* </div> */}
 								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
 									<span className="pb-2 font-medium text-[20px] text-[#183953]">
 										{" "}
@@ -117,8 +123,12 @@ function Page() {
 							</div>
 
 							<div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[4rem]">
-								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  xl:bottom-[11rem] sm:bottom-[12rem]  bottom-[12rem]   right-[-2rem] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
-									<img src="/images/40.svg" />
+								{/* xl:bottom-[11rem] sm:bottom-[12rem]  bottom-[12rem]   right-[-2rem] */}
+								<div className=" ">
+									<img
+										src="/images/40.svg"
+										className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
+									/>
 								</div>
 								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
 									<span className="pb-2 font-medium text-[20px] text-[#183953]">
@@ -137,7 +147,8 @@ function Page() {
 							</div>
 
 							<div className=" relative w-fit left-[0rem] top-[10rem]">
-								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    sm:left-[-2rem] left-[-3rem]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
+								{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    sm:left-[-2rem] left-[-3rem]  */}
+								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
 									<img src="/images/40.svg" />
 								</div>
 								<div className=" xl:w-[500px]  md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
@@ -157,7 +168,8 @@ function Page() {
 								</div>
 							</div>
 							<div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[15rem]">
-								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    right-[-2rem] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
+								{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    right-[-2rem]  */}
+								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
 									<img src="/images/40.svg" />
 								</div>
 								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
@@ -221,13 +233,13 @@ function Page() {
 										</div>
 										<div className="  flex justify-center flex-wrap gap-3">
 											{projects.map((el) => (
-												<div className=" shrink-0">
+												<div key={`${el.id}+${el.img}`} className=" shrink-0">
 													<ProjectCards el={el} />
 												</div>
 											))}
 										</div>
 										<div className="w-full flex justify-center items-center">
-											<Pagination />
+											<Pagination length={lengthArr} data={projects} />
 										</div>
 									</div>
 								</Sidebar>
@@ -249,7 +261,7 @@ function Page() {
 					</h2>
 					<div className="w-full  flex justify-center items-center">
 						<div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-[56rem] p-4 ">
-							<div className="md:w-2/5 relative flex items-center">
+							<div className="md:w-2/5 relative flex items-center justify-center">
 								<img
 									className=" w-full rounded-t-lg  md:rounded-none md:rounded-s-lg"
 									src={arr.img}
@@ -258,12 +270,12 @@ function Page() {
 								<img
 									onClick={changeTestimonies}
 									src="/images/44.svg"
-									className="absolute right-0 mr-[-40px] z-10"
+									className="absolute md:right-0 md:mr-[-40px] md:mb-[14rem]  bottom-0 mb-[-40px] z-10"
 								/>
 							</div>
 
 							<div className="flex md:w-3/5 flex-col justify-between p-4 leading-normal">
-								<div className="px-12 pb-6 flex justify-center items-center">
+								<div className="px-12 pb-6 md:pt-0 pt-16 flex justify-center items-center">
 									<img src="/images/45.svg" />
 								</div>
 								<p className="mb-3 px-10 font-normal text-[#183953] dark:text-gray-400">
