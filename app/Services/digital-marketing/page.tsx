@@ -7,6 +7,7 @@ import { projects } from "../../data";
 import ProjectCards from "../../components/ProjectCards/ProjectCard";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Pagination from "../../components/Paginations/PaginationCom";
+import Image from "next/image";
 
 function Page() {
 	const [tests, setTests] = useState([
@@ -229,68 +230,198 @@ function Page() {
 						/>
 					</div>
 				</div>
-				<div className="w-full pt-[48rem] flex justify-center items-center">
-					<button className="md:px-12 md:py-4 px-7 py-2 rounded-full bg-[#7A24A1] text-white lg:text-[22px] text-[16px] w-fit">
-						<span className="flex gap-3">
-							{" "}
-							Schedule Meeting{" "}
-							<span className="flex items-center ">
-								<FaArrowRight />
-							</span>
-						</span>
-					</button>
-				</div>
+				<div className="w-full pt-[30rem] pb-[10rem] flex justify-center items-center"></div>
 			</div>
-			<div className="container mx-auto md:px-0 px-4 mb-[10rem]">
-				<div className="w-full flex justify-center">
-					<div className="w-[95%]">
-						<div className="w-full">
-							<Sidebar>
-								<div className="w-full pt-5 px-7">
-									<div className="w-full flex lg:flex-row flex-col justify-between mb-3">
-										<span className="md:text-[26px] text-[20px] sm:text-[20px] text-center font-medium text-[#173953] lg:mb-0 md:mb-5 mb-0">
-											Web Development{" "}
-											<span className="text-[#FEAA53]">Projects</span>{" "}
+			<div className="mb-[0rem] ">
+				<img
+					src="/images/17.svg"
+					className="absolute left-0 mb-[20rem]  w-full -z-10"
+				/>
+			</div>
+			<div className=" w-full flex flex-col justify-center items-center mb-[10rem]">
+				{" "}
+				<h2 className="md:text-[48px] text-[36px] sm:text-[30px] pb-[8rem] text-center font-medium text-[#173953]">
+					Our <span className="text-[#FEAA53]">Pricings</span>
+				</h2>
+				<div className="xl:w-[60%] md:w-[90%] w-full flex md:flex-row flex-col gap-6 justify-center items-center">
+					<div className="max-w-sm py-6 md:px-10 px-7 pricings border border-gray-200  rounded-[22px] shadow lg:mt-28 mt-0">
+						<div className="w-full flex justify-center">
+							<span className=" text-[14px] text-[#FEAA53]">Best Offer</span>
+						</div>
+						<div className="w-full text-center mb-4">
+							<h5 className="mb-2 lg:text-[52px] text-[36px] font-medium tracking-tight text-white dark:text-white">
+								Hourly
+							</h5>
+						</div>
+						<div className="w-full flex justify-center items-center pb-4">
+							<div className="w-[70%] p-6 bg-[#ffffff4a] text-center rounded-[20px]">
+								<span className="text-white text-[28px] font-medium flex justify-center ">
+									{" "}
+									<small className="text-[12px] ">$</small> 3.0
+									<small className="mt-3 text-base font-light text-[9px]">
+										/h
+									</small>
+								</span>
+							</div>
+						</div>
+						<div className="w-full flex justify-center items-center pb-10">
+							<div className="w-full">
+								<ul className="list-disc text-white text-[14px]">
+									<li className="pb-2">Benefit to that this plan offers (1)</li>
+									<li className="pb-2">Benefit to that this plan offers (2)</li>
+									<li className="pb-2">Benefit to that this plan offers (3)</li>
+								</ul>
+							</div>
+						</div>
+						<div className="w-full flex justify-center items-center mb-8">
+							<div className="w-[80%]">
+								<button className="px-6 py-3 rounded-full bg-transparent border-1 border-stroke border-white text-center text-white w-full flex justify-center">
+									<span className="w-full flex justify-center gap-3 ">
+										{" "}
+										Subscribe{" "}
+										<span className="flex items-center ">
+											<FaArrowRight />
 										</span>
-										<form className="lg:max-w-md    flex lg:justify-end justify-center">
-											<div className="relative w-[300px]">
-												{/* <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"></div> */}
-												<input
-													type="search"
-													id="default-search"
-													placeholder="Search"
-													className="block w-full p-4 ps-10 text-sm text-gray-900  border-1 border-stroke border-[#173953] rounded-[20px] bg-white focus:ring-none focus:border-none placeholder:text-[#FEAA53]"
-													required
-												/>
-												<button
-													type="submit"
-													className="w-[40px] h-[40px] text-white absolute end-2.5 bottom-1.5 bg-[#7A24A1] hover:bg-[#9a42c3] focus:ring-4 focus:outline-none focus:ring-[#7A24A1] font-medium  text-sm px-4 py-2 rounded-full">
-													<FaArrowRight />
-												</button>
-											</div>
-										</form>
-									</div>
-									<div className="  flex justify-center flex-wrap gap-3">
-										{projects.map((el: any) => (
-											<div key={`${el.id}+${el.img}`} className=" shrink-0">
-												<ProjectCards el={el} />
-											</div>
-										))}
-									</div>
-									<div className="w-full flex justify-center items-center">
-										<Pagination />
-									</div>
+									</span>
+								</button>
+							</div>
+						</div>
+						<div className="w-full text-center">
+							<span className="text-[#7c7c7c] text-[10px]">Pricing in USD</span>
+						</div>
+					</div>
+					<div className="max-w-sm py-6 md:px-10 px-7 pricings border border-gray-200  rounded-[22px] shadow ">
+						<div className="w-full flex justify-center">
+							<span className=" text-[14px] text-[#FEAA53]">Best Offer</span>
+						</div>
+						<div className="w-full text-center mb-4">
+							<h5 className="mb-2 lg:text-[52px] text-[36px font-medium tracking-tight text-white dark:text-white">
+								Monthly
+							</h5>
+						</div>
+						<div className="w-full flex justify-center items-center pb-4">
+							<div className="w-[70%] p-6 bg-[#ffffff4a] text-center rounded-[20px]">
+								<span className="text-white text-[28px] font-medium flex justify-center ">
+									{" "}
+									<small className="text-[12px] ">$</small> 16.0
+									<small className="mt-3 text-base font-light text-[9px]">
+										/m
+									</small>
+								</span>
+							</div>
+						</div>
+						<div className="w-full flex justify-center items-center pb-10">
+							<div className="w-full">
+								<ul className="list-disc text-white text-[14px]">
+									<li className="pb-2">Benefit to that this plan offers (1)</li>
+									<li className="pb-2">Benefit to that this plan offers (2)</li>
+									<li className="pb-2">Benefit to that this plan offers (3)</li>
+								</ul>
+							</div>
+						</div>
+						<div className="w-full flex justify-center items-center mb-8">
+							<div className="w-[80%]">
+								<button className="px-6 py-3 rounded-full bg-transparent border-1 border-stroke border-white text-center text-white w-full flex justify-center">
+									<span className="w-full flex justify-center gap-3 ">
+										{" "}
+										Subscribe{" "}
+										<span className="flex items-center ">
+											<FaArrowRight />
+										</span>
+									</span>
+								</button>
+							</div>
+						</div>
+						<div className="w-full text-center">
+							<span className="text-[#7c7c7c] text-[10px]">Pricing in USD</span>
+						</div>
+					</div>
+					<div className="max-w-sm py-6 lg:px-10 px-7 pricings border border-gray-200  rounded-[22px] shadow  lg:mt-28 mt-0">
+						<div className="w-full flex justify-center ">
+							<span className=" text-[14px] text-[#FEAA53] mb-3">
+								Best Offer
+							</span>
+						</div>
+						<div className="w-full flex flex-col">
+							<div className="w-full flex justify-center items-center pb-2">
+								<div className="w-[70%] p-4 bg-[#ffffff4a] text-center rounded-[20px]">
+									<span className="text-white text-[28px] font-medium flex justify-center ">
+										{" "}
+										<small className="text-[12px] ">cred</small> 10
+										<small className="mt-3 text-base font-light text-[9px]">
+											/h
+										</small>
+									</span>
 								</div>
-							</Sidebar>
+							</div>
+							<div className="w-full flex justify-center items-center pb-4">
+								<div className="w-[70%] p-4 bg-[#ffffff4a] text-center rounded-[20px]">
+									<span className="text-white text-[28px] font-medium flex justify-center ">
+										{" "}
+										<small className="text-[12px] ">cred</small> 10
+										<small className="mt-3 text-base font-light text-[9px]">
+											/h
+										</small>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div className="w-full flex justify-center items-center pb-10">
+							<div className="w-full">
+								<ul className="list-disc text-white text-[14px]">
+									<li className="pb-2">Benefit to that this plan offers (1)</li>
+									<li className="pb-2">Benefit to that this plan offers (2)</li>
+									<li className="pb-2">Benefit to that this plan offers (3)</li>
+								</ul>
+							</div>
+						</div>
+						<div className="w-full flex justify-center items-center mb-8">
+							<div className="w-[80%]">
+								<button className="px-6 py-3 rounded-full bg-transparent border-1 border-stroke border-white text-center text-white w-full flex justify-center">
+									<span className="w-full flex justify-center gap-3 ">
+										{" "}
+										Subscribe{" "}
+										<span className="flex items-center ">
+											<FaArrowRight />
+										</span>
+									</span>
+								</button>
+							</div>
+						</div>
+						<div className="w-full text-center">
+							<span className="text-[#7c7c7c] text-[10px]">Pricing in USD</span>
 						</div>
 					</div>
 				</div>
-
-				<div className="mt-0">
-					<img src="/images/42.svg" className="absolute left-0 w-full -z-10" />
+			</div>
+			<div className="w-full flex justify-center items-center mb-[32rem]">
+				<button className="md:px-12 md:py-4 px-7 py-2 rounded-full bg-[#7A24A1] text-white lg:text-[22px] text-[16px] w-fit">
+					<span className="flex gap-3">
+						{" "}
+						Schedule Meeting{" "}
+						<span className="flex items-center ">
+							<FaArrowRight />
+						</span>
+					</span>
+				</button>
+			</div>
+			<div className="w-full container mx-auto flex flex-col justify-center">
+				<h2 className="md:text-[48px] text-[36px] sm:text-[30px] pb-[8rem] text-center font-medium text-[#173953]">
+					Service <span className="text-[#FEAA53]">Statistics</span>
+				</h2>
+				<div className="w-full flex justify-center items-center">
+					<div className="w-[70%] rounded-[43px] ">
+						<img alt="statistics" src="/images/53.svg" className="w-full" />
+					</div>
 				</div>
 			</div>
-			<div className="pb-[35rem] pt-[10rem]  w-full ">
+			<div className="mb-[45rem] pt-[10rem]  w-full ">
+				<div className="">
+					<img
+						src="/images/42.svg"
+						className="absolute mt-[-35rem] left-0 w-full -z-10"
+					/>
+				</div>
 				<h2 className="md:text-[48px] text-[36px] sm:text-[30px] pb-[8rem] text-center font-medium text-[#173953]">
 					What Clients <span className="text-[#FEAA53]">Say</span>
 				</h2>

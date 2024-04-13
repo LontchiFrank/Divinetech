@@ -188,3 +188,7 @@ box-shadow: 0px 205px 82px rgba(179, 179, 179, 0.01), 0px 115px 69px rgba(179, 1
 .sidebarGradient{
 	background: linear-gradient(180deg, #7A24A1 0%, #DDB8F2 100%);
 }
+
+.pricings{
+	background: linear-gradient(180deg, #7A24A1 0%, #483464 100%);
+}
