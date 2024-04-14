@@ -187,6 +187,12 @@ function Page() {
 								</div>
 							</div>
 						</div>
+						<div className="w-full xl:block hidden -z-10">
+							<img
+								src="/images/26.svg"
+								className="absolute top-[60rem] right-0 -z-10"
+							/>
+						</div>
 					</div>
 					<div className="w-full pt-[28rem] flex justify-center items-center">
 						<button className="md:px-12 md:py-4 px-7 py-2 rounded-full bg-[#7A24A1] text-white lg:text-[22px] text-[16px] w-fit">
