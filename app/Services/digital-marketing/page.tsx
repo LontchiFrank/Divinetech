@@ -410,7 +410,7 @@ function Page() {
 					Service <span className="text-[#FEAA53]">Statistics</span>
 				</h2>
 				<div className="w-full flex justify-center items-center">
-					<div className="w-[70%] rounded-[43px] ">
+					<div className="md:w-[70%] w-full rounded-[43px] ">
 						<img alt="statistics" src="/images/53.svg" className="w-full" />
 					</div>
 				</div>

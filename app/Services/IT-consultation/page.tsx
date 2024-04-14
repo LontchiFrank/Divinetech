@@ -94,12 +94,12 @@ function Page() {
 						</div>
 					</div>
 				</div>
-				<div className="md:container  lg:mx-auto  md:px-12 px-2 lg:flex flex-col mb-[13rem]">
+				<div className=" md:container  lg:mx-auto   md:px-12 px-10 lg:flex flex-col mb-[13rem]">
 					<div className="w-full flex justify-center ">
-						<div className="w-[90%] relative  flex-none">
+						<div className="lg:w-[90%] relative ">
 							<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[50%]  md:w-[45%] h-[30%]  absolute -z-10 xl:bottom-[22rem] lg:bottom-[28rem] bottom-[30rem] xl:left-[22rem] lg:left-[16rem] left-[20rem] rounded-[20px] md:block hidden "></div>
 							<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute xl:bottom-[3rem]  xl:eft-[16rem] lg:bottom-[7rem] lg:left-[8rem] bottom-[5rem] left-[6rem] -z-10  rounded-[20px] md:block hidden"></div>
-							{/* <div className="border-dashed border-t-3 ml-20 border-r-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute -z-10 bottom-[-3rem] left-[12rem] rounded-[20px] md:block hidden"></div> */}
+
 							<div className="relative w-fit ">
 								<img
 									src="/images/40.svg"
@@ -121,8 +121,7 @@ function Page() {
 									</span>
 								</div>
 							</div>
-
-							<div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[4rem]">
+							<div className=" relative w-fit xl:left-[43rem] lg:left-[24rem] md:left-[19rem] left-0 top-[4rem]">
 								<div className=" ">
 									<img
 										src="/images/40.svg"
@@ -165,37 +164,155 @@ function Page() {
 									</span>
 								</div>
 							</div>
-							{/* <div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[15rem]">
-								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
-									<img src="/images/40.svg" />
-								</div>
-								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
-									<span className="pb-2 font-medium text-[20px] text-[#183953]">
-										{" "}
-										User Experience
-									</span>
-									<span className="text-[14px] text-[#183953]">
-										We create intuitive and visually appealing interfaces that
-										provide a seamless and engaging experience for your mobile
-										users. Through careful consideration of information
-										architecture, navigation, and interaction design, we ensure
-										that users can easily navigate through your mobile app and
-										accomplish their tasks with efficiency and delight.
-									</span>
-								</div>
-							</div> */}
 						</div>
 					</div>
-					<div className="w-full pt-[28rem] flex justify-center items-center">
-						<button className="md:px-12 md:py-4 px-7 py-2 rounded-full bg-[#7A24A1] text-white lg:text-[22px] text-[16px] w-fit">
-							<span className="flex gap-3">
-								{" "}
-								Schedule Meeting{" "}
-								<span className="flex items-center ">
-									<FaArrowRight />
-								</span>
-							</span>
-						</button>
+				</div>
+				<div className="pt-[10rem]  md:px-12 px-2 mb-[13rem]">
+					<h2 className="md:text-[48px] text-[36px] sm:text-[30px] pb-[2rem] text-center font-medium text-[#173953]">
+						Service <span className="text-[#FEAA53]">Model</span>
+					</h2>
+					<div className="w-full flex justify-center items-center">
+						<p className="xl:w-[40%] lg:w-[60%] w-[100%] text-center md:text-[20px] text-[18px]  text-[#173953] pb-[3rem]">
+							We know how large objects will act, but things on a small scale
+							just do not act that way.
+						</p>
+					</div>
+					<div className="w-full flex justify-center items-center mb-[7rem]">
+						<div className=" self-center  flex lg:flex-row sm:flex-col flex-col lg:gap-9 gap-20 mt-8">
+							<div className=" relative  left-0 ">
+								<div className=" ">
+									<img
+										src="/images/56.svg"
+										className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px] md:mr-[105px] mr-[200px]  rounded-full border border-stroke flex justify-center items-center purpleShadow"
+									/>
+								</div>
+								<div className=" xl:w-[300px] md:w-[300px] w-full shrink flex flex-col py-7 px-10 border bg-[#7A24A1] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
+									<span className="pb-2 font-medium text-center text-[34px] text-[#fff]">
+										{" "}
+										Input
+									</span>
+									<span className="text-[14px] text-center text-[#fff]">
+										Collect needed data and clearly communicate process
+									</span>
+								</div>
+							</div>
+							<div className=" relative  left-0 ">
+								<div className=" ">
+									<img
+										src="/images/57.svg"
+										className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px] md:mr-[105px] mr-[200px]  rounded-full border border-stroke flex justify-center items-center purpleShadow"
+									/>
+								</div>
+								<div className=" xl:w-[300px] md:w-[300px] w-full shrink flex flex-col py-7 px-10 border bg-[#7A24A1] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
+									<span className="pb-2 font-medium text-center text-[34px] text-[#fff]">
+										{" "}
+										Construct
+									</span>
+									<span className="text-[14px] text-center text-[#fff]">
+										Complete milestone and deliver results
+									</span>
+								</div>
+							</div>
+							<div className=" relative  left-0 ">
+								<div className=" ">
+									<img
+										src="/images/58.svg"
+										className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px] md:mr-[105px] mr-[200px]   rounded-full  border border-stroke flex justify-center items-center purpleShadow"
+									/>
+								</div>
+								<div className=" xl:w-[300px] md:w-[300px] w-full shrink flex flex-col py-7 px-10 border bg-[#7A24A1] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
+									<span className="pb-2 font-medium text-center text-[34px] text-[#fff]">
+										{" "}
+										Output
+									</span>
+									<span className="text-[14px] text-center text-[#fff]">
+										Process for off boarding clients and deliver of final
+										results.
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="w-full md:px-12 px-2 mt-[10rem] pb-[18rem]">
+					<h2 className="md:text-[48px] text-[36px] sm:text-[30px] pb-[3rem] text-center font-medium text-[#173953]">
+						Our <span className="text-[#FEAA53]">Packages</span>
+					</h2>
+					<div className="w-full flex justify-center items-center">
+						<p className="xl:w-[40%] lg:w-[60%] w-[100%] text-center md:text-[20px] text-[18px]  text-[#173953] pb-[8rem]">
+							We know how large objects will act, but things on a small scale
+							just do not act that way.
+						</p>
+					</div>
+					<div className="w-full  flex justify-center items-center">
+						<div className="xl:w-[70%] w-[90%] flex lg:flex-row flex-col gap-10 ">
+							<div className="lg:w-1/3 w-full h-[400px]  flex flex-col   rounded-[20px] benefits lg:mt-14 mt-0">
+								<div className="w-full py-9 flex flex-col justify-center items-center ">
+									<div className="pb-6">
+										<span className="xl:text-[40px] text-[30px] text-white">
+											Package
+										</span>{" "}
+									</div>
+									<div className="px-3 py-5 bg-[#ffffff4a]  rounded-[20px] flex justify-center items-center">
+										<div className="w-full flex justify-center items-center ">
+											<span className="text-white text-[15px]">
+												One Time Flat Fee
+											</span>
+										</div>
+									</div>
+								</div>
+								<div className="flex flex-col justify-center">
+									<span className="text-center px-9 text-white ">
+										Client pays one time free(or installments ) for a specific
+										set of deliverable...
+									</span>
+								</div>
+							</div>
+							<div className="lg:w-1/3 w-full h-[400px]  flex flex-col   rounded-[20px] benefits">
+								<div className="w-full py-9 flex flex-col justify-center items-center ">
+									<div className="pb-6">
+										<span className="xl:text-[40px] text-[30px] text-white">
+											Retainer
+										</span>{" "}
+									</div>
+									<div className="px-3 py-5 bg-[#ffffff4a]  rounded-[20px] flex justify-center items-center">
+										<div className="w-full flex justify-center items-center ">
+											<span className="text-white text-[15px]">
+												Reoccurring Flat Fee
+											</span>
+										</div>
+									</div>
+								</div>
+								<div className="flex flex-col justify-center">
+									<span className="text-center px-9 text-white ">
+										Client pays monthly, quarterly, annually for a specific
+										service or “access” to your expertise
+									</span>
+								</div>
+							</div>
+							<div className="lg:w-1/3 w-full h-[400px]  flex flex-col   rounded-[20px] benefits lg:mt-14 mt-0">
+								<div className="w-full py-9 flex flex-col justify-center items-center ">
+									<div className="pb-6">
+										<span className="xl:text-[40px] text-[30px] text-white">
+											Percentage
+										</span>{" "}
+									</div>
+									<div className="px-3 py-5 bg-[#ffffff4a] mx-8  rounded-[20px] flex justify-center items-center">
+										<div className="w-full flex justify-center items-center ">
+											<span className="text-white text-[15px]">
+												% of resources managed or generated
+											</span>
+										</div>
+									</div>
+								</div>
+								<div className="flex flex-col justify-center">
+									<span className="text-center px-9 text-white ">
+										Clients pay a percentage of money managed or income
+										generated from your efforts...
+									</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className="w-full container mx-auto flex flex-col justify-center">
@@ -203,7 +320,7 @@ function Page() {
 						Service <span className="text-[#FEAA53]">Statistics</span>
 					</h2>
 					<div className="w-full flex justify-center items-center">
-						<div className="w-[70%] rounded-[43px] ">
+						<div className="md:w-[70%] w-full rounded-[43px] ">
 							<img alt="statistics" src="/images/53.svg" className="w-full" />
 						</div>
 					</div>
