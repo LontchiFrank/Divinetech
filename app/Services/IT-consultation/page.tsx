@@ -121,7 +121,8 @@ function Page() {
 									</span>
 								</div>
 							</div>
-							<div className=" relative w-fit xl:left-[43rem] lg:left-[24rem] md:left-[19rem] left-0 top-[4rem]">
+							{/* 45rem */}
+							<div className=" relative w-fit xl:left-[45rem] lg:left-[24rem] md:left-[19rem] left-0 top-[4rem]">
 								<div className=" ">
 									<img
 										src="/images/40.svg"
