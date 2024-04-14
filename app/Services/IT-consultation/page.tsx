@@ -97,8 +97,8 @@ function Page() {
 				<div className=" md:container  lg:mx-auto   md:px-12 px-10 lg:flex flex-col mb-[13rem]">
 					<div className="w-full flex justify-center ">
 						<div className="lg:w-[90%] relative ">
-							<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[50%]  md:w-[45%] h-[30%]  absolute -z-10 xl:bottom-[22rem] lg:bottom-[28rem] bottom-[30rem] xl:left-[22rem] lg:left-[16rem] left-[20rem] rounded-[20px] md:block hidden "></div>
-							<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute xl:bottom-[3rem]  xl:eft-[16rem] lg:bottom-[7rem] lg:left-[8rem] bottom-[5rem] left-[6rem] -z-10  rounded-[20px] md:block hidden"></div>
+							<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-full  md:w-[45%] h-[30%]  absolute -z-10 xl:bottom-[22rem] lg:bottom-[28rem] bottom-[30rem] xl:left-[22rem] lg:left-[16rem] left-[20rem] rounded-[20px] md:block hidden "></div>
+							<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-full md:w-[45%] h-[30%]  absolute xl:bottom-[3rem]  xl:eft-[16rem] lg:bottom-[7rem] lg:left-[8rem] bottom-[5rem] left-[6rem] -z-10  rounded-[20px] md:block hidden"></div>
 
 							<div className="relative w-fit ">
 								<img
@@ -165,6 +165,12 @@ function Page() {
 									</span>
 								</div>
 							</div>
+						</div>
+						<div className="w-full xl:block hidden -z-10">
+							<img
+								src="/images/26.svg"
+								className="absolute top-[60rem] right-0 -z-10"
+							/>
 						</div>
 					</div>
 				</div>
