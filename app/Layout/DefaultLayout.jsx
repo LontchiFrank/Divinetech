@@ -245,7 +245,7 @@ export default function DefaultLayout({ children }) {
 						<Button
 							className="bg-[#7A24A1] px-5 py-3 rounded-[50px] text-white"
 							link
-							href=""
+							href="/Contact"
 							radius="sm">
 							Contact
 						</Button>

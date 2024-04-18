@@ -64,7 +64,7 @@ function page() {
 								Projects
 							</h1>
 						</div>
-						<p className="md:w-[70%] w-full text-center xl:text-[22px]">
+						<p className="md:w-[70%] w-full text-center xl:text-[22px]  text-[#183953]">
 							Welcome to Saas Simplify , based in Cameroon, where our dedicated
 							professionals excel in Design, Software Development, IT
 							Consultancy, Mobile App Development. Discover excellence in

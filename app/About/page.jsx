@@ -270,7 +270,7 @@ function page() {
 							</button>
 						</div>
 					</div>
-					{/* flex lg:flex-nowrap sm:flex-wrap  */}
+
 					<div className="w-full grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-7 mt-14">
 						<div className=" bg-[#EEE0F5] p-9 flex justify-center items-center rounded-[10px]">
 							<div className="flex gap-3">
