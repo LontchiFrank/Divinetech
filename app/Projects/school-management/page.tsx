@@ -2,7 +2,7 @@
 
 import React from "react";
 import DefaultLayout from "../../Layout/DefaultLayout";
-import ExpertCards from "../../components/ExpertCards/page";
+import ExpertCards from "../../components/ExpertCards/ExpertCards";
 import { experts } from "../../data";
 
 function page() {
@@ -132,8 +132,8 @@ function page() {
 							<div
 								className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
              gap-6">
-								{experts.map((el) => (
-									<ExpertCards el={el} />
+								{experts.map((el, index) => (
+									<ExpertCards key={index} el={el} />
 								))}
 							</div>
 						</div>

@@ -8,7 +8,7 @@ import { projects } from "../data";
 import ProjectCards from "../components/ProjectCards/ProjectCard";
 import { FaArrowRight } from "react-icons/fa";
 
-function page() {
+function Projects() {
 	const [tests, setTests] = useState([
 		{
 			name: "Frank Brown",
@@ -135,4 +135,4 @@ function page() {
 	);
 }
 
-export default page;
+export default Projects;
