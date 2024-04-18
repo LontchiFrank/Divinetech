@@ -24,7 +24,7 @@ function page() {
 			<div className="  min-h-[60vh] lg:min-h-[90vh]  ">
 				<div className=" container lg:flex-col flex-col mx-auto  pt-16 md:flex-row sm:flex-col  px-8 2xl:px-36  xl:px-32 lg:px-20 md:px-4 sm:px-12  w-full justify-center items-center mb-[4rem]">
 					<div className="w-full lg:w-full  flex flex-col justify-center items-center sm:pb-8 md:pb-0 ">
-						<div className="md:w-full w-3/5 md:pb-4 pb-2 mt-[4rem] z-10">
+						<div className="w-full md:pb-4 pb-2 mt-[4rem] z-10">
 							<h1 className="font-[700]  text-[2rem] xl:text-[72px] lg:text-[2.6rem] sm:text-center textGradientAbout xl:leading-[4.5rem] lg:leading-[3.5rem] md:leading-[2rem] leading-8  pb-5">
 								Our Exceptional Team
 							</h1>

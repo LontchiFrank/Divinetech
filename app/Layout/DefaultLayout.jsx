@@ -242,11 +242,17 @@ export default function DefaultLayout({ children }) {
 				</NavbarContent>
 				<NavbarContent justify="end">
 					<NavbarItem>
-						<Link href="/Contact" onClick={() => handleItemClick("Contact")}>
+						<Link href="/Contact">
 							<Button
-								className="bg-[#7A24A1] px-5 py-3 rounded-[50px] text-white"
+								className={
+									activeItem === "Contact"
+										? "isActive bg-[#7A24A1] px-5 py-3 rounded-[50px] "
+										: "bg-[#7A24A1] px-5 py-3 rounded-[50px] text-white"
+								}
+								// className=""
 								link
-								radius="sm">
+								radius="sm"
+								onClick={() => handleItemClick("Contact")}>
 								Contact
 							</Button>
 						</Link>
