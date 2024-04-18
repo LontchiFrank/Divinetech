@@ -126,7 +126,7 @@ export default function DefaultLayout({ children }) {
 									className={
 										activeItem === "Our Services"
 											? "isActive"
-											: "text-[#183953] p-0 bg-transparent data-[hover=true]:bg-transparent"
+											: "text-[#183953] p-0 bg-transparent "
 									}
 									onClick={() => handleItemClick("Our Services")}
 									radius="sm"
@@ -242,13 +242,14 @@ export default function DefaultLayout({ children }) {
 				</NavbarContent>
 				<NavbarContent justify="end">
 					<NavbarItem>
-						<Button
-							className="bg-[#7A24A1] px-5 py-3 rounded-[50px] text-white"
-							link
-							href="/Contact"
-							radius="sm">
-							Contact
-						</Button>
+						<Link href="/Contact" onClick={() => handleItemClick("Contact")}>
+							<Button
+								className="bg-[#7A24A1] px-5 py-3 rounded-[50px] text-white"
+								link
+								radius="sm">
+								Contact
+							</Button>
+						</Link>
 					</NavbarItem>
 				</NavbarContent>
 				<NavbarMenu>
