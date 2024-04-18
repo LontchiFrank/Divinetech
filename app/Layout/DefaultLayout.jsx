@@ -171,7 +171,10 @@ export default function DefaultLayout({ children }) {
 						</DropdownMenu>
 					</Dropdown>
 					<NavbarItem>
-						<Link color="foreground" className="text-[#183953]" href="#">
+						<Link
+							color="foreground"
+							className="text-[#183953]"
+							href="/Projects">
 							Projects
 						</Link>
 					</NavbarItem>

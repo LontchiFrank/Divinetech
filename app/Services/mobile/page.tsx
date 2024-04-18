@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import DefaultLayout from "../../Layout/DefaultLayout";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import Paginations from "../../components/Paginations/PaginationCom";
 import { projects } from "../../data";
 import ProjectCards from "../../components/ProjectCards/ProjectCard";

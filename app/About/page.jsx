@@ -29,10 +29,9 @@ function page() {
 							</h1>
 						</div>
 						<p className="md:w-[70%] w-full text-center xl:text-[18px]">
-							Welcome to Saas Simplify , based in Cameroon, where our dedicated
-							professionals excel in Design, Software Development, IT
-							Consultancy, Mobile App Development. Discover excellence in
-							technology with Saas Simplify.
+							We’ve got some really innovative and interesting SaaS projects on
+							various domains, ranging from web development, mobile app
+							development and UI/Ux design. Explore some of our projects today.
 						</p>
 						<div className="mt-20">
 							<img
