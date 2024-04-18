@@ -51,7 +51,7 @@ function page() {
 					backgroundSize: "cover",
 					backgroundRepeat: "no-repeat",
 					width: "100%",
-
+					zIndex: "-10",
 					top: 0,
 					right: 0,
 					position: "absolute",
@@ -64,7 +64,7 @@ function page() {
 								Projects
 							</h1>
 						</div>
-						<p className="md:w-[70%] w-full text-center xl:text-[18px]">
+						<p className="md:w-[70%] w-full text-center xl:text-[22px]">
 							Welcome to Saas Simplify , based in Cameroon, where our dedicated
 							professionals excel in Design, Software Development, IT
 							Consultancy, Mobile App Development. Discover excellence in
@@ -91,6 +91,7 @@ function page() {
 											</span>
 											<form className="lg:max-w-md    flex lg:justify-end justify-center">
 												<div className="relative w-[300px]">
+													{/* <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"></div> */}
 													<input
 														type="search"
 														id="default-search"
@@ -108,7 +109,7 @@ function page() {
 										</div>
 										<div className="  flex justify-center flex-wrap gap-3">
 											{projects.map((el: any) => (
-												<div key={`${el.id}`} className=" shrink-0">
+												<div key={`${el.id}+${el.img}`} className=" shrink-0">
 													<ProjectCards el={el} />
 												</div>
 											))}
@@ -121,6 +122,13 @@ function page() {
 							</div>
 						</div>
 					</div>
+
+					{/* <div className="mt-0">
+						<img
+							src="/images/42.svg"
+							className="absolute left-0 w-full -z-10"
+						/>
+					</div> */}
 				</div>
 			</div>
 		</DefaultLayout>

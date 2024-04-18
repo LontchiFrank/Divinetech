@@ -39,3 +39,31 @@ export const projects = [
 		link: "/Projects/school-management",
 	},
 ];
+
+export const experts = [
+	{
+		name: "Engr.Enow Devine",
+		img: "/images/65.svg",
+		role: "CEO / Developer",
+	},
+	{
+		name: "Alkaloid Verine",
+		img: "/images/66.svg",
+		role: "Developer",
+	},
+	{
+		name: "David Beckam",
+		img: "/images/67.svg",
+		role: "Developer",
+	},
+	{
+		name: "Dan- Tabe Lilian",
+		img: "/images/68.svg",
+		role: "UI/UX Designer",
+	},
+	{
+		name: "Ajah Yvette",
+		img: "/images/69.svg",
+		role: "UI/UX Designer",
+	},
+];

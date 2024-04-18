@@ -41,6 +41,30 @@ export default function DefaultLayout({ children }) {
 		}
 	};
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [activeItem, setActiveItem] = useState("");
+
+	const handleItemClick = (item) => {
+		if (item === "Our Services" || item === "about-dropdown") {
+			setActiveItem("Our Services");
+			console.log(item);
+		} else {
+			setActiveItem(item);
+		}
+	};
+
+	useEffect(() => {
+		if (
+			window.location.pathname === "/Services/uiux" ||
+			window.location.pathname === "/Services/web" ||
+			window.location.pathname === "/Services/mobile" ||
+			window.location.pathname === "/Services/digital-marketing" ||
+			window.location.pathname === "/Services/IT-consultation"
+		) {
+			setActiveItem("Our Services");
+		} else {
+			setActiveItem(window.location.pathname.substring(1));
+		}
+	}, []);
 
 	const menuItems = [
 		"Profile",
@@ -54,6 +78,8 @@ export default function DefaultLayout({ children }) {
 		"Help & Feedback",
 		"Log Out",
 	];
+
+	const navs = [""];
 
 	return (
 		<div className="">
@@ -74,16 +100,21 @@ export default function DefaultLayout({ children }) {
 						<Link className="text-[#183953]" color="foreground" href="/">
 							<img src="/images/logo.svg" alt="" />
 						</Link>
-
-						{/* <p className="font-bold text-inherit">ACME</p> */}
 					</NavbarBrand>
 				</NavbarContent>
 
 				<NavbarContent
 					className="hidden sm:flex gap-14  items-center text-[20px]"
 					justify="center">
-					<NavbarItem isActive>
-						<Link className="text-[#183953]" color="foreground" href="/About">
+					<NavbarItem>
+						<Link
+							className={
+								activeItem === "About"
+									? "isActive"
+									: 'text-[#183953]" color="foreground'
+							}
+							onClick={() => handleItemClick("About")}
+							href="/About">
 							About
 						</Link>
 					</NavbarItem>
@@ -92,8 +123,12 @@ export default function DefaultLayout({ children }) {
 							<DropdownTrigger>
 								<Button
 									disableRipple
-									className="p-0 bg-transparent data-[hover=true]:bg-transparent"
-									// endContent={icons.chevron}
+									className={
+										activeItem === "Our Services"
+											? "isActive"
+											: "text-[#183953] p-0 bg-transparent data-[hover=true]:bg-transparent"
+									}
+									onClick={() => handleItemClick("Our Services")}
 									radius="sm"
 									variant="light">
 									Our Services
@@ -109,6 +144,7 @@ export default function DefaultLayout({ children }) {
 							<DropdownItem
 								key="services"
 								href="/Services/uiux"
+								onClick={(e) => handleItemClick("about-dropdown")}
 								description={
 									<span className="text-[12px]">
 										We create user friendly and centered designs
@@ -121,6 +157,7 @@ export default function DefaultLayout({ children }) {
 							</DropdownItem>
 							<DropdownItem
 								href="/Services/web"
+								onClick={() => handleItemClick("about-dropdown")}
 								description={
 									<span className="text-[12px]">
 										Build your website with us
@@ -134,6 +171,7 @@ export default function DefaultLayout({ children }) {
 
 							<DropdownItem
 								href="/Services/mobile"
+								onClick={() => handleItemClick("about-dropdown")}
 								description={
 									<span className="text-[12px]">
 										Build you mobile app with us.
@@ -146,6 +184,7 @@ export default function DefaultLayout({ children }) {
 							</DropdownItem>
 							<DropdownItem
 								href="/Services/IT-consultation"
+								onClick={() => handleItemClick("about-dropdown")}
 								description={
 									<span className="text-[12px]">
 										Share your ideas with experts for better performance.
@@ -158,6 +197,7 @@ export default function DefaultLayout({ children }) {
 							</DropdownItem>
 							<DropdownItem
 								href="/Services/digital-marketing"
+								onClick={() => handleItemClick("about-dropdown")}
 								description={
 									<span className="text-[12px]">
 										Taking your products to the world.
@@ -172,19 +212,30 @@ export default function DefaultLayout({ children }) {
 					</Dropdown>
 					<NavbarItem>
 						<Link
+							className={
+								activeItem === "Projects" ? "isActive" : "text-[#183953]"
+							}
+							onClick={() => handleItemClick("Projects")}
 							color="foreground"
-							className="text-[#183953]"
 							href="/Projects">
 							Projects
 						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link color="foreground" className="text-[#183953]" href="#">
+						<Link
+							className={activeItem === "Team" ? "isActive" : "text-[#183953]"}
+							onClick={() => handleItemClick("Team")}
+							color="foreground"
+							href="/Team">
 							Team
 						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link color="foreground" className="text-[#183953]" href="#">
+						<Link
+							color="foreground"
+							className={activeItem === "Blog" ? "isActive" : "text-[#183953]"}
+							onClick={() => handleItemClick("Blog")}
+							href="/Blog">
 							Blog
 						</Link>
 					</NavbarItem>
