@@ -108,6 +108,7 @@ export default function DefaultLayout({ children }) {
 					justify="center">
 					<NavbarItem>
 						<Link
+							rel="preload"
 							className={
 								activeItem === "About"
 									? "isActive"
@@ -144,6 +145,7 @@ export default function DefaultLayout({ children }) {
 							<DropdownItem
 								key="services"
 								href="/Services/uiux"
+								rel="preload"
 								onClick={(e) => handleItemClick("about-dropdown")}
 								description={
 									<span className="text-[12px]">
@@ -157,6 +159,7 @@ export default function DefaultLayout({ children }) {
 							</DropdownItem>
 							<DropdownItem
 								href="/Services/web"
+								rel="preload"
 								onClick={() => handleItemClick("about-dropdown")}
 								description={
 									<span className="text-[12px]">
@@ -171,6 +174,7 @@ export default function DefaultLayout({ children }) {
 
 							<DropdownItem
 								href="/Services/mobile"
+								rel="preload"
 								onClick={() => handleItemClick("about-dropdown")}
 								description={
 									<span className="text-[12px]">
@@ -184,6 +188,7 @@ export default function DefaultLayout({ children }) {
 							</DropdownItem>
 							<DropdownItem
 								href="/Services/IT-consultation"
+								rel="preload"
 								onClick={() => handleItemClick("about-dropdown")}
 								description={
 									<span className="text-[12px]">
@@ -197,6 +202,7 @@ export default function DefaultLayout({ children }) {
 							</DropdownItem>
 							<DropdownItem
 								href="/Services/digital-marketing"
+								rel="preload"
 								onClick={() => handleItemClick("about-dropdown")}
 								description={
 									<span className="text-[12px]">
@@ -212,6 +218,7 @@ export default function DefaultLayout({ children }) {
 					</Dropdown>
 					<NavbarItem>
 						<Link
+							rel="preload"
 							className={
 								activeItem === "Projects" ? "isActive" : "text-[#183953]"
 							}
@@ -223,6 +230,7 @@ export default function DefaultLayout({ children }) {
 					</NavbarItem>
 					<NavbarItem>
 						<Link
+							rel="preload"
 							className={activeItem === "Team" ? "isActive" : "text-[#183953]"}
 							onClick={() => handleItemClick("Team")}
 							color="foreground"
@@ -232,6 +240,7 @@ export default function DefaultLayout({ children }) {
 					</NavbarItem>
 					<NavbarItem>
 						<Link
+							rel="preload"
 							color="foreground"
 							className={activeItem === "Blog" ? "isActive" : "text-[#183953]"}
 							onClick={() => handleItemClick("Blog")}
@@ -242,7 +251,7 @@ export default function DefaultLayout({ children }) {
 				</NavbarContent>
 				<NavbarContent justify="end">
 					<NavbarItem>
-						<Link href="/Contact">
+						<Link href="/Contact" rel="preload">
 							<Button
 								className={
 									activeItem === "Contact"

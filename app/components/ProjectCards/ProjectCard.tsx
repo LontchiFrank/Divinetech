@@ -27,7 +27,7 @@ export default function ProjectCards({ el }: Props) {
 				<button
 					onClick={() => console.log("mummy")}
 					className="inline-flex items-center px-5 py-2 text-sm font-medium text-center text-white bg-[#7A24A1] cursor-pointer rounded-[22px] hover:bg-[#7A24A1]  focus:ring-4 focus:outline-none focus:ring-[#7A24A1]">
-					<Link href={el?.link}>
+					<Link rel="preload" href={el?.link}>
 						<div className="flex">
 							Request Service
 							<span className="flex items-center ml-1">

@@ -52,22 +52,22 @@ function Footers() {
 					</a>
 					<ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900  ">
 						<li>
-							<a href="#" className="mr-4 hover:underline md:mr-6 ">
+							<a href="/About" className="mr-4 hover:underline md:mr-6 ">
 								About
 							</a>
 						</li>
 						<li>
-							<a href="#" className="mr-4 hover:underline md:mr-6">
+							<a href="/Services/uiux" className="mr-4 hover:underline md:mr-6">
 								Our Services
 							</a>
 						</li>
 						<li>
-							<a href="#" className="mr-4 hover:underline md:mr-6 ">
+							<a href="/Team" className="mr-4 hover:underline md:mr-6 ">
 								Team
 							</a>
 						</li>
 						<li>
-							<a href="#" className="mr-4 hover:underline md:mr-6">
+							<a href="/Projects" className="mr-4 hover:underline md:mr-6">
 								Projects
 							</a>
 						</li>
