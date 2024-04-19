@@ -254,6 +254,7 @@ function App() {
 											<Image
 												width={1000}
 												height={1000}
+												rel="preload"
 												src="/images/21.svg"
 												style={{ width: "50%", height: "70%" }}
 											/>
@@ -278,6 +279,7 @@ function App() {
 											<Image
 												width={1000}
 												height={1000}
+												rel="preload"
 												src="/images/22.svg"
 												style={{ width: "50%", height: "70%" }}
 											/>
