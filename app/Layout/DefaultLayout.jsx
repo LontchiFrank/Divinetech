@@ -97,7 +97,11 @@ export default function DefaultLayout({ children }) {
 						className="sm:hidden"
 					/>
 					<NavbarBrand>
-						<Link className="text-[#183953]" color="foreground" href="/">
+						<Link
+							className="text-[#183953]"
+							color="foreground"
+							prefetch={false}
+							href="/">
 							<img src="/images/logo.svg" alt="" />
 						</Link>
 					</NavbarBrand>
