@@ -3,6 +3,7 @@
 import React from "react";
 import DefaultLayout from "../Layout/DefaultLayout";
 import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
+import Image from "next/image";
 
 function page() {
 	return (
@@ -34,16 +35,22 @@ function page() {
 							development and UI/Ux design. Explore some of our projects today.
 						</p>
 						<div className="mt-20">
-							<img
+							<Image
+								alt="sun"
+								width={1000}
+								height={1000}
 								src="/images/12.svg"
 								className="absolute left-0 w-full -z-10"
 							/>
 						</div>
 					</div>
 					<div className="mt-32">
-						<img
+						<Image
+							width={300}
+							height={300}
 							src="/images/26.svg"
-							className="absolute top-[32rem] right-0 z-10"
+							alt="sun"
+							className="absolute top-[32rem] mt-[29rem] right-0 z-10"
 						/>
 					</div>
 
@@ -51,7 +58,12 @@ function page() {
 						<div className="lg:w-[75%] w-full px-10  flex md:flex-row flex-col bg-[#FCFCFC] py-16 rounded-[20px] z-10 imgShadow">
 							<div className="lg:w-1/2 w-full  flex justify-center items-center">
 								<div className="w-full flex justify-center items-center md:pt-[12rem] pt-[6rem]">
-									<img src="/images/32.svg" />
+									<Image
+										width={1000}
+										height={1000}
+										alt="sum"
+										src="/images/32.svg"
+									/>
 								</div>
 							</div>
 							<div className="lg:w-1/2 w-full  flex flex-col gap-16 justify-center items-center">
@@ -168,11 +180,15 @@ function page() {
 						</div>
 						<div className="w-[60%] h-[1020px] lg:block  bg-[#DBD1ED] flex absolute -z-10 ml-[18rem]  left-32 py-16 rounded-[20px] hidden">
 							<div className="mt-[24rem] ">
-								<img src="" className="" />
+								{/* <Image width={1000} height={1000}
+								alt="sum" src="" className="" /> */}
 							</div>
 						</div>
 						<div className="mt-[24rem]  ">
-							<img
+							<Image
+								width={1000}
+								height={1000}
+								alt="sum"
 								src="/images/33.svg"
 								className=" w-[50%] lg:block absolute -z-10 top-[20rem] xl:left-[45%] min-[1414px]:left-[58%] lg:left-[58%] hidden"
 							/>
@@ -242,17 +258,8 @@ function page() {
 									<option value="mercedes">Mercedes</option>
 									<option value="audi">Audi</option>
 								</select>
-								{/* <input
-									className="w-full bg-transparent h-full border-none focus:border-none focus:outline-none  text-white placeholder:text-white"
-									placeholder="Phone"
-								/> */}
 							</div>
-							<div class="w-full justify-center items-center px-8 py-4 rounded-3xl border-solid max-md:px-5">
-								{/* <input
-									className="w-full bg-transparent h-full border-none focus:border-none focus:outline-none  text-white placeholder:text-white"
-									placeholder="State/Region"
-								/> */}
-							</div>
+							<div class="w-full justify-center items-center px-8 py-4 rounded-3xl border-solid max-md:px-5"></div>
 						</div>
 						<div className="w-full flex justify-center ">
 							<button
@@ -264,7 +271,12 @@ function page() {
 									{" "}
 									Send{" "}
 									<span className="flex items-center ">
-										<img src="/images/34.svg" />
+										<Image
+											alt="sun"
+											width={40}
+											height={40}
+											src="/images/34.svg"
+										/>
 									</span>
 								</span>
 							</button>
@@ -275,7 +287,12 @@ function page() {
 						<div className=" bg-[#EEE0F5] p-9 flex justify-center items-center rounded-[10px]">
 							<div className="flex gap-3">
 								<div>
-									<img src="/images/35.svg" />
+									<Image
+										width={22}
+										height={22}
+										alt="sun"
+										src="/images/35.svg"
+									/>
 								</div>
 								<div>
 									<span className="text-[#7A24A1] text-[14px]">
@@ -288,10 +305,15 @@ function page() {
 						<div className=" bg-[#EEE0F5] p-6 flex justify-center items-center rounded-[10px]">
 							<div className="flex gap-3">
 								<div className="flex items-center">
-									<img src="/images/36.svg" />
+									<Image
+										width={22}
+										height={22}
+										alt="sun"
+										src="/images/36.svg"
+									/>
 								</div>
 								<div>
-									<span className="text-[#7A24A1] text-[14px]">
+									<span className="text-[#7A24A1] text-[13px]">
 										<span className="font-bold "> Email:</span>{" "}
 										contact@sassimplified.com
 									</span>
@@ -301,7 +323,12 @@ function page() {
 						<div className=" bg-[#EEE0F5] p-9  flex justify-center items-center rounded-[10px]">
 							<div className="flex gap-3">
 								<div>
-									<img src="/images/37.svg" />
+									<Image
+										width={22}
+										height={22}
+										alt="sun"
+										src="/images/37.svg"
+									/>
 								</div>
 								<div>
 									<span className="text-[#7A24A1] text-[14px]">

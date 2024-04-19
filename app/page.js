@@ -8,6 +8,7 @@ import { Autoplay, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { ProfData } from "./data";
+import Image from "next/image";
 
 function App() {
 	return (
@@ -36,7 +37,12 @@ function App() {
 									Elevate your business with SaaS services today.
 								</h1>
 								<div className="w-full flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10 lg:hidden">
-									<img src="/images/7.svg" style={{ height: "60%" }} />
+									<Image
+										src="/images/7.svg"
+										// style={{ height: "60%", width: "100%" }}
+										width={1000}
+										height={600}
+									/>
 								</div>
 								<p className="text-dark-background font-light xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[16px] pt-[2rem]">
 									With our intuitive and user-friendly platforms, you can
@@ -45,7 +51,6 @@ function App() {
 								</p>
 							</div>
 							<button
-								// endContent={<img src="/images/Home/3rem.svg" />}
 								link
 								href="#how-it-works"
 								className="px-12 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
@@ -59,7 +64,12 @@ function App() {
 							</button>
 						</div>
 						<div className="w-full lg:w-3/5  lg:flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10 hidden">
-							<img src="/images/7.svg" style={{ paddingTop: "1rem" }} />
+							<Image
+								src="/images/7.svg"
+								style={{ paddingTop: "1rem" }}
+								width={1000}
+								height={1000}
+							/>
 						</div>
 					</div>
 					<div className=" container mx-auto mt-[15rem]">
@@ -85,12 +95,7 @@ function App() {
 								},
 							}}
 							freeMode={true}
-							// pagination={{
-							// 	clickable: true,
-							// }}
-							modules={[Autoplay, FreeMode]}
-							// className=""
-						>
+							modules={[Autoplay, FreeMode]}>
 							{ProfData.map((item) => (
 								<SwiperSlide key={item.title}>
 									{" "}
@@ -98,20 +103,20 @@ function App() {
 								</SwiperSlide>
 							))}
 						</Swiper>
-
-						{/* <VideoCom />
-				<VideoCom />
-				<VideoCom />
-				<VideoCom /> */}
 					</div>
 				</div>
 			</div>
 			<div className="mt-44">
-				<img src="/images/12.svg" className="absolute left-0 w-full -z-10" />
+				<Image
+					width={1000}
+					height={1000}
+					src="/images/12.svg"
+					className="absolute left-0 w-full -z-10"
+				/>
 			</div>
 			<div className="container  md:flex flex-col mx-auto xl:px-32 w-full  pt-24 md:flex-row mt-[0rem]">
 				<div className="md:w-1/2 w-full flex  justify-center items-center">
-					<img src="/images/9.svg" />
+					<Image width={1000} height={1000} src="/images/9.svg" />
 				</div>
 				<div className="md:w-1/2 w-full  flex p-12 pt-32 flex-col ">
 					<h2 className="md:text-[48px] text-[40px] sm:text-[30px] pb-4 text-left font-medium text-[#173953]">
@@ -121,7 +126,6 @@ function App() {
 						With our custom SaaSGPT chatbot, life only gets better and easier.
 					</p>
 					<button
-						// endContent={<img src="/images/Home/3rem.svg" />}
 						link
 						href="#how-it-works"
 						className="px-12 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
@@ -155,16 +159,25 @@ function App() {
 					<div className="xl:w-[50%] sm:w-3/5 w-full md:h-[561px] h-[620px] rounded-[20px] frames ">
 						<div className="flex sm:justify-between ">
 							<div className="absolute z-10 top-0 xl:left-[10rem] left-[2rem] ">
-								<img className="lg:w-[520px] w-[310px] " src="/images/15.svg" />
+								<Image
+									width={1000}
+									height={1000}
+									className="lg:w-[520px] w-[310px] "
+									src="/images/15.svg"
+								/>
 							</div>
 							<div className="absolute z-10 lg:top-[6.5rem] sm:top-[3rem] bottom-[2rem] xl:right-[8.5rem] sm:right-[5rem] right-[3rem] ">
-								<img className="lg:w-[520px] w-[310px]" src="/images/16.svg" />
+								<Image
+									width={1000}
+									height={1000}
+									className="lg:w-[520px] w-[310px]"
+									src="/images/16.svg"
+								/>
 							</div>
 						</div>
 					</div>
 					<div className="w-full flex justify-center absolute z-10 md:top-[32rem] top-[37rem]">
 						<button
-							// endContent={<img src="/images/Home/3rem.svg" />}
 							link
 							href="#how-it-works"
 							className="md:px-12 md:py-6 px-8 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
@@ -179,7 +192,12 @@ function App() {
 					</div>
 				</div>
 				<div className="mt-0">
-					<img src="/images/17.svg" className="absolute left-0 w-full -z-10" />
+					<Image
+						width={1000}
+						height={1000}
+						src="/images/17.svg"
+						className="absolute left-0 w-full -z-10"
+					/>
 				</div>
 			</div>
 
@@ -198,7 +216,6 @@ function App() {
 						</p>
 						<div className="w-full flex justify-center items-center">
 							<button
-								// endContent={<img src="/images/Home/3rem.svg" />}
 								link
 								href="#how-it-works"
 								className="px-14 py-6 rounded-full bg-[#7A24A1] text-white w-fit">
@@ -215,14 +232,13 @@ function App() {
 				</div>
 			</div>
 			<div className="w-full flex justify-center items-center">
-				<img src="/images/18.svg" />
+				<Image width={1000} height={1000} src="/images/18.svg" />
 			</div>
 			<div className="w-full lg:mb-[0rem] pb-[6rem]">
 				<div className="flex flex-col justify-center items-center">
 					<div className="w-[100%] container mx-auto xl:px-28 px-12 mt-[9rem]">
 						<h1 className="md:text-[48px] text-center flex flex-col text-[40px] sm:text-[30px] pb-4 font-medium ">
 							<span className="text-[#FEAA53]">Benefits</span>
-							{/* <span className="text-[#173953]">with SaaSSimplified</span> */}
 						</h1>
 						<div className="w-full flex justify-center items-center">
 							<p className="xl:w-[40%] lg:w-[60%] w-[100%] text-center md:text-[20px] text-[18px]  text-[#173953] pb-[8rem]">
@@ -235,7 +251,9 @@ function App() {
 								<div className="w-full pt-9 flex justify-center ">
 									<div className="w-[25%] py-7 bg-[#ffffff4a]  rounded-[20px] flex justify-center items-center">
 										<div className="w-full flex justify-center items-center ">
-											<img
+											<Image
+												width={1000}
+												height={1000}
 												src="/images/21.svg"
 												style={{ width: "50%", height: "70%" }}
 											/>
@@ -257,7 +275,9 @@ function App() {
 								<div className="w-full pt-9 flex justify-center ">
 									<div className="w-[25%] py-7 bg-[#ffffff4a]  rounded-[20px] flex justify-center items-center">
 										<div className="w-full flex justify-center items-center ">
-											<img
+											<Image
+												width={1000}
+												height={1000}
 												src="/images/22.svg"
 												style={{ width: "50%", height: "70%" }}
 											/>
@@ -278,7 +298,9 @@ function App() {
 								<div className="w-full pt-9 flex justify-center ">
 									<div className="w-[25%] py-7 bg-[#ffffff4a]  rounded-[20px] flex justify-center items-center">
 										<div className="w-full flex justify-center items-center ">
-											<img
+											<Image
+												width={1000}
+												height={1000}
 												src="/images/23.svg"
 												style={{ width: "50%", height: "70%" }}
 											/>
@@ -300,12 +322,22 @@ function App() {
 				</div>
 			</div>
 			<div className="w-full relative mb-[20rem]">
-				<div className="hidden lg:flex justify-end absolute bottom-[24rem] right-0">
-					<img src="/images/24.svg" className="" />
-				</div>
+				{/* <div className="hidden lg:flex justify-end "> */}
+				<Image
+					width={400}
+					height={400}
+					src="/images/24.svg"
+					className="hidden lg:flex justify-end absolute bottom-[27rem] right-0"
+				/>
+				{/* </div> */}
 				<div className="w-full mt-[15rem] container mx-auto xl:px-28 px-10 flex lg:flex-row flex-col gap-6">
 					<div className="xl:pb-0 pb-12">
-						<img src="/images/25.svg" className="" />
+						<Image
+							width={1000}
+							height={1000}
+							src="/images/25.svg"
+							className=""
+						/>
 					</div>
 					<div className="xl:w-[45%] w-full px-7">
 						<div className="flex flex-col pb-12">
