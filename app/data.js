@@ -67,3 +67,30 @@ export const experts = [
 		role: "UI/UX Designer",
 	},
 ];
+
+export const ProfData = [
+	{
+		img: "/images/8.svg",
+		title: "Michael Blaise",
+	},
+	{
+		img: "/images/10.svg",
+		title: "Kim Park",
+	},
+	{
+		img: "/images/11.svg",
+		title: "Angela Watte",
+	},
+	{
+		img: "/images/8.svg",
+		title: "Michael Blaise",
+	},
+	{
+		img: "/images/10.svg",
+		title: "Kim Park",
+	},
+	{
+		img: "/images/11.svg",
+		title: "Angela Watte",
+	},
+];

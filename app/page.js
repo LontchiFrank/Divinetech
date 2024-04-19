@@ -7,36 +7,9 @@ import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
 import { Autoplay, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
-// import "./globals.css";
+import { ProfData } from "./data";
 
 function App() {
-	const ProfData = [
-		{
-			img: "/images/8.svg",
-			title: "Michael Blaise",
-		},
-		{
-			img: "/images/10.svg",
-			title: "Kim Park",
-		},
-		{
-			img: "/images/11.svg",
-			title: "Angela Watte",
-		},
-		{
-			img: "/images/8.svg",
-			title: "Michael Blaise",
-		},
-		{
-			img: "/images/10.svg",
-			title: "Kim Park",
-		},
-		{
-			img: "/images/11.svg",
-			title: "Angela Watte",
-		},
-	];
 	return (
 		<DefaultLayout>
 			<div
