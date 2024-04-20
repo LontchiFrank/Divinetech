@@ -39,6 +39,7 @@ function App() {
 								<div className="w-full flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10 lg:hidden">
 									<Image
 										src="/images/7.svg"
+										rel="preload"
 										// style={{ height: "60%", width: "100%" }}
 										width={1000}
 										height={600}
@@ -69,6 +70,7 @@ function App() {
 								style={{ paddingTop: "1rem" }}
 								width={1000}
 								height={1000}
+								rel="preload"
 							/>
 						</div>
 					</div>
