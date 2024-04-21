@@ -1,11 +1,18 @@
 /** @format */
 
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import DefaultLayout from "../Layout/DefaultLayout";
 import Article from "../components/Article/Article";
 import Image from "next/image";
+import Link from "next/link";
 
 function page() {
+	const [toggle, setToggle] = useState({
+		details: "details",
+		article: "article",
+	});
+
 	return (
 		<DefaultLayout>
 			<div
@@ -16,7 +23,6 @@ function page() {
 					backgroundSize: "cover",
 					backgroundRepeat: "no-repeat",
 					width: "100%",
-
 					top: 0,
 					right: 0,
 					position: "absolute",
@@ -73,13 +79,13 @@ function page() {
 							Recent <span className="text-[#FEAA53]">Articles</span>
 						</h2>
 						<div className="w-full flex flex-wrap">
-							<Article />
-							<Article />
-							<Article />
-							<Article />
-							<Article />
-							<Article />
-							<Article />
+							<Article screen={toggle} />
+							<Article screen={toggle} />
+							<Article screen={toggle} />
+							<Article screen={toggle} />
+							<Article screen={toggle} />
+							<Article screen={toggle} />
+							<Article screen={toggle} />
 						</div>
 					</div>
 				</div>
