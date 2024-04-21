@@ -4,7 +4,7 @@
 import React, { useState } from "react";
 import DefaultLayout from "../../Layout/DefaultLayout";
 import { TbCalendarCheck } from "react-icons/tb";
-import Article from "../../components/Article/Article";
+import ArticleDetails from "../../components/Article/ArticleDetails";
 
 function BlogDetails() {
 	const [toggle, setToggle] = useState({
@@ -29,19 +29,19 @@ function BlogDetails() {
 			<div className=" min-h-[60vh] lg:min-h-[90vh]">
 				<div className=" container lg:flex-col flex-col mx-auto  pt-16 md:flex-row sm:flex-col  px-8  xl:px-12 lg:px-12 md:px-4 sm:px-12  w-full justify-center items-center mb-[4rem]">
 					<div className="w-full flex gap-[4rem]">
-						<div className="w-3/5 flex flex-col">
+						<div className="lg:w-3/5 w-full flex flex-col">
 							<div className="w-full relative  rounded-[40px]  bg-[#EEE0F5]  testimonials">
 								<img
 									src="/images/17.svg"
 									className="absolute top-[0rem] left-0 z-10 w-[60%]"
 								/>
-								<div className="w-full flex flex-col p-[4rem]">
+								<div className="w-full flex flex-col sm:p-[4rem] p-[1rem]">
 									<div className="w-full border-b-2 border-stroke border-[#7A24A1] flex justify-between pb-3">
 										<span>
 											{" "}
 											<img src="/images/logo.svg" alt="" />
 										</span>
-										<span className="font-medium">
+										<span className="font-medium sm:text-[16px] text-[14px]">
 											Elevating Your <br />
 											<span className="font-normal">Ideas</span>
 										</span>
@@ -155,7 +155,7 @@ function BlogDetails() {
 										</div>
 									</ul>
 								</span>
-								<div className="w-full p-[3rem] rounded-lg bg-[#483464]">
+								<div className="w-full sm:p-[3rem] p-[1rem] rounded-lg bg-[#483464]">
 									<div className="text-[#FEAA53] mb-[1rem]">Comments</div>
 									<div className="border-2 border-stroke rounded-[16px]">
 										<textarea
@@ -180,14 +180,14 @@ function BlogDetails() {
 								</div>
 							</div>
 						</div>
-						<div className="w-2/5 z-10">
+						<div className="w-2/5 lg:block hidden z-10">
 							<div className="bgSecond py-[3rem] rounded-[20px]">
 								<div className="text-[#FEAA53] text-[24px] text-center">
 									<span className="mb-[2rem]">Related Articles</span>
 									<div className="w-full">
-										<Article screen={toggle} />
-										<Article screen={toggle} />
-										<Article screen={toggle} />
+										<ArticleDetails />
+										<ArticleDetails />
+										<ArticleDetails />
 									</div>
 								</div>
 							</div>

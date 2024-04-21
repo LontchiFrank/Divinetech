@@ -4,8 +4,6 @@
 import React, { useState } from "react";
 import DefaultLayout from "../Layout/DefaultLayout";
 import Article from "../components/Article/Article";
-import Image from "next/image";
-import Link from "next/link";
 
 function page() {
 	const [toggle, setToggle] = useState({
