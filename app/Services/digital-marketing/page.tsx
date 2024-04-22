@@ -4,10 +4,6 @@ import React, { useState } from "react";
 import DefaultLayout from "../../Layout/DefaultLayout";
 import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
 import { projects } from "../../data";
-import ProjectCards from "../../components/ProjectCards/ProjectCard";
-import Sidebar from "../../components/Sidebar/Sidebar";
-import Pagination from "../../components/Paginations/PaginationCom";
-import Image from "next/image";
 
 function Page() {
 	const [tests, setTests] = useState([
@@ -60,7 +56,7 @@ function Page() {
 					<div className=" container lg:flex flex-col mx-auto  pt-16 md:flex-row sm:flex-col  gap-9 px-8 2xl:px-32  xl:px-32 lg:px-20 md:px-12 sm:px-12  w-full justify-center items-center mb-[10rem]">
 						<div className="w-full lg:w-2/5  flex flex-col justify-center  sm:pb-8 md:pb-0 ">
 							<div className="md:pb-4 pb-2 z-10 mb-10">
-								<h1 className="font-[700]   xl:text-[3.2rem] text-[2.6rem] sm:text-left text-center text-gradient xl:leading-[4.5rem] lg:leading-[3.5rem] md:leading-[2rem] leading-8  pb-5">
+								<h1 className="font-[700]   xl:text-[3.2rem] text-[2.6rem] sm:text-left text-center text-gradient xl:leading-[4.5rem] lg:leading-[3.5rem] md:leading-[2rem] leading-10  pb-5">
 									Digital Marketing
 								</h1>
 								<div className="w-full flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10 lg:hidden">
@@ -91,20 +87,28 @@ function Page() {
 					</div>
 				</div>
 			</div>
-			<div className="md:container  lg:mx-auto  md:px-12 px-2 lg:flex flex-col mb-[13rem]">
-				<div className="w-full flex justify-center ">
-					<div className="w-[90%] relative  ">
-						<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-full xl:mb-[10rem] lg:mb-[22rem] mb-[18rem] lg:w-[43%] md:w-[45%] h-[30%]  absolute -z-10 lg:bottom-[35rem] bottom-[39rem] xl:left-[22rem] left-[20rem] rounded-[20px] md:block hidden "></div>
-						<div className="border-dashed border-t-3 xl:ml-20 ml-0 border-l-3 border-[#7A24A1] xl:mb-[13rem] lg:mb-[18rem] mb-[22rem] lg:w-[47%] xl:w-full md:w-[45%] h-[30%]  absolute bottom-[15rem]  -z-10  left-[16rem] rounded-[20px] md:block hidden"></div>
-						<div className="border-dashed border-t-3 xl:ml-20 ml-0 border-r-3 border-[#7A24A1] xl:mb-[10rem] lg:mb-[16rem] mb-[17rem] xl:w-full md:w-[45%] h-[30%]  absolute -z-10 bottom-[-3rem] left-[16rem] rounded-[20px] md:block hidden"></div>
-						<div className="border-dashed border-t-3 xl:ml-20 ml-0 border-l-3 border-[#7A24A1] xl:mb-[11.5rem] lg:mb-[12rem] mb-[14rem] xl:w-full md:w-[45%] h-[30%]  absolute bottom-[-21rem]  -z-10  left-[16rem] rounded-[20px] md:block hidden"></div>
-						<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-full xl:mb-[3rem] lg:mb-[4rem] mb-[-59rem] lg:w-[43%] md:w-[45%] h-[30%]  absolute -z-10 lg:bottom-[-32rem] bottom-[30rem] xl:left-[22rem] left-[20rem] rounded-[20px] md:block hidden "></div>
-						<div className="relative w-fit ">
+
+			<div className="md:container md:mx-auto  md:px-12 px-2 lg:flex flex-col mb-[13rem]">
+				<div className="w-full xl:block hidden -z-10">
+					<img
+						src="/images/26.svg"
+						className="absolute top-[60rem] right-0 -z-10"
+					/>
+				</div>
+				<div className="w-full flex justify-center relative">
+					<div className=" md:w-full w-[100%]  xl:ml-0 sm:ml-0 ml-0   flex-none">
+						<div className="w-full flex justify-center">
+							<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[57%] lg:w-[47%]   md:w-[20%] h-[20%]  absolute -z-10 mt-[6rem] xl:left-[22rem] left-[20rem] rounded-[20px] md:block hidden "></div>
+							<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[57%] lg:w-[47%] mt-[5rem]  bottom-[50rem] md:w-[50%] h-[20%] xl:mb-[8rem] mb-[20rem]  absolute  -z-10 lg:left-[10rem] left-[5rem] rounded-[20px] md:block hidden"></div>
+							<div className="border-dashed border-t-3 ml-20 border-r-3 border-[#7A24A1] xl:w-[57%] lg:w-[43%] md:w-[16%] h-[20%] xl:mb-[22rem] mb-[30rem]  absolute -z-10 bottom-[17rem] left-[18rem] rounded-[20px] md:block hidden"></div>
+							<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[67%] lg:w-[47%] mt-[5rem] bottom-[0rem] h-[20%] xl:mb-[22rem] mb-[28rem]  md:w-[50%]  absolute  -z-10 lg:left-[10rem] left-[5rem] rounded-[20px] md:block hidden"></div>
+							<div className="border-dashed border-t-3 ml-20 border-r-3 border-[#7A24A1]  xl:w-[57%] lg:w-[43%] md:w-[16%] h-[20%] mb-[22rem]   absolute -z-10 bottom-[-15rem] left-[18rem] rounded-[20px] md:block hidden"></div>
+						</div>
+						<div className="relative w-fit mb-16 ">
 							<img
 								src="/images/40.svg"
-								className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
+								className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] md:ml-[-28px] ml-0  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
 							/>
-							{/* </div> */}
 							<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
 								<span className="pb-2 font-medium text-[20px] text-[#183953]">
 									{" "}
@@ -119,35 +123,36 @@ function Page() {
 								</span>
 							</div>
 						</div>
-
-						<div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[4rem] lg:ml-[3rem] ml-0 ">
-							{/* xl:bottom-[11rem] sm:bottom-[12rem]  bottom-[12rem]   right-[-2rem] */}
-							<div className=" ">
-								<img
-									src="/images/40.svg"
-									className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
-								/>
-							</div>
-							<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
-								<span className="pb-2 font-medium text-[20px] text-[#183953]">
-									{" "}
-									Content Marketing
-								</span>
-								<span className="text-[14px] text-[#183953]">
-									At SaaSSimplified , we share valuable, relevant, and
-									informative content to attract and engage your target
-									audience. This may include blog posts, articles, videos,
-									e-books, and webinars. By providing useful information and
-									demonstrating expertise, content marketing establishes your
-									company as a trusted resource and helps nurture leads
-									throughout the customer journey.
-								</span>
+						{/* xl:right-[10rem] md:left-[28rem] left-0 top-[4rem] */}
+						<div className="w-full flex justify-end mb-16">
+							<div className=" relative w-fit ">
+								<div className=" ">
+									<img
+										src="/images/40.svg"
+										className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px]  md:mr-[-28px] mr-0  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
+									/>
+								</div>
+								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
+									<span className="pb-2 font-medium text-[20px] text-[#183953]">
+										{" "}
+										Content Marketing
+									</span>
+									<span className="text-[14px] text-[#183953]">
+										At SaaSSimplified , we share valuable, relevant, and
+										informative content to attract and engage your target
+										audience. This may include blog posts, articles, videos,
+										e-books, and webinars. By providing useful information and
+										demonstrating expertise, content marketing establishes your
+										company as a trusted resource and helps nurture leads
+										throughout the customer journey.
+									</span>
+								</div>
 							</div>
 						</div>
-
-						<div className=" relative w-fit left-[0rem] top-[9rem] mb-[2rem]">
+						{/* left-[0rem] top-[10rem] */}
+						<div className=" relative w-fit mb-16">
 							{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    sm:left-[-2rem] left-[-3rem]  */}
-							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
+							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px]  md:ml-[-28px] ml-0  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
 								<img src="/images/40.svg" />
 							</div>
 							<div className=" xl:w-[500px]  md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
@@ -164,27 +169,28 @@ function Page() {
 								</span>
 							</div>
 						</div>
-						<div className=" relative w-fit xl:left-[46rem] md:left-[24rem] left-0 top-[12rem] mb-[3rem]">
-							{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    right-[-2rem]  */}
-							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
-								<img src="/images/40.svg" />
-							</div>
-							<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
-								<span className="pb-2 font-medium text-[20px] text-[#183953]">
-									{" "}
-									Search Engine Optimization (SEO)
-								</span>
-								<span className="text-[14px] text-[#183953]">
-									Through our meticulous keyword research, on-page optimization,
-									and technical improvements, we ensure that your website ranks
-									higher in search engine results, making it easier for
-									potential customers to find you organically.
-								</span>
+						{/* xl:left-[50rem] md:left-[28rem] left-0 top-[15rem] */}
+						<div className="w-full flex justify-end mb-10">
+							<div className=" relative w-fit ">
+								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] right-0 mt-[-49px] md:mr-[-28px] mr-0  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
+									<img src="/images/40.svg" />
+								</div>
+								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
+									<span className="pb-2 font-medium text-[20px] text-[#183953]">
+										{" "}
+										Search Engine Optimization (SEO)
+									</span>
+									<span className="text-[14px] text-[#183953]">
+										Through our meticulous keyword research, on-page
+										optimization, and technical improvements, we ensure that
+										your website ranks higher in search engine results, making
+										it easier for potential customers to find you organically.
+									</span>
+								</div>
 							</div>
 						</div>
-						<div className=" relative w-fit left-[0rem] top-[15rem] mb-[2rem]">
-							{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    sm:left-[-2rem] left-[-3rem]  */}
-							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
+						<div className=" relative w-fit mb-16">
+							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px]  md:ml-[-28px] ml-0  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
 								<img src="/images/40.svg" />
 							</div>
 							<div className=" xl:w-[500px]  md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
@@ -201,36 +207,31 @@ function Page() {
 								</span>
 							</div>
 						</div>
-						<div className=" relative w-fit xl:left-[46rem] md:left-[24rem] left-0 top-[18rem] mb-[-12rem]">
-							{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    right-[-2rem]  */}
-							<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
-								<img src="/images/40.svg" />
+						<div className="w-full flex justify-end mb-16">
+							<div className=" relative w-fit ">
+								<div className=" ">
+									<img
+										src="/images/40.svg"
+										className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px]  md:mr-[-28px] mr-0  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
+									/>
+								</div>
+								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
+									<span className="pb-2 font-medium text-[20px] text-[#183953]">
+										{" "}
+										Affiliate Marketing
+									</span>
+									<span className="text-[14px] text-[#183953]">
+										Through the efforts of our service, your SaaS brand can gain
+										exposure to new audiences across various marketing channels.
+										SaaSSimplified can create content, write reviews, produce
+										videos, or share their personal experiences with your SaaS
+										product, helping to build trust and credibility
+									</span>
+								</div>
 							</div>
-							<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
-								<span className="pb-2 font-medium text-[20px] text-[#183953]">
-									{" "}
-									Affiliate Marketing
-								</span>
-								<span className="text-[14px] text-[#183953]">
-									Through the efforts of our service, your SaaS brand can gain
-									exposure to new audiences across various marketing channels.
-									SaaSSimplified can create content, write reviews, produce
-									videos, or share their personal experiences with your SaaS
-									product, helping to build trust and credibility.
-								</span>
-							</div>
-						</div>
-					</div>
-					<div className="w-full xl:block hidden">
-						<div className=" xl:block hidden">
-							<img
-								src="/images/26.svg"
-								className="absolute top-[60rem] right-0 -z-10"
-							/>
 						</div>
 					</div>
 				</div>
-				<div className="w-full pt-[30rem] pb-[10rem] flex justify-center items-center"></div>
 			</div>
 			<div className="mb-[0rem] ">
 				<img

@@ -92,20 +92,19 @@ function Page() {
 						</div>
 					</div>
 				</div>
-				<div className="md:container  lg:mx-auto  md:px-12 px-2 lg:flex flex-col mb-[13rem]">
-					<div className="w-full flex justify-center ">
-						<div className="w-[90%] relative  flex-none">
-							<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[50%]  md:w-[45%] h-[30%]  absolute -z-10 lg:bottom-[35rem] bottom-[39rem] xl:left-[22rem] left-[20rem] rounded-[20px] md:block hidden "></div>
-							<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute bottom-[15rem]  -z-10  left-[16rem] rounded-[20px] md:block hidden"></div>
-							<div className="border-dashed border-t-3 ml-20 border-r-3 border-[#7A24A1] xl:w-[50%] md:w-[45%] h-[30%]  absolute -z-10 bottom-[-3rem] left-[12rem] rounded-[20px] md:block hidden"></div>
-							<div className="relative w-fit ">
-								{/* xl:bottom-[11rem] md:bottom-[16rem] sm:bottom-[11rem] bottom-[12rem]  sm:left-[-2rem] left-[-3rem]  */}
-								{/* <div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-40px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"> */}
+				<div className="md:container md:mx-auto  md:px-12 px-2 lg:flex flex-col mb-[13rem]">
+					<div className="flex justify-center relative">
+						<div className=" md:w-full w-[90%]  xl:ml-0 sm:ml-0 ml-0   flex-none">
+							<div className="w-full flex justify-center">
+								<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[57%] lg:w-[47%]   md:w-[20%] h-[30%]  absolute -z-10 mt-[6rem] xl:left-[22rem] left-[20rem] rounded-[20px] md:block hidden "></div>
+								<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[57%] lg:w-[47%] mt-[5rem]  bottom-[24rem] md:w-[50%] h-[30%]  absolute  -z-10 lg:left-[10rem] left-[5rem] rounded-[20px] md:block hidden"></div>
+								<div className="border-dashed border-t-3 ml-20 border-r-3 border-[#7A24A1] xl:w-[57%] lg:w-[43%] md:w-[16%] h-[30%]  absolute -z-10 bottom-[8rem] left-[18rem] rounded-[20px] md:block hidden"></div>
+							</div>
+							<div className="relative w-fit mb-16 ">
 								<img
 									src="/images/40.svg"
 									className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
 								/>
-								{/* </div> */}
 								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
 									<span className="pb-2 font-medium text-[20px] text-[#183953]">
 										{" "}
@@ -120,32 +119,33 @@ function Page() {
 									</span>
 								</div>
 							</div>
-
-							<div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[4rem]">
-								{/* xl:bottom-[11rem] sm:bottom-[12rem]  bottom-[12rem]   right-[-2rem] */}
-								<div className=" ">
-									<img
-										src="/images/40.svg"
-										className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
-									/>
-								</div>
-								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
-									<span className="pb-2 font-medium text-[20px] text-[#183953]">
-										{" "}
-										Wireframing and Prototyping
-									</span>
-									<span className="text-[14px] text-[#183953]">
-										We create low-fidelity wireframes and High-fidelity
-										prototypes to outline the structure and layout of your
-										software application, ensuring optimal user flow and
-										intuitive navigation. Through interactive prototypes, we
-										simulate the user experience, allowing you to visualize and
-										test the interface before development begins.
-									</span>
+							{/* xl:right-[10rem] md:left-[28rem] left-0 top-[4rem] */}
+							<div className="w-full flex justify-end mb-16">
+								<div className=" relative w-fit ">
+									<div className=" ">
+										<img
+											src="/images/40.svg"
+											className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
+										/>
+									</div>
+									<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
+										<span className="pb-2 font-medium text-[20px] text-[#183953]">
+											{" "}
+											Wireframing and Prototyping
+										</span>
+										<span className="text-[14px] text-[#183953]">
+											We create low-fidelity wireframes and High-fidelity
+											prototypes to outline the structure and layout of your
+											software application, ensuring optimal user flow and
+											intuitive navigation. Through interactive prototypes, we
+											simulate the user experience, allowing you to visualize
+											and test the interface before development begins.
+										</span>
+									</div>
 								</div>
 							</div>
-
-							<div className=" relative w-fit left-[0rem] top-[10rem]">
+							{/* left-[0rem] top-[10rem] */}
+							<div className=" relative w-fit mb-16">
 								{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    sm:left-[-2rem] left-[-3rem]  */}
 								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
 									<img src="/images/40.svg" />
@@ -166,30 +166,32 @@ function Page() {
 									</span>
 								</div>
 							</div>
-							<div className=" relative w-fit xl:left-[43rem] md:left-[24rem] left-0 top-[15rem]">
-								{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    right-[-2rem]  */}
-								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
-									<img src="/images/40.svg" />
-								</div>
-								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
-									<span className="pb-2 font-medium text-[20px] text-[#183953]">
-										{" "}
-										Mobile Responsive Designs
-									</span>
-									<span className="text-[14px] text-[#183953]">
-										Mobile responsiveness is vital in today's digital landscape.
-										Our UI/UX designers optimize your SaaS application for a
-										seamless experience across various devices, including
-										smartphones and tablets. Whether it's adapting the layout,
-										adjusting interactive elements, or optimizing touch
-										interactions, we prioritize delivering a consistent user
-										experience across all platforms.
-									</span>
+							{/* xl:left-[50rem] md:left-[28rem] left-0 top-[15rem] */}
+							<div className="w-full flex justify-end mb-10">
+								<div className=" relative w-fit ">
+									<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
+										<img src="/images/40.svg" />
+									</div>
+									<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
+										<span className="pb-2 font-medium text-[20px] text-[#183953]">
+											{" "}
+											Mobile Responsive Designs
+										</span>
+										<span className="text-[14px] text-[#183953]">
+											Mobile responsiveness is vital in today's digital
+											landscape. Our UI/UX designers optimize your SaaS
+											application for a seamless experience across various
+											devices, including smartphones and tablets. Whether it's
+											adapting the layout, adjusting interactive elements, or
+											optimizing touch interactions, we prioritize delivering a
+											consistent user experience across all platforms.
+										</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className="w-full pt-[28rem] flex justify-center items-center">
+					<div className="w-full pt-[10rem] flex justify-center items-center">
 						<button className="md:px-12 md:py-4 px-7 py-2 rounded-full bg-[#7A24A1] text-white lg:text-[22px] text-[16px] w-fit">
 							<span className="flex gap-3">
 								{" "}

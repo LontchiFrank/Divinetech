@@ -15,9 +15,9 @@ function Footers() {
 					width: "100%",
 				}}>
 				{/* <div className="xl:mx-[23rem] lg:mx-[13rem] sm:mx-[8rem] mb-24"> */}
-				<div className="container mx-auto xl:px-[16rem] lg:px-[16rem]  md:px-16 sm:px-12 ">
-					<div class="flex justify-center items-center px-16 py-16 rounded-xl shadow-xl max-md:px-5 footerBox ">
-						<div class="flex flex-col items-center w-full max-w-[870px] max-md:max-w-full px-14">
+				<div className="container mx-auto xl:px-[16rem] lg:px-[4rem]  md:px-16 sm:px-12 ">
+					<div class="flex lg:flex-row justify-center items-center flex-col px-16 py-16 rounded-xl shadow-xl max-md:px-5 footerBox ">
+						<div class="flex flex-col items-center w-full max-w-[870px] max-md:max-w-full sm:px-14 px-6">
 							<div class="text-7xl font-bold text-center text-orange-400 leading-[72px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
 								Willing to elevate your ideas?
 							</div>
@@ -37,7 +37,7 @@ function Footers() {
 										placeholder="Your Message"
 									/>
 								</div>
-								<div class="justify-center px-8 py-5 text-center text-white capitalize whitespace-nowrap bg-gray-700 rounded-full leading-[143%] max-md:px-5">
+								<div class="sm:w-full justify-center px-8 py-5 text-center text-white capitalize whitespace-nowrap bg-gray-700 rounded-full leading-[143%] max-md:px-5">
 									Subscribe
 								</div>
 							</div>

@@ -23,7 +23,7 @@ const Sidebar = ({ children }) => {
 	return (
 		<div className="w-full flex">
 			<aside
-				className={` w-[20%] rounded-[10px] xl:block hidden absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden sidebarGradient duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0 p-4`}
+				className={` w-[20%] rounded-[10px] xl:block hidden absolute left-0 top-0 z-9999 flex w-72.5 flex-col overflow-y-hidden sidebarGradient duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0 p-4`}
 				style={{ zIndex: "0" }}>
 				<div className="flex items-center justify-center gap-2 px-3 py-5.5  lg:py-6.5">
 					<span className="text-center xl:text-[24px] lg:text-[18px] xl:mx-4 text-white mb-3">

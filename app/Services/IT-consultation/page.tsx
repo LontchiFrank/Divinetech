@@ -94,18 +94,25 @@ function Page() {
 						</div>
 					</div>
 				</div>
-				<div className=" md:container  lg:mx-auto   md:px-12 px-10 lg:flex flex-col mb-[13rem]">
-					<div className="w-full flex justify-center ">
-						<div className="lg:w-[90%] relative ">
-							<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-full  md:w-[45%] h-[30%]  absolute -z-10 xl:bottom-[22rem] lg:bottom-[28rem] bottom-[30rem] xl:left-[22rem] lg:left-[16rem] left-[20rem] rounded-[20px] md:block hidden "></div>
-							<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-full md:w-[45%] h-[30%]  absolute xl:bottom-[3rem]  xl:eft-[16rem] lg:bottom-[7rem] lg:left-[8rem] bottom-[5rem] left-[6rem] -z-10  rounded-[20px] md:block hidden"></div>
 
-							<div className="relative w-fit ">
+				<div className="md:container md:mx-auto  md:px-12 px-2 lg:flex flex-col mb-[13rem]">
+					<div className="w-full xl:block hidden -z-10">
+						<img
+							src="/images/26.svg"
+							className="absolute top-[60rem] right-0 -z-10"
+						/>
+					</div>
+					<div className="w-full flex justify-center relative">
+						<div className=" md:w-full w-[100%]  xl:ml-0 sm:ml-0 ml-0   flex-none">
+							<div className="w-full flex justify-center">
+								<div className="border-dashed border-t-3 border-r-3 border-[#7A24A1] xl:w-[57%] lg:w-[47%]   md:w-[20%] h-[30%]  absolute -z-10 mt-[6rem] xl:left-[22rem] left-[20rem] rounded-[20px] md:block hidden "></div>
+								<div className="border-dashed border-t-3 ml-20 border-l-3 border-[#7A24A1] xl:w-[57%] lg:w-[47%] mt-[5rem]  bottom-[14rem] md:w-[50%] h-[30%]  absolute  -z-10 lg:left-[10rem] left-[5rem] rounded-[20px] md:block hidden"></div>
+							</div>
+							<div className="relative w-fit mb-16 ">
 								<img
 									src="/images/40.svg"
-									className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
+									className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] md:ml-[-28px] ml-0  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
 								/>
-								{/* </div> */}
 								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
 									<span className="pb-2 font-medium text-[20px] text-[#183953]">
 										{" "}
@@ -121,32 +128,36 @@ function Page() {
 									</span>
 								</div>
 							</div>
-							{/* 45rem */}
-							<div className=" relative w-fit xl:left-[45rem] lg:left-[24rem] md:left-[19rem] left-0 top-[4rem]">
-								<div className=" ">
-									<img
-										src="/images/40.svg"
-										className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px] mr-[-28px]  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
-									/>
-								</div>
-								<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
-									<span className="pb-2 font-medium text-[20px] text-[#183953]">
-										{" "}
-										Infrastructure Optimization
-									</span>
-									<span className="text-[14px] text-[#183953]">
-										We evaluate your current IT infrastructure and recommend
-										solutions to streamline operations, improve scalability, and
-										ensure data security. Whether it's optimizing your cloud
-										infrastructure, implementing robust data backup and recovery
-										systems, or enhancing network performance, we provide
-										tailored recommendations and assist in their implementation.
-									</span>
+							{/* xl:right-[10rem] md:left-[28rem] left-0 top-[4rem] */}
+							<div className="w-full flex justify-end mb-16">
+								<div className=" relative w-fit ">
+									<div className=" ">
+										<img
+											src="/images/40.svg"
+											className="w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff]  right-0 mt-[-49px]  md:mr-[-28px] mr-0  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow"
+										/>
+									</div>
+									<div className=" xl:w-[500px] md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
+										<span className="pb-2 font-medium text-[20px] text-[#183953]">
+											{" "}
+											Infrastructure Optimization
+										</span>
+										<span className="text-[14px] text-[#183953]">
+											We evaluate your current IT infrastructure and recommend
+											solutions to streamline operations, improve scalability,
+											and ensure data security. Whether it's optimizing your
+											cloud infrastructure, implementing robust data backup and
+											recovery systems, or enhancing network performance, we
+											provide tailored recommendations and assist in their
+											implementation.
+										</span>
+									</div>
 								</div>
 							</div>
-
-							<div className=" relative w-fit left-[0rem] top-[10rem]">
-								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px] ml-[-28px] rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
+							{/* left-[0rem] top-[10rem] */}
+							<div className=" relative w-fit mb-16">
+								{/* xl:bottom-[13rem] sm:bottom-[14rem] bottom-[14rem]    sm:left-[-2rem] left-[-3rem]  */}
+								<div className=" w-[80px] h-[80px] p-3 absolute z-10 bg-[#fff] left-0 mt-[-49px]  md:ml-[-28px] ml-0  rounded-full border-[#7A24A1] border border-stroke flex justify-center items-center purpleShadow">
 									<img src="/images/40.svg" />
 								</div>
 								<div className=" xl:w-[500px]  md:w-[400px] w-full shrink flex flex-col py-7 px-10 border bg-[#fff] border-stroke rounded-[20px] border-[#7A24A1] purpleShadow">
@@ -166,12 +177,17 @@ function Page() {
 								</div>
 							</div>
 						</div>
-						<div className="w-full xl:block hidden -z-10">
-							<img
-								src="/images/26.svg"
-								className="absolute top-[60rem] right-0 -z-10"
-							/>
-						</div>
+					</div>
+					<div className="w-full pt-[10rem] flex justify-center items-center">
+						<button className="md:px-12 md:py-4 px-7 py-2 rounded-full bg-[#7A24A1] text-white lg:text-[22px] text-[16px] w-fit">
+							<span className="flex gap-3">
+								{" "}
+								Schedule Meeting{" "}
+								<span className="flex items-center ">
+									<FaArrowRight />
+								</span>
+							</span>
+						</button>
 					</div>
 				</div>
 				<div className="pt-[10rem]  md:px-12 px-2 mb-[13rem]">
