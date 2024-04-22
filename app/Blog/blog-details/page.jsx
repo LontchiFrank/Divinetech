@@ -1,16 +1,11 @@
 /** @format */
 
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import DefaultLayout from "../../Layout/DefaultLayout";
 import { TbCalendarCheck } from "react-icons/tb";
 import ArticleDetails from "../../components/Article/ArticleDetails";
 
 function BlogDetails() {
-	const [toggle, setToggle] = useState({
-		details: "details",
-		article: "article",
-	});
 	return (
 		<DefaultLayout>
 			<div
