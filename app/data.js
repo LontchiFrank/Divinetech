@@ -70,27 +70,28 @@ export const experts = [
 
 export const ProfData = [
 	{
-		img: "/images/8.svg",
-		title: "Michael Blaise",
+		img: "/images/72.svg",
+		title: "UI/UX",
+		link: "/Services/uiux",
 	},
 	{
-		img: "/images/10.svg",
-		title: "Kim Park",
+		img: "/images/74.svg",
+		title: "Mobile Development",
+		link: "/Services/mobile",
 	},
 	{
-		img: "/images/11.svg",
-		title: "Angela Watte",
+		img: "/images/73.svg",
+		title: "Web Development",
+		link: "/Services/web",
 	},
 	{
-		img: "/images/8.svg",
-		title: "Michael Blaise",
+		img: "/images/75.svg",
+		title: "IT consultation",
+		link: "/Services/IT-consultation",
 	},
 	{
-		img: "/images/10.svg",
-		title: "Kim Park",
-	},
-	{
-		img: "/images/11.svg",
-		title: "Angela Watte",
+		img: "/images/76.svg",
+		title: "Digital Marketing",
+		link: "/Services/digital-marketing",
 	},
 ];

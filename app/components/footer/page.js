@@ -4,7 +4,7 @@ import React from "react";
 
 function Footers() {
 	return (
-		<div className="w-full flex flex-col justify-center items-center ">
+		<div className="w-full  flex flex-col justify-center items-center ">
 			<footer
 				className="p-4 bg-white md:p-0 lg:py-[6rem]   w-full h-full"
 				style={{
@@ -15,7 +15,7 @@ function Footers() {
 					width: "100%",
 				}}>
 				{/* <div className="xl:mx-[23rem] lg:mx-[13rem] sm:mx-[8rem] mb-24"> */}
-				<div className="xl:px-[20rem] lg:px-[16rem]  md:px-16 sm:px-12 mx-auto ">
+				<div className="container mx-auto xl:px-[16rem] lg:px-[16rem]  md:px-16 sm:px-12 ">
 					<div class="flex justify-center items-center px-16 py-16 rounded-xl shadow-xl max-md:px-5 footerBox ">
 						<div class="flex flex-col items-center w-full max-w-[870px] max-md:max-w-full px-14">
 							<div class="text-7xl font-bold text-center text-orange-400 leading-[72px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
@@ -47,7 +47,7 @@ function Footers() {
 				<div className="mx-auto max-w-screen-xl flex flex-col pb-3 justify-center   items-center text-center w-full xl:pt-[22rem] lg:pt-[18rem] sm:pt-[8rem] ">
 					<a
 						href="#"
-						className="flex justify-center items-center text-2xl font-semibold text-gray-900  mb-12">
+						className="flex justify-center items-center text-2xl font-semibold text-gray-900  mb-12  sm:mt-0 mt-12">
 						<img src="/images/1.svg" />
 					</a>
 					<ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900  ">

@@ -1,16 +1,40 @@
 /** @format */
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import DefaultLayout from "./Layout/DefaultLayout";
 import VideoCom from "./components/videoCom/videoCom";
-import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
+import {
+	FaArrowRight,
+	FaChevronDown,
+	FaChevronRight,
+	FaChevronUp,
+} from "react-icons/fa";
 import { Autoplay, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Link from "next/link";
 import { ProfData } from "./data";
 import Image from "next/image";
 
 function App() {
+	const [open, setOpen] = useState(false);
+	const [open2, setOpen2] = useState(false);
+	const [open3, setOpen3] = useState(false);
+	const [open4, setOpen4] = useState(false);
+
+	const handleOpen = () => {
+		setOpen(!open);
+	};
+	const handleOpen2 = () => {
+		setOpen2(!open2);
+	};
+	const handleOpen3 = () => {
+		setOpen3(!open3);
+	};
+	const handleOpen4 = () => {
+		setOpen4(!open4);
+	};
+
 	return (
 		<DefaultLayout>
 			<div
@@ -51,18 +75,20 @@ function App() {
 									drive productivity from anywhere, at any time.
 								</p>
 							</div>
-							<button
-								link
-								href="#how-it-works"
-								className="px-12 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
-								<span className="flex gap-3">
-									{" "}
-									Let's Discuss{" "}
-									<span className="flex items-center ">
-										<FaArrowRight />
+							<Link href="/Contact">
+								<button
+									link
+									href="#how-it-works"
+									className="px-12 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
+									<span className="flex gap-3">
+										{" "}
+										Let's Discuss{" "}
+										<span className="flex items-center ">
+											<FaArrowRight />
+										</span>
 									</span>
-								</span>
-							</button>
+								</button>
+							</Link>
 						</div>
 						<div className="w-full lg:w-3/5  lg:flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10 hidden">
 							<Image
@@ -78,7 +104,6 @@ function App() {
 						<Swiper
 							loop
 							autoplay
-							// className="flex max-w-[90%] lg:max-w-[90%]"
 							direction="horizontal"
 							spaceBetween={20}
 							slidesPerView={4}
@@ -108,7 +133,7 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<div className="mt-44">
+			<div className="lg:mt-32 mt-20">
 				<Image
 					width={1000}
 					height={1000}
@@ -116,7 +141,7 @@ function App() {
 					className="absolute left-0 w-full -z-10"
 				/>
 			</div>
-			<div className="container  md:flex flex-col mx-auto xl:px-32 w-full  pt-24 md:flex-row mt-[0rem]">
+			<div className="container  md:flex flex-col mx-auto xl:px-32 w-full md:flex-row mt-[0rem]">
 				<div className="md:w-1/2 w-full flex  justify-center items-center">
 					<Image width={1000} height={1000} src="/images/9.svg" />
 				</div>
@@ -142,93 +167,101 @@ function App() {
 				</div>
 			</div>
 
-			<div className="w-full lg:mt-[18rem] mt-[7rem] lg:pb-[14rem] pb-[6rem]">
-				<div className="flex flex-col justify-center items-center">
-					<div className="xl:w-[45%] lg:w-[50%] w-full px-7">
-						<h1 className="xl:text-[48px] text-center lg:text-[40px] text-[35px] pb-4 font-medium text-[#173953]">
-							Productivity <span className="text-[#FEAA53]">Services</span>
-						</h1>
-						<p className="text-center md:text-[20px] text-[18px]  text-[#173953] pb-8">
-							Looking for any Tech-related services, we got you totally covered
-							on that. With our innovative SaaS (Software-as-a-Services)
-							offerings, we unleash your business potential in this digital era.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div className="w-full relative lg:pb-[16rem] pb-[6rem]">
-				<div className="w-full flex-col flex justify-center relative items-center sm:px-0 px-7">
-					<div className="xl:w-[50%] sm:w-3/5 w-full md:h-[561px] h-[620px] rounded-[20px] frames ">
-						<div className="flex sm:justify-between ">
-							<div className="absolute z-10 top-0 xl:left-[10rem] left-[2rem] ">
-								<Image
-									width={1000}
-									height={1000}
-									className="lg:w-[520px] w-[310px] "
-									src="/images/15.svg"
-								/>
-							</div>
-							<div className="absolute z-10 lg:top-[6.5rem] sm:top-[3rem] bottom-[2rem] xl:right-[8.5rem] sm:right-[5rem] right-[3rem] ">
-								<Image
-									width={1000}
-									height={1000}
-									className="lg:w-[520px] w-[310px]"
-									src="/images/16.svg"
-								/>
-							</div>
+			<div className="container mx-auto  md:px-10 px-9 ">
+				<div className="w-full lg:mt-[18rem] mt-[7rem] lg:pb-[14rem] pb-[6rem]">
+					<div className="flex flex-col justify-center items-center">
+						<div className="xl:w-[45%] lg:w-[50%] w-full px-7">
+							<h1 className="xl:text-[48px] text-center lg:text-[40px] text-[35px] pb-4 font-medium text-[#173953]">
+								Productivity <span className="text-[#FEAA53]">Services</span>
+							</h1>
+							<p className="text-center md:text-[20px] text-[18px]  text-[#173953] pb-8">
+								Looking for any Tech-related services, we got you totally
+								covered on that. With our innovative SaaS
+								(Software-as-a-Services) offerings, we unleash your business
+								potential in this digital era.
+							</p>
 						</div>
 					</div>
-					<div className="w-full flex justify-center absolute z-10 md:top-[32rem] top-[37rem]">
-						<button
-							link
-							href="#how-it-works"
-							className="md:px-12 md:py-6 px-8 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
-							<span className="flex gap-3">
-								{" "}
-								Get Started{" "}
-								<span className="flex items-center ">
-									<FaArrowRight />
-								</span>
-							</span>
-						</button>
-					</div>
-				</div>
-				<div className="mt-0">
-					<Image
-						width={1000}
-						height={1000}
-						src="/images/17.svg"
-						className="absolute left-0 w-full -z-10"
-					/>
 				</div>
 			</div>
-
-			<div className="w-full lg:mb-[0rem] pb-[6rem]">
-				<div className="flex flex-col justify-center items-center">
-					<div className="xl:w-[70%] lg:w-[80%] w-full px-7 mt-[9rem]">
-						<h1 className="xl:text-[48px] text-center flex flex-col md:text-[40px] text-[35px] lg:pb-16 pb-10 font-medium ">
-							<span className="text-[#FEAA53]">Share your projects</span>
-							<span className="text-[#173953]">with SaaSSimplified</span>
-						</h1>
-						<p className="text-center md:text-[20px] text-[18px]  text-[#173953] pb-[8rem]">
-							Be ahead of the competition with our comprehensive suite of SaaS
-							solutions tailored to meet your business expectations. From robust
-							project management tools to advanced customer relationship
-							management systems, we have you covered every step of the way.
-						</p>
-						<div className="w-full flex justify-center items-center">
+			<div className="container mx-auto xl:px-0 w-full">
+				<div className="w-full relative lg:pb-[16rem] pb-[6rem]">
+					<div className="w-full flex-col flex justify-center relative items-center sm:px-0 px-7">
+						<div className="xl:w-[50%] sm:w-3/5 w-full md:h-[561px] h-[620px] rounded-[20px] frames ">
+							<div className="flex sm:justify-between ">
+								<div className="absolute z-10 top-0 xl:left-[10rem] left-[2rem] ">
+									<Image
+										width={1000}
+										height={1000}
+										className="lg:w-[520px] w-[310px] "
+										src="/images/15.svg"
+									/>
+								</div>
+								<div className="absolute z-10 lg:top-[6.5rem] sm:top-[3rem] bottom-[2rem] xl:right-[8.5rem] sm:right-[5rem] right-[3rem] ">
+									<Image
+										width={1000}
+										height={1000}
+										className="lg:w-[520px] w-[310px]"
+										src="/images/16.svg"
+									/>
+								</div>
+							</div>
+						</div>
+						<div className="w-full flex justify-center absolute z-10 md:top-[32rem] top-[37rem]">
 							<button
 								link
 								href="#how-it-works"
-								className="px-14 py-6 rounded-full bg-[#7A24A1] text-white w-fit">
+								className="md:px-12 md:py-6 px-8 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
 								<span className="flex gap-3">
 									{" "}
-									Get To Us{" "}
+									Get Started{" "}
 									<span className="flex items-center ">
 										<FaArrowRight />
 									</span>
 								</span>
 							</button>
+						</div>
+					</div>
+					<div className="mt-0">
+						<Image
+							width={1000}
+							height={1000}
+							src="/images/17.svg"
+							className="absolute left-0 w-full -z-10"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div className="container mx-auto md:px-8 px-2">
+				<div className="w-full lg:mb-[0rem] pb-[6rem]">
+					<div className="flex flex-col justify-center items-center">
+						<div className="xl:w-[70%] lg:w-[80%] w-full px-7 mt-[9rem]">
+							<h1 className="xl:text-[48px] text-center flex flex-col md:text-[40px] text-[35px] lg:pb-16 pb-10 font-medium ">
+								<span className="text-[#FEAA53]">Share your projects</span>
+								<span className="text-[#173953]">with SaaSSimplified</span>
+							</h1>
+							<p className="text-center md:text-[20px] text-[18px]  text-[#173953] pb-[8rem]">
+								Be ahead of the competition with our comprehensive suite of SaaS
+								solutions tailored to meet your business expectations. From
+								robust project management tools to advanced customer
+								relationship management systems, we have you covered every step
+								of the way.
+							</p>
+							<div className="w-full flex justify-center items-center">
+								<button
+									link
+									href="#how-it-works"
+									className="px-14 py-6 rounded-full bg-[#7A24A1] text-white w-fit">
+									<span className="flex gap-3">
+										{" "}
+										Get To Us{" "}
+										<span className="flex items-center ">
+											<FaArrowRight />
+										</span>
+									</span>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -379,31 +412,112 @@ function App() {
 					</h2>
 				</div>
 				<div className="w-full mb-48">
-					<div className="border-b-1 border-[#173953] flex justify-between py-3">
-						<span className="text-[18px] text-[#173953]">
-							What specific services does SaaSSimplied offers?
-						</span>
-						<FaChevronDown className="text-[#173953]" />
+					<div className="border-b-1 border-[#173953] flex flex-col justify-between py-3">
+						<div className="w-full flex justify-between">
+							<span className="text-[18px] text-[#173953]">
+								What specific services does SaaSSimplied offers?
+							</span>
+							{open ? (
+								<FaChevronUp className="text-[#173953]" onClick={handleOpen} />
+							) : (
+								<FaChevronDown
+									className="text-[#173953]"
+									onClick={handleOpen}
+								/>
+							)}
+						</div>
+						{open ? (
+							<p className="text-[15px] pt-3 text-[#6f6f6f]">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+								enim ad minim veniam, quis nostrud exercitation ullamco laboris
+								nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+								in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+								nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+								sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						) : null}
 					</div>
-					<div className="border-b-1 border-[#173953] flex justify-between pt-10 pb-3">
-						<span className="text-[18px] text-[#173953]">
-							Are there any prerequisites or prior knowledge required to benefit
-							from SaaSSimplified?
-						</span>
-						<FaChevronDown className="text-[#173953]" />
+
+					<div className="border-b-1 border-[#173953] flex flex-col justify-between pt-10 pb-3">
+						<div className="w-full flex justify-between">
+							<span className="text-[18px] text-[#173953]">
+								Are there any prerequisites or prior knowledge required to
+								benefit from SaaSSimplified?
+							</span>
+							{open2 ? (
+								<FaChevronUp className="text-[#173953]" onClick={handleOpen2} />
+							) : (
+								<FaChevronDown
+									className="text-[#173953]"
+									onClick={handleOpen2}
+								/>
+							)}
+						</div>
+						{open2 ? (
+							<p className="text-[15px] pt-3 text-[#6f6f6f]">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+								enim ad minim veniam, quis nostrud exercitation ullamco laboris
+								nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+								in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+								nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+								sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						) : null}
 					</div>
-					<div className="border-b-1 border-[#173953] flex justify-between pt-10 pb-3">
-						<span className="text-[18px] text-[#173953]">
-							Is SaaSSimplied suitable for beginners or more advanced job
-							seekers?
-						</span>
-						<FaChevronDown className="text-[#173953]" />
+					<div className="border-b-1 border-[#173953] flex flex-col justify-between pt-10 pb-3">
+						<div className="w-full flex justify-between">
+							<span className="text-[18px] text-[#173953]">
+								Is SaaSSimplied suitable for beginners or more advanced job
+								seekers?
+							</span>
+							{open3 ? (
+								<FaChevronUp className="text-[#173953]" onClick={handleOpen3} />
+							) : (
+								<FaChevronDown
+									className="text-[#173953]"
+									onClick={handleOpen3}
+								/>
+							)}
+						</div>
+						{open3 ? (
+							<p className="text-[15px] pt-3 text-[#6f6f6f]">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+								enim ad minim veniam, quis nostrud exercitation ullamco laboris
+								nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+								in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+								nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+								sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						) : null}
 					</div>
-					<div className="border-b-1 border-[#173953] flex justify-between pt-10 pb-3">
-						<span className="text-[18px] text-[#173953]">
-							Can I access SaaSSimplified services on anywhere in the world?
-						</span>
-						<FaChevronDown className="text-[#173953]" />
+					<div className="border-b-1 border-[#173953] flex flex-col pt-10 pb-3">
+						<div className="w-full flex justify-between ">
+							<span className="text-[18px] text-[#173953]">
+								Can I access SaaSSimplified services on anywhere in the world?
+							</span>
+							{open4 ? (
+								<FaChevronUp className="text-[#173953]" onClick={handleOpen4} />
+							) : (
+								<FaChevronDown
+									className="text-[#173953]"
+									onClick={handleOpen4}
+								/>
+							)}
+						</div>
+						{open4 ? (
+							<p className="text-[15px] pt-3 text-[#6f6f6f]">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+								enim ad minim veniam, quis nostrud exercitation ullamco laboris
+								nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+								in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+								nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+								sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						) : null}
 					</div>
 				</div>
 			</div>
