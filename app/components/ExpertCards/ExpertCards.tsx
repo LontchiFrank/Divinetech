@@ -19,7 +19,7 @@ function ExpertCards({ el }: any) {
 						{el.role}
 					</p>
 				</div>
-				<div className="w-full flex justify-end">
+				<div className="w-full flex justify-end cursor-pointer">
 					<div className="w-[80px] h-[60px] bg-[#FEAA53] text-white text-[30px] font-bold flex justify-center items-center">
 						in
 					</div>

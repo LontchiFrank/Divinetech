@@ -29,7 +29,7 @@ function Projects() {
 			img: "/images/43.svg",
 		},
 	]);
-
+	const [active, setActive] = useState(1);
 	const [testimony, setTestimony] = useState(0);
 	const lengthArr = projects.length;
 	console.log(lengthArr);
@@ -78,7 +78,7 @@ function Projects() {
 						</div>
 					</div>
 				</div>
-				<div className="container mx-auto md:px-0 px-4 mb-[10rem]">
+				<div className="container mx-auto md:px-0 px-4 mb-[0rem]">
 					<div className="w-full flex justify-center">
 						<div className="w-[95%]">
 							<div className="w-full">
@@ -108,27 +108,27 @@ function Projects() {
 											</form>
 										</div>
 										<div className="  flex justify-center flex-wrap gap-3">
-											{projects.map((el: any) => (
-												<div key={`${el.id}+${el.img}`} className=" shrink-0">
-													<ProjectCards el={el} />
-												</div>
-											))}
+											{projects
+												.slice((active - 1) * 6, active * 6)
+												.map((el: any) => (
+													<div key={`${el.id}+${el.img}`} className=" shrink-0">
+														<ProjectCards el={el} />
+													</div>
+												))}
 										</div>
 										<div className="w-full flex justify-center items-center">
-											<Paginations />
+											<Paginations
+												arr={lengthArr}
+												pros={projects}
+												active={active}
+												setActive={setActive}
+											/>
 										</div>
 									</div>
 								</Sidebar>
 							</div>
 						</div>
 					</div>
-
-					{/* <div className="mt-0">
-						<img
-							src="/images/42.svg"
-							className="absolute left-0 w-full -z-10"
-						/>
-					</div> */}
 				</div>
 			</div>
 		</DefaultLayout>

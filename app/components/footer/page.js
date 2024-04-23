@@ -37,7 +37,7 @@ function Footers() {
 										placeholder="Your Message"
 									/>
 								</div>
-								<div class="sm:w-full justify-center px-8 py-5 text-center text-white capitalize whitespace-nowrap bg-gray-700 rounded-full leading-[143%] max-md:px-5">
+								<div class="w-full justify-center px-8 py-5 text-center text-white capitalize whitespace-nowrap bg-gray-700 rounded-full leading-[143%] max-md:px-5">
 									Subscribe
 								</div>
 							</div>

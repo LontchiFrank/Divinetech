@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import DefaultLayout from "../../Layout/DefaultLayout";
 import { FaArrowRight, FaChevronDown, FaChevronRight } from "react-icons/fa";
 import { projects } from "../../data";
+import Link from "next/link";
 
 function Page() {
 	const [tests, setTests] = useState([
@@ -71,15 +72,17 @@ function Page() {
 									business goals.
 								</p>
 							</div>
-							<button className="px-12 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
-								<span className="flex gap-3">
-									{" "}
-									Request Service{" "}
-									<span className="flex items-center ">
-										<FaArrowRight />
+							<Link href="/Contact">
+								<button className="px-12 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
+									<span className="flex gap-3">
+										{" "}
+										Request Service{" "}
+										<span className="flex items-center ">
+											<FaArrowRight />
+										</span>
 									</span>
-								</span>
-							</button>
+								</button>
+							</Link>
 						</div>
 						<div className="w-full lg:w-3/5  lg:flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10 hidden">
 							<img src="/images/52.svg" style={{ paddingTop: "1rem" }} />
@@ -416,7 +419,7 @@ function Page() {
 					</div>
 				</div>
 			</div>
-			<div className="mb-[45rem] pt-[10rem]  w-full ">
+			<div className="mb-[12rem] pt-[10rem]  w-full ">
 				<div className="">
 					<img
 						src="/images/42.svg"

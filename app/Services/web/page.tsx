@@ -7,6 +7,7 @@ import { projects } from "../../data";
 import ProjectCards from "../../components/ProjectCards/ProjectCard";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Paginations from "../../components/Paginations/PaginationCom";
+import Link from "next/link";
 
 function Page() {
 	const [tests, setTests] = useState([
@@ -29,6 +30,8 @@ function Page() {
 			img: "/images/43.svg",
 		},
 	]);
+
+	const [active, setActive] = useState(1);
 	const [testimony, setTestimony] = useState(0);
 	const lengthArr = projects.length;
 	console.log(lengthArr);
@@ -75,15 +78,17 @@ function Page() {
 									online presence and set you apart in the competition.
 								</p>
 							</div>
-							<button className="px-12 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
-								<span className="flex gap-3">
-									{" "}
-									Request Service{" "}
-									<span className="flex items-center ">
-										<FaArrowRight />
+							<Link href="/Contact">
+								<button className="px-12 py-4 rounded-full bg-[#7A24A1] text-white w-fit">
+									<span className="flex gap-3">
+										{" "}
+										Request Service{" "}
+										<span className="flex items-center ">
+											<FaArrowRight />
+										</span>
 									</span>
-								</span>
-							</button>
+								</button>
+							</Link>
 						</div>
 						<div className="w-full lg:w-3/5  lg:flex flex-col justify-center self-center md:mr-[-100px] lg:pt-0 pt-10 hidden">
 							<img src="/images/46.svg" style={{ paddingTop: "1rem" }} />
@@ -237,14 +242,21 @@ function Page() {
 										</form>
 									</div>
 									<div className="  flex justify-center flex-wrap gap-3">
-										{projects.map((el: any) => (
-											<div key={`${el.id}+${el.img}`} className=" shrink-0">
-												<ProjectCards el={el} />
-											</div>
-										))}
+										{projects
+											.slice((active - 1) * 6, active * 6)
+											.map((el: any) => (
+												<div key={`${el.id}+${el.img}`} className=" shrink-0">
+													<ProjectCards el={el} />
+												</div>
+											))}
 									</div>
 									<div className="w-full flex justify-center items-center">
-										<Paginations />
+										<Paginations
+											arr={lengthArr}
+											pros={projects}
+											active={active}
+											setActive={setActive}
+										/>
 									</div>
 								</div>
 							</Sidebar>
@@ -256,7 +268,7 @@ function Page() {
 					<img src="/images/42.svg" className="absolute left-0 w-full -z-10" />
 				</div>
 			</div>
-			<div className="pb-[35rem] pt-[10rem]  w-full ">
+			<div className="pb-[12rem] pt-[10rem]  w-full ">
 				<h2 className="md:text-[48px] text-[36px] sm:text-[30px] pb-[8rem] text-center font-medium text-[#173953]">
 					What Clients <span className="text-[#FEAA53]">Say</span>
 				</h2>

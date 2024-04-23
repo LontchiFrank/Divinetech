@@ -24,8 +24,8 @@ function page() {
 			<div className="  min-h-[60vh] lg:min-h-[90vh]  ">
 				<div className=" container lg:flex-col flex-col mx-auto  pt-16 md:flex-row sm:flex-col  px-8 2xl:px-36  xl:px-32 lg:px-20 md:px-4 sm:px-12  w-full justify-center items-center mb-[4rem]">
 					<div className="w-full lg:w-full  flex flex-col justify-center items-center sm:pb-8 md:pb-0 ">
-						<div className="md:w-2/5 w-3/5 md:pb-4 pb-2 z-10">
-							<h1 className="font-[700]  text-[2rem] xl:text-[72px] lg:text-[2.6rem] sm:text-center textGradientAbout xl:leading-[4.5rem] lg:leading-[3.5rem] md:leading-[2rem] leading-8  pb-5">
+						<div className="md:w-2/5 w-full md:pb-4 pb-2 z-10">
+							<h1 className="font-[700]  text-[2rem] xl:text-[72px] lg:text-[2.6rem] text-center textGradientAbout xl:leading-[4.5rem] lg:leading-[3.5rem] md:leading-[2rem] leading-8  pb-5">
 								About Us
 							</h1>
 						</div>
@@ -44,7 +44,7 @@ function page() {
 							/>
 						</div>
 					</div>
-					<div className="mt-32">
+					<div className="mt-16">
 						<Image
 							width={300}
 							height={300}
@@ -54,7 +54,7 @@ function page() {
 						/>
 					</div>
 
-					<div className="flex justify-center  items-center mt-[12rem] ">
+					<div className="flex justify-center  items-center  ">
 						<div className="lg:w-[75%] w-full px-10  flex md:flex-row flex-col bg-[#FCFCFC] py-16 rounded-[20px] z-10 imgShadow">
 							<div className="lg:w-1/2 w-full  flex justify-center items-center">
 								<div className="w-full flex justify-center items-center md:pt-[12rem] pt-[6rem]">
@@ -210,7 +210,7 @@ function page() {
 					</div>
 
 					<div className="rounded-[20px] w-full bg-[#483464] py-14 md:px-12 px-6">
-						<div className="flex w-full gap-7 mb-7">
+						<div className="flex md:flex-row flex-col w-full gap-7 mb-7">
 							<div class="w-full justify-center items-center px-7 py-4 whitespace-nowrap rounded-3xl border border-violet-100 border-solid max-md:px-5">
 								<input
 									className="w-full bg-transparent h-full border-none focus:border-none focus:outline-none  text-white placeholder:text-white"
@@ -224,7 +224,7 @@ function page() {
 								/>
 							</div>
 						</div>
-						<div className="flex w-full gap-7 mb-7">
+						<div className="flex md:flex-row flex-col w-full gap-7 mb-7">
 							<div class="w-full justify-center items-center px-7 py-4 whitespace-nowrap rounded-3xl border border-violet-100 border-solid max-md:px-5">
 								<input
 									className="w-full bg-transparent h-full border-none focus:border-none focus:outline-none  text-white placeholder:text-white"
@@ -247,7 +247,7 @@ function page() {
 								/>
 							</div>
 						</div>
-						<div className="flex w-full gap-7 mb-12">
+						<div className="flex md:flex-row flex-col w-full gap-7 mb-12">
 							<div class="w-full justify-center items-center px-7 py-4 whitespace-nowrap rounded-3xl border border-violet-100 border-solid max-md:px-5">
 								<select
 									className="w-full bg-transparent h-full border-none focus:border-none focus:outline-none  text-white placeholder:text-white"

@@ -49,7 +49,7 @@ function page() {
 						<img src="/images/70.svg" />
 					</div>
 					<div className="rounded-[20px] w-full bg-[#483464] py-14 md:px-12 px-6 mt-[10rem]">
-						<div className="flex w-full gap-7 mb-7">
+						<div className="flex md:flex-row flex-col w-full gap-7 mb-7">
 							<div className="w-full justify-center items-center px-7 py-4 whitespace-nowrap rounded-3xl border border-violet-100 border-solid max-md:px-5">
 								<input
 									className="w-full bg-transparent h-full border-none focus:border-none focus:outline-none  text-white placeholder:text-white"
@@ -63,7 +63,7 @@ function page() {
 								/>
 							</div>
 						</div>
-						<div className="flex w-full gap-7 mb-7">
+						<div className="flex md:flex-row flex-col w-full gap-7 mb-7">
 							<div className="w-full justify-center items-center px-7 py-4 whitespace-nowrap rounded-3xl border border-violet-100 border-solid max-md:px-5">
 								<input
 									className="w-full bg-transparent h-full border-none focus:border-none focus:outline-none  text-white placeholder:text-white"
@@ -86,7 +86,7 @@ function page() {
 								/>
 							</div>
 						</div>
-						<div className="flex w-full gap-7 mb-12">
+						<div className="flex md:flex-row flex-col w-full gap-7 mb-12">
 							<div className="w-full justify-center items-center px-7 py-4 whitespace-nowrap rounded-3xl border border-violet-100 border-solid max-md:px-5">
 								<select
 									className="w-full bg-transparent h-full border-none focus:border-none focus:outline-none  text-white placeholder:text-white"

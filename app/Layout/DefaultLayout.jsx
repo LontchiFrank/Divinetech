@@ -42,6 +42,7 @@ export default function DefaultLayout({ children }) {
 	};
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [activeItem, setActiveItem] = useState("");
+	const [activeMenu, setActiveMenu] = useState("");
 
 	const handleItemClick = (item) => {
 		if (item === "Our Services" || item === "about-dropdown") {
@@ -50,6 +51,9 @@ export default function DefaultLayout({ children }) {
 		} else {
 			setActiveItem(item);
 		}
+	};
+	const handleMenuClick = (item) => {
+		setActiveMenu(item);
 	};
 
 	useEffect(() => {
@@ -67,16 +71,19 @@ export default function DefaultLayout({ children }) {
 	}, []);
 
 	const menuItems = [
-		"Profile",
-		"Dashboard",
-		"Activity",
-		"Analytics",
-		"System",
-		"Deployments",
-		"My Settings",
-		"Team Settings",
-		"Help & Feedback",
-		"Log Out",
+		{ name: "My Settings", link: "/" },
+		{ name: "About", link: "/About" },
+		{ name: "UI/UX", link: "/Services/uiux" },
+		,
+		{ name: "Mobile Development", link: "/Services/mobile" },
+		{ name: "Web Development", link: "/Services/web" },
+		{ name: "IT consultation", link: "/Services/IT-consultation" },
+		{ name: "Digital Marketing", link: "/Services/digital-marketing" },
+		{ name: "Projects", link: "/Projects" },
+		{ name: "Team", link: "/Team" },
+		{ name: "Blog", link: "/Blog" },
+		{ name: "Contacts", link: "/Contact" },
+		,
 	];
 
 	const navs = [""];
@@ -252,7 +259,7 @@ export default function DefaultLayout({ children }) {
 					</NavbarItem>
 				</NavbarContent>
 				<NavbarContent justify="end">
-					<NavbarItem>
+					<NavbarItem className="sm:block hidden">
 						<Link href="/Contact" prefetch={false}>
 							<Button
 								className={
@@ -260,7 +267,6 @@ export default function DefaultLayout({ children }) {
 										? "isActive bg-[#7A24A1] px-5 py-3 rounded-[50px] "
 										: "bg-[#7A24A1] px-5 py-3 rounded-[50px] text-white"
 								}
-								// className=""
 								link
 								radius="sm"
 								onClick={() => handleItemClick("Contact")}>
@@ -273,6 +279,7 @@ export default function DefaultLayout({ children }) {
 					{menuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`}>
 							<Link
+								onClick={() => handleMenuClick(item.link)}
 								color={
 									index === 2
 										? "primary"
@@ -280,10 +287,14 @@ export default function DefaultLayout({ children }) {
 										? "danger"
 										: "foreground"
 								}
-								className="w-full"
-								href="#"
+								className={
+									activeMenu === item.link
+										? "isActive w-full"
+										: "text-black w-full"
+								}
+								href={item.link}
 								size="lg">
-								{item}
+								{item.name}
 							</Link>
 						</NavbarMenuItem>
 					))}

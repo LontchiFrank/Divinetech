@@ -30,11 +30,22 @@ const Sidebar = ({ children }) => {
 						Frameworks
 					</span>
 				</div>
-				<div className="bg-[#5f1f7f] mx-2 py-[2rem] flex justify-between px-2 mb-4">
-					<span></span>
+				<div className="bg-[#5f1f7f] mx-2 py-[1rem] flex justify-between px-2 mb-4">
+					{/* <span></span>
 					<span>
 						<FaChevronDown className="text-white" />{" "}
-					</span>
+					</span> */}
+					<select
+						className="w-full bg-transparent h-full border-none focus:border-none focus:outline-none  text-white placeholder:text-white"
+						name="cars"
+						id="cars">
+						<option></option>
+						<option value="saab">UI/UX</option>
+						<option value="mercedes">Web Development</option>
+						<option value="audi">Mobile Development</option>
+						<option value="audi">Digital Marketting</option>
+						<option value="audi">IT Consultation</option>
+					</select>
 				</div>
 				<div className="flex items-center justify-start gap-2 px-3 py-5.5 lg:py-6.5">
 					<span className="text-center xl:text-[20px] text-[18px] text-white mb-0">
