@@ -5,6 +5,11 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/system";
 import { useRouter } from "next/navigation";
+import "swiper/react";
+import "swiper/css";
+import "swiper/swiper-bundle.css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const montserrat = Montserrat({
 	display: "swap",

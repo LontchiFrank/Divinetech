@@ -51,8 +51,6 @@ function App() {
 					position: "absolute",
 				}}></div>
 			<div className="w-full relative">
-				{/* container flex min-h-[60vh] lg:min-h-[90vh] mx-auto */}
-
 				<div className="  min-h-[60vh] lg:min-h-[90vh]  ">
 					<div className=" container lg:flex flex-col mx-auto  pt-16 md:flex-row sm:flex-col  px-8 2xl:px-36  xl:px-32 lg:px-20 md:px-12 sm:px-12  w-full justify-center items-center mb-[4rem]">
 						<div className="w-full lg:w-2/5  flex flex-col justify-center sm:pb-8 md:pb-0 ">
@@ -64,7 +62,6 @@ function App() {
 									<Image
 										src="/images/7.svg"
 										rel="preload"
-										// style={{ height: "60%", width: "100%" }}
 										width={1000}
 										height={600}
 									/>

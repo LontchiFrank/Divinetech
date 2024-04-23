@@ -1,8 +1,20 @@
 /** @format */
-
+"use client";
 import React from "react";
 import DefaultLayout from "../Layout/DefaultLayout";
 import Article from "../components/Article/Article";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+	Navigation,
+	Pagination,
+	EffectFade,
+	Autoplay,
+	FreeMode,
+} from "swiper/modules";
+
+import "swiper/swiper-bundle.css";
+import "./styles.css";
 
 function page() {
 	return (
@@ -38,31 +50,94 @@ function page() {
 							src="/images/17.svg"
 							className="absolute top-[0rem] left-0 z-10 w-[60%]"
 						/>
-						<div className="w-full flex flex-col p-[4rem]">
-							<div className="w-full border-b-2 border-stroke border-[#7A24A1] flex justify-between pb-3">
+						<div className="w-full flex flex-col md:p-[4rem] p-[2rem]">
+							<div className="w-full border-b-2 border-stroke border-[#7A24A1] flex justify-between  pb-0">
 								<span>
 									{" "}
 									<img src="/images/logo.svg" alt="" />
 								</span>
-								<span className="font-medium">
-									Elevating Your <br />
-									<span className="font-normal">Ideas</span>
+								<span className="md:text-[16px] text-[13px] flex items-center font-medium">
+									Elevating Your Ideas
 								</span>
 							</div>
-							<div className="w-full h-full flex md:flex-row flex-col  justify-center items-center">
-								<div className="md:w-1/2 w-full h-full xl:p-[0rem] md:p-10 py-10 flex justify-center items-center">
-									<div className="flex flex-col ">
-										<h1 className="text-[#7A24A1] xl:text-[53px] md:text-[38px] text-[30px] font-semibold">
-											The Importance Of User Experience Design In SaaS
-											Applications
-										</h1>
-									</div>
-								</div>
-								<div className="md:w-3/5 w-full h-full flex justify-center items-center">
-									<div className="w-full xl:py-[4rem] flex justify-end py-10">
-										<img src="/images/71.svg" />
-									</div>
-								</div>
+							<div className="w-full ">
+								<Swiper
+									effect="fade"
+									modules={[
+										Navigation,
+										Pagination,
+										EffectFade,
+										Autoplay,
+										FreeMode,
+									]}
+									navigation={false}
+									fadeEffect={{ crossFade: true }}
+									// loop={true}
+									autoplay={{
+										delay: 1000,
+										disableOnInteraction: false,
+									}}
+									spaceBetween={50}
+									pagination={{
+										clickable: true,
+										bulletClass: "swiper-pagination-bullet",
+										bulletActiveClass: "swiper-pagination-bullet-active",
+									}}
+									freeMode={true}
+									className="flex mySwiper">
+									<SwiperSlide>
+										<div className="w-full flex md:flex-row flex-col  justify-center items-center">
+											<div className="md:w-1/2 w-full h-full xl:p-[0rem] md:p-10 py-10 flex justify-center items-center">
+												<div className="flex flex-col ">
+													<h1 className="text-[#7A24A1] xl:text-[53px] md:text-[38px] text-[30px] font-semibold">
+														The Importance Of User Experience Design In SaaS
+														Applications
+													</h1>
+												</div>
+											</div>
+											<div className="md:w-3/5 w-full h-full flex justify-center items-center">
+												<div className="w-full xl:py-[4rem] flex justify-end py-10">
+													<img src="/images/71.svg" />
+												</div>
+											</div>
+										</div>
+									</SwiperSlide>
+									<SwiperSlide>
+										<div className="w-full h-full flex md:flex-row flex-col  justify-center items-center">
+											<div className="md:w-1/2 w-full h-full xl:p-[0rem] md:p-10 py-10 flex justify-center items-center">
+												<div className="flex flex-col ">
+													<h1 className="text-[#7A24A1] xl:text-[53px] md:text-[38px] text-[30px] font-semibold">
+														The Default Of User Experience Design In SaaS web
+														Application
+													</h1>
+												</div>
+											</div>
+											<div className="md:w-3/5 w-full h-full flex justify-center items-center">
+												<div className="w-full xl:py-[4rem] flex justify-end py-10">
+													<img src="/images/71.svg" />
+												</div>
+											</div>
+										</div>
+									</SwiperSlide>
+									<SwiperSlide>
+										<div className="w-full h-full flex md:flex-row flex-col  justify-center items-center">
+											<div className="md:w-1/2 w-full h-full xl:p-[0rem] md:p-10 py-10 flex justify-center items-center">
+												<div className="flex flex-col ">
+													<h1 className="text-[#7A24A1] xl:text-[53px] md:text-[38px] text-[30px] font-semibold">
+														The Benefits Of User Experience Design In SaaS
+														Mobile Applications
+													</h1>
+												</div>
+											</div>
+											<div className="md:w-3/5 w-full h-full flex justify-center items-center">
+												<div className="w-full xl:py-[4rem] flex justify-end py-10">
+													<img src="/images/71.svg" />
+												</div>
+											</div>
+										</div>
+										{/* <img src="https://swiperjs.com/demos/images/nature-3.jpg" /> */}
+									</SwiperSlide>
+								</Swiper>
 							</div>
 						</div>
 					</div>

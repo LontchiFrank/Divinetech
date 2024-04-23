@@ -37,8 +37,7 @@ function BlogDetails() {
 											<img src="/images/logo.svg" alt="" />
 										</span>
 										<span className="font-medium sm:text-[16px] text-[14px]">
-											Elevating Your <br />
-											<span className="font-normal">Ideas</span>
+											Elevating Your<span className="font-normal">Ideas</span>
 										</span>
 									</div>
 									<div className="w-full h-full flex md:flex-row flex-col  justify-center items-center">

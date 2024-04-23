@@ -1,0 +1,10 @@
+.swiper-pagination-bullet {
+	background-color: gray; /* Inactive bullet color */
+	width: 12px; /* Bullet width */
+	height: 12px; /* Bullet height */
+	margin: 0 4px; /* Bullet margin */
+  }
+  
+  .swiper-pagination-bullet-active {
+	background-color: #7A24A1; /* Active bullet color */
+  }
