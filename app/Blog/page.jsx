@@ -34,7 +34,7 @@ function page() {
 			<div className="  min-h-[60vh] lg:min-h-[90vh]">
 				<div className=" container lg:flex-col flex-col mx-auto  pt-16 md:flex-row sm:flex-col  px-8 2xl:px-36  xl:px-32 lg:px-20 md:px-4 sm:px-12  w-full justify-center items-center mb-[4rem]">
 					<div className="w-full lg:w-full  flex flex-col justify-start sm:pb-8 md:pb-0 ">
-						<div className="xl:w-[40%] md:w-[60%] w-3/5 md:pb-4 pb-2 z-10 flex justify-start">
+						<div className="xl:w-[40%] md:w-[60%] w-full md:pb-4 pb-2 z-10 flex justify-start">
 							<h1 className="font-[700]  text-[2rem] xl:text-[58px] lg:text-[2.6rem] md:text-left text-center textGradientAbout xl:leading-[4.5rem] lg:leading-[3.5rem] md:leading-[2rem] leading-8  pb-5">
 								New Articles Every Week
 							</h1>

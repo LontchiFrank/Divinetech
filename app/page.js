@@ -186,7 +186,7 @@ function App() {
 					<div className="w-full flex-col flex justify-center relative items-center sm:px-0 px-7">
 						<div className="xl:w-[50%] sm:w-3/5 w-full md:h-[561px] h-[620px] rounded-[20px] frames ">
 							<div className="flex sm:justify-between ">
-								<div className="absolute z-10 top-0 xl:left-[10rem] left-[2rem] ">
+								<div className="absolute z-10 top-0 xl:left-[10rem] lg:left-[-1rem]  md:left-[2rem] sm:left-[-1rem] left-[2rem] ">
 									<Image
 										width={1000}
 										height={1000}
@@ -194,7 +194,7 @@ function App() {
 										src="/images/15.svg"
 									/>
 								</div>
-								<div className="absolute z-10 lg:top-[6.5rem] sm:top-[3rem] bottom-[2rem] xl:right-[8.5rem] sm:right-[5rem] right-[3rem] ">
+								<div className="absolute z-10 lg:top-[6.5rem] md:top-[11rem] sm:top-[15rem] bottom-[2rem] xl:right-[4.5rem] lg:right-[-1rem]  md:right-[3rem] sm:right-[-1rem] right-[3rem]">
 									<Image
 										width={1000}
 										height={1000}
@@ -409,8 +409,8 @@ function App() {
 					</h2>
 				</div>
 				<div className="w-full mb-48">
-					<div className="border-b-1 border-[#173953] flex flex-col justify-between py-3">
-						<div className="w-full flex justify-between">
+					<div className="border-b-1 border-[#173953] flex flex-col justify-between py-3 cursor-pointer">
+						<div className="w-full flex justify-between" onClick={handleOpen}>
 							<span className="text-[18px] text-[#173953]">
 								What specific services does SaaSSimplied offers?
 							</span>
@@ -436,7 +436,9 @@ function App() {
 						) : null}
 					</div>
 
-					<div className="border-b-1 border-[#173953] flex flex-col justify-between pt-10 pb-3">
+					<div
+						className="border-b-1 border-[#173953] flex flex-col justify-between pt-10 pb-3 cursor-pointer"
+						onClick={handleOpen2}>
 						<div className="w-full flex justify-between">
 							<span className="text-[18px] text-[#173953]">
 								Are there any prerequisites or prior knowledge required to
@@ -463,7 +465,9 @@ function App() {
 							</p>
 						) : null}
 					</div>
-					<div className="border-b-1 border-[#173953] flex flex-col justify-between pt-10 pb-3">
+					<div
+						className="border-b-1 border-[#173953] flex flex-col justify-between pt-10 pb-3 cursor-pointer"
+						onClick={handleOpen3}>
 						<div className="w-full flex justify-between">
 							<span className="text-[18px] text-[#173953]">
 								Is SaaSSimplied suitable for beginners or more advanced job
@@ -490,7 +494,9 @@ function App() {
 							</p>
 						) : null}
 					</div>
-					<div className="border-b-1 border-[#173953] flex flex-col pt-10 pb-3">
+					<div
+						className="border-b-1 border-[#173953] flex flex-col pt-10 pb-3 cursor-pointer"
+						onClick={handleOpen4}>
 						<div className="w-full flex justify-between ">
 							<span className="text-[18px] text-[#173953]">
 								Can I access SaaSSimplified services on anywhere in the world?
